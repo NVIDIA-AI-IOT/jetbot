@@ -1,0 +1,2 @@
+add_library(ssd_tensorrt SHARED FlattenConcat.cpp)
+target_link_libraries(ssd_tensorrt nvinfer cublas)
