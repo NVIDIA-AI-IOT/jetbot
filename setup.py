@@ -13,7 +13,7 @@ build_libs()
 
 setup(
     name='jetbot',
-    version='0.2.0',
+    version='0.3.0',
     description='An open-source robot based on NVIDIA Jetson Nano',
     packages=find_packages(),
     install_requires=[
