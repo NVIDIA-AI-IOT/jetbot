@@ -5,7 +5,7 @@
 JetBot is an open-source robot based on NVIDIA Jetson Nano that is
 
 * **Affordable** - Less than $150 add-on to Jetson Nano
-* **Educational** - Examples from basic motion to AI based collision avoidance
+* **Educational** - Tutorials from basic motion to AI based collision avoidance
 * **Fun!** - Interactively programmed from your web browser
 
 Building and using JetBot gives the hands on experience needed to create entirely new AI projects.
