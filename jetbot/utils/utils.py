@@ -1,5 +1,3 @@
-import io
-import cv2
 import subprocess
 import pkg_resources
 import platform
