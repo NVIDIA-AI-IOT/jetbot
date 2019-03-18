@@ -2,7 +2,7 @@
 
 <!--[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) -->
 
-> JetBot is currently in pre-release.  The bill of materials is finalized, but the JetBot SD card image will not be released until 3/30/2019.
+> This release comes with the finalized bill of materials that you can order and start building JetBot.  The software image will be posted on Monday 3/25/2019.
 
 <img src="../..//wiki/images/jetson-jetbot-illustration_1600x1260.png" height="256">
 
