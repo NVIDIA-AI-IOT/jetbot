@@ -1,6 +1,6 @@
 # JetBot
 
-[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) 
+<!--[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) -->
 
 > JetBot is currently in pre-release.  The bill of materials is finalized, but the JetBot SD card image will not be released until 3/30/2019.
 
