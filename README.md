@@ -2,7 +2,7 @@
 
 <!--[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) -->
 
-> This release comes with the finalized bill of materials that you can order and start building JetBot.  The software image will be posted on Monday 3/25/2019.
+> 3/25/2019 - The JetBot SD card image is now posted!  To get started, check out the [Wiki](https://github.com/NVIDIA-AI-IOT-private/jetbot/wiki).
 
 <img src="../..//wiki/images/jetson-jetbot-illustration_1600x1260.png" height="256">
 
