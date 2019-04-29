@@ -2,7 +2,7 @@
 
 <!--[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) -->
 
-> 3/25/2019 - The JetBot SD card image is now posted!  To get started, check out the [Wiki](https://github.com/NVIDIA-AI-IOT/jetbot/wiki).
+> Interested in making projects like this with Jetson Nano?  Check out our upcoming [webinar](https://info.nvidia.com/ai-for-makers-learn-with-jetbot-reg-page.html?nvid=nv-int-84114)!  
 
 <img src="../..//wiki/images/jetson-jetbot-illustration_1600x1260.png" height="256">
 
