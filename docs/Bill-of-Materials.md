@@ -92,3 +92,5 @@ You need the following parts to build JetBot.  They come in packs, so order the 
 ## Next
 
 Follow the [hardware setup](hardware-setup).
+
+[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/docs/Bill-of-Materials/?pixel)](https://github.com/igrigorik/ga-beacon)

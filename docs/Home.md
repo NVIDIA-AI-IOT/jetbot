@@ -29,4 +29,4 @@ Ask a question, make a suggestion, share a project...
 * [3D printing](3D-printing)
 * [jetbot_ros - Robot Operating System (ROS) port](https://github.com/dusty-nv/jetbot_ros)
 
-[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/wiki/Home?pixel)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/docs/Home?pixel)](https://github.com/igrigorik/ga-beacon)

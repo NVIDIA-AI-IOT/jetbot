@@ -31,4 +31,4 @@ In high power mode, it is possible to draw more current than the battery can sup
     ```
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/wiki/Battery-Tips/?pixel)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/docs/Battery-Tips/?pixel)](https://github.com/igrigorik/ga-beacon)

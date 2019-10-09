@@ -236,4 +236,4 @@ Once finished, your JetBot should look similar to this.
 
 Follow the [software setup](software-setup).
 
-[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/wiki/Hardware-Setup/?pixel)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/docs/Hardware-Setup/?pixel)](https://github.com/igrigorik/ga-beacon)

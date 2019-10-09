@@ -88,4 +88,4 @@ place the Jetson Nano in ``5W`` mode by calling the following command
 Follow the [examples](examples).
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/wiki/Software-Setup/?pixel)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/docs/Software-Setup/?pixel)](https://github.com/igrigorik/ga-beacon)

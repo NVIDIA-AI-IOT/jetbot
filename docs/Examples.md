@@ -125,4 +125,4 @@ Share it with us
 
 * [NVIDIA Developer Forums](https://devtalk.nvidia.com/default/board/372/jetson-projects/)
 
-[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/wiki/Examples/?pixel)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/docs/Examples/?pixel)](https://github.com/igrigorik/ga-beacon)

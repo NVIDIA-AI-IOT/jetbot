@@ -64,4 +64,4 @@ that can print the chassis for you.  Below are some quotes from popular 3D print
 | [Sculpteo](https://www.sculpteo.com/) | ~$100 |
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/wiki/3D-printing/?pixel)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/docs/3D-printing/?pixel)](https://github.com/igrigorik/ga-beacon)
