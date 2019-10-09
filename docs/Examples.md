@@ -1,6 +1,6 @@
 This page lists the examples provided with JetBot.
 
-> Make sure your robot is connected to WiFi as described in the [software setup](software-setup)
+> Make sure your robot is connected to WiFi as described in the [software setup](Software-Setup.md)
 
 ### Example 1 - Basic Motion
 
@@ -12,7 +12,7 @@ In this example we'll control JetBot by programming from a web browser.
 
 2. Sign in with the default password ``jetbot``
 3. Navigate to ``~/Notebooks/basic_motion/``
-4. Open and follow the [``basic_motion.ipynb``](../../jetbot/blob/master/notebooks/basic_motion/basic_motion.ipynb) notebook
+4. Open and follow the [``basic_motion.ipynb``](../../master/notebooks/basic_motion/basic_motion.ipynb) notebook
     > Make sure JetBot has enough space to move around.
 
 ### Example 2 - Teleoperation
@@ -28,7 +28,7 @@ In this example we'll drive JetBot remotely, view live streaming video, and save
 2. Sign in with the default password ``jetbot``
 2. Shutdown all other running notebooks by selecting ``Kernel`` -> ``Shutdown All Kernels...``
 3. Navigate to ``~/Notebooks/teleoperation/``
-3. Open and follow the [``teleoperation.ipynb``](../../jetbot/blob/master/notebooks/teleoperation/teleoperation.ipynb) notebook
+3. Open and follow the [``teleoperation.ipynb``](../../master/notebooks/teleoperation/teleoperation.ipynb) notebook
 
 ### Example 3 - Collision avoidance
 
@@ -59,13 +59,13 @@ JetBot safe!  We'll teach JetBot to detect two scenarios ``free`` and ``blocked`
 3. Connect to your robot by navigating to ``http://<jetbot_ip_address>:8888``
 4. Sign in with the default password ``jetbot``
 5. In the Jupyter Lab tab, navigate to ``~/collision_avoidance``
-6. Upload the collision avoidance [training notebook](../../jetbot/blob/master/notebooks/collision_avoidance/train_model.ipynb) to this folder
+6. Upload the collision avoidance [training notebook](../../master/notebooks/collision_avoidance/train_model.ipynb) to this folder
 7. Open and follow the ``train_model.ipynb`` notebook
 
 ##### Option 2 - Train on other GPU machine
 1. Connect to a GPU machine with PyTorch installed and a Jupyter Lab server running
 
-2. Upload the collision avoidance [training notebook](../../jetbot/blob/master/notebooks/collision_avoidance/train_model.ipynb) to this machine
+2. Upload the collision avoidance [training notebook](../../master/notebooks/collision_avoidance/train_model.ipynb) to this machine
 3. Open and follow the ``train_model.ipynb`` notebook
 
 #### Step 3 - Run live demo on JetBot

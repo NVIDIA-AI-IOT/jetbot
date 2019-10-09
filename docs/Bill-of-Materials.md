@@ -1,6 +1,6 @@
 This page lists everything you need to build JetBot, along with purchasing links from popular vendors.
 
-Some of the parts are 3D printed.  We provide the STL files needed to print these parts.  Please see our [3d printing](3d-printing) page for tips on printing.
+Some of the parts are 3D printed.  We provide the STL files needed to print these parts.  Please see our [3d printing](./3D-printing.md) page for tips on printing.
 
 ### Common parts
 
@@ -18,8 +18,8 @@ You need these components for each JetBot.
 | USB cable pack | 1 | $6.99 | [Amazon](http://amzn.com/B01N337FQF/) | Type A to Micro, right angle |
 | *PiOLED* display | 1 | $14.95 | [Adafruit](http://adafru.it/3527), [Amazon](https://amzn.to/2GgxUxX) |  |
 | *PiOLED* header | 1 | $5.95 | [Adafruit](http://adafru.it/1541), [Amazon](https://amzn.to/2taLSJf), [Sparkfun](https://www.sparkfun.com/products/12792) | 2x(3+) right angle male |
-| Chassis | 1 | -- | [STL file](../../jetbot/blob/master/assets/chassis.stl) | see [3D printing](3d-printing) | |
-| Camera Mount | 1 | -- | [STL file](../../jetbot/blob/master/assets/camera_mount.stl) | see [3D printing](3d-printing) |
+| Chassis | 1 | -- | [STL file](../../master/assets/chassis.stl) | see [3D printing](./3D-printing.md) |
+| Camera Mount | 1 | -- | [STL file](../../master/assets/camera_mount.stl) | see [3D printing](./3D-printing.md) |
 
 ### Camera
 
@@ -91,6 +91,6 @@ You need the following parts to build JetBot.  They come in packs, so order the 
 
 ## Next
 
-Follow the [hardware setup](hardware-setup).
+Follow the [hardware setup](./Hardware-Setup.md).
 
 [![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/docs/Bill-of-Materials/?pixel)](https://github.com/igrigorik/ga-beacon)
