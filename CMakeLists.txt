@@ -8,3 +8,4 @@ include_directories(${CUDA_INCLUDE_DIRS})
 link_directories(${CUDA_TOOLKIT_ROOT_DIR}/lib64)
 
 add_subdirectory(jetbot)
+add_directory()
