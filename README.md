@@ -2,7 +2,7 @@
 
 <!--[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) -->
 
-> Interested in making projects like this with Jetson Nano?  Check out the [webinar](https://info.nvidia.com/ai-for-makers-learn-with-jetbot-reg-page.html?nvid=nv-int-84114) we released on 5/16/2019!  
+> Looking for a quick way to get started with JetBot?  Many third party kits are [now available](../../wiki/third-party-kits)!
 
 <img src="../..//wiki/images/jetson-jetbot-illustration_1600x1260.png" height="256">
 
