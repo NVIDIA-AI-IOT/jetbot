@@ -177,13 +177,13 @@ def ssd_pipeline_to_uff(checkpoint_path, config_path,
 
     boxloc_concat_plugin = gs.create_plugin_node(
         "boxloc_concat",
-        op="FlattenConcat_TRT",
+        op="FlattenConcat_TRT_jetbot",
         dtype=tf.float32,
     )
 
     boxconf_concat_plugin = gs.create_plugin_node(
         "boxconf_concat",
-        op="FlattenConcat_TRT",
+        op="FlattenConcat_TRT_jetbot",
         dtype=tf.float32,
     )
 

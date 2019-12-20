@@ -25,7 +25,7 @@ using namespace nvinfer1;
 namespace
 {
 const char* FLATTENCONCAT_PLUGIN_VERSION{"1"};
-const char* FLATTENCONCAT_PLUGIN_NAME{"FlattenConcat_TRT"};
+const char* FLATTENCONCAT_PLUGIN_NAME{"FlattenConcat_TRT_jetbot"};
 }
 
 // Flattens all input tensors and concats their flattened version together
