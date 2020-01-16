@@ -1,10 +1,8 @@
 import ctypes
-import graphsurgeon as gs
 import numpy as np
 import os
 import subprocess
 import tensorrt as trt
-import uff
 
 TRT_INPUT_NAME = 'input'
 TRT_OUTPUT_NAME = 'nms'
@@ -86,9 +84,10 @@ def _load_config(config_path):
 
 def ssd_pipeline_to_uff(checkpoint_path, config_path,
                         tmp_dir='exported_model'):
-
+    import graphsurgeon as gs
     from object_detection import exporter
     import tensorflow as tf
+    import uff
 
     # TODO(@jwelsh): Implement by extending model builders with
     # TensorRT plugin stubs.  Currently, this method uses pattern
@@ -224,6 +223,7 @@ def ssd_uff_to_engine(uff_buffer,
                       strict_type_constraints=False,
                       log_level=trt.Logger.INFO):
 
+    import uff
     # create the tensorrt engine
     with trt.Logger(log_level) as logger, trt.Builder(logger) as builder, \
         builder.create_network() as network, trt.UffParser() as parser:
