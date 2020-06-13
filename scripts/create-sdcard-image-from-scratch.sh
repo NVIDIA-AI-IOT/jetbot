@@ -37,7 +37,7 @@ sudo apt-get install -y libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip
 sudo apt-get install -y python3-pip
 sudo -H pip3 install -U pip setuptools
 sudo -H pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast h5py astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta
-sudo -H pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v43 tensorflow==1.15.2+nv20.4
+sudo -H pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v44 tensorflow==1.15.2+nv20.4
 
 # Install the pre-built PyTorch pip wheel 
 echo -e "\e[45m Install the pre-built PyTorch pip wheel  \e[0m"
