@@ -70,6 +70,9 @@ sudo -H jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter lab --generate-config
 python3 -c "from notebook.auth.security import set_password; set_password('$password', '$HOME/.jupyter/jupyter_notebook_config.json')"
 
+# fix for permission error
+sudo chown -R jetbot:jetbot ~/.local/share/
+
 # install jetbot python module
 cd
 sudo apt install -y python3-smbus
