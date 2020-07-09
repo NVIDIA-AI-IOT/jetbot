@@ -33,19 +33,19 @@ sudo -H pip3 install jetson-stats
 # Install the pre-built TensorFlow pip wheel
 echo -e "\e[48;5;202m Install the pre-built TensorFlow pip wheel \e[0m"
 sudo apt-get update
-sudo apt-get install -y libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev
+sudo apt-get install -y libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev liblapack-dev libblas-dev gfortran
 sudo apt-get install -y python3-pip
-sudo -H pip3 install -U pip setuptools
-sudo -H pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast h5py astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta
-sudo -H pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v44 tensorflow==1.15.2+nv20.4
+sudo pip3 install -U pip testresources setuptools numpy==1.16.1 future==0.17.1 mock==3.0.5 h5py==2.9.0 keras_preprocessing==1.0.5 keras_applications==1.0.8 gast==0.2.2 futures protobuf pybind11
+# TF-1.15
+sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v44 'tensorflow<2'
 
 # Install the pre-built PyTorch pip wheel 
 echo -e "\e[45m Install the pre-built PyTorch pip wheel  \e[0m"
 cd
-wget -N https://nvidia.box.com/shared/static/3ibazbiwtkl181n95n9em3wtrca7tdzp.whl -O torch-1.5.0-cp36-cp36m-linux_aarch64.whl
+wget -N https://nvidia.box.com/shared/static/yr6sjswn25z7oankw8zy1roow9cy5ur1.whl -O torch-1.6.0rc2-cp36-cp36m-linux_aarch64.whl
 sudo apt-get install -y python3-pip libopenblas-base libopenmpi-dev 
 sudo -H pip3 install Cython
-sudo -H pip3 install numpy torch-1.5.0-cp36-cp36m-linux_aarch64.whl
+sudo -H pip3 install numpy torch-1.6.0rc2-cp36-cp36m-linux_aarch64.whl 
 
 # Install torchvision package
 echo -e "\e[45m Install torchvision package \e[0m"
@@ -57,7 +57,8 @@ sudo -H python3 setup.py install
 
 # Install traitlets (master, to support the unlink() method)
 echo -e "\e[48;5;172m Install traitlets \e[0m"
-sudo python3 -m pip install git+https://github.com/ipython/traitlets@master
+#sudo python3 -m pip install git+https://github.com/ipython/traitlets@master
+sudo -H pip3 install traitlets
 
 # Install jupyter lab
 echo -e "\e[48;5;172m Install Jupyter Lab \e[0m"
