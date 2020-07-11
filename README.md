@@ -16,3 +16,10 @@ Building and using JetBot gives the hands on experience needed to create entirel
 
 To get started, read the [JetBot Wiki](https://github.com/NVIDIA-AI-IOT/jetbot/wiki).
 
+## Getting Started
+
+1. Order parts from the [bill of materials](docs/bill_of_materials.md)
+
+2. Follow the [hardware setup](docs/hardware_setup.md)
+3. Follow the [software setup](docs/software_setup.md)
+4. Run through the [examples](docs/examples.md)
