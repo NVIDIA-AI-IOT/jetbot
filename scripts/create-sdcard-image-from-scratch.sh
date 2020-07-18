@@ -52,7 +52,7 @@ echo -e "\e[45m Install torchvision package \e[0m"
 cd
 git clone https://github.com/pytorch/vision
 cd vision
-#git checkout v0.4.0
+git checkout release/0.6
 sudo -H python3 setup.py install
 
 # Install traitlets (master, to support the unlink() method)
