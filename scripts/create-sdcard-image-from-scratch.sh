@@ -6,7 +6,6 @@ password='jetbot'
 
 # Record the time this script starts
 date
-
 # Get the full dir name of this script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
@@ -64,7 +63,7 @@ sudo -H pip3 install traitlets
 echo -e "\e[48;5;172m Install Jupyter Lab \e[0m"
 sudo apt install -y curl
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt install -y nodejs 
+sudo apt install -y nodejs libffi-dev 
 sudo -H pip3 install jupyter jupyterlab
 sudo -H jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
