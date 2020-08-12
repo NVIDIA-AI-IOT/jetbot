@@ -32,6 +32,12 @@ cd vision
 git checkout v0.4.0
 sudo python3 setup.py install
 
+# Install torch2trt
+cd $HOME
+git clone https://github.com/NVIDIA-AI-IOT/torch2trt
+cd torch2trt
+sudo python3 setup.py install
+
 # Install traitlets (master, to support the unlink() method)
 sudo python3 -m pip install git+https://github.com/ipython/traitlets@master
 
