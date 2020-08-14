@@ -79,7 +79,7 @@ sudo systemctl start jetbot_jupyter
 # Optimize the system configuration to create more headroom
 sudo nvpmodel -m 0
 sudo systemctl set-default multi-user
-systemctl disable nvzramconfig.service
+sudo systemctl disable nvzramconfig.service
 
 # Copy JetBot notebooks to home directory
 cp -r ~/jetbot/notebooks ~/Notebooks
