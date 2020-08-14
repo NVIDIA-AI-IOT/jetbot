@@ -9,6 +9,14 @@ while true; do sudo -n true; sleep 120; kill -0 "$$" || exit; done 2>/dev/null &
 # Enable i2c permissions
 sudo usermod -aG i2c $USER
 
+# Make swapfile
+cd 
+sudo fallocate -l 4G /var/swapfile
+sudo chmod 600 /var/swapfile
+sudo mkswap /var/swapfile
+sudo swapon /var/swapfile
+sudo bash -c 'echo "/var/swapfile swap swap defaults 0 0" >> /etc/fstab'
+
 # Install pip and some python dependencies
 sudo apt-get update
 sudo apt install -y python3-pip python3-pil
@@ -67,14 +75,6 @@ python3 create_jupyter_service.py
 sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
 sudo systemctl enable jetbot_jupyter
 sudo systemctl start jetbot_jupyter
-
-# Make swapfile
-cd 
-sudo fallocate -l 4G /var/swapfile
-sudo chmod 600 /var/swapfile
-sudo mkswap /var/swapfile
-sudo swapon /var/swapfile
-sudo bash -c 'echo "/var/swapfile swap swap defaults 0 0" >> /etc/fstab'
 
 # Optimize the system configuration to create more headroom
 sudo nvpmodel -m 0
