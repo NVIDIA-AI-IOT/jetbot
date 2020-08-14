@@ -76,6 +76,11 @@ sudo mkswap /var/swapfile
 sudo swapon /var/swapfile
 sudo bash -c 'echo "/var/swapfile swap swap defaults 0 0" >> /etc/fstab'
 
+# Optimize the system configuration to create more headroom
+sudo nvpmodel -m 0
+sudo systemctl set-default multi-user
+systemctl disable nvzramconfig.service
+
 # Copy JetBot notebooks to home directory
 cp -r ~/jetbot/notebooks ~/Notebooks
 
