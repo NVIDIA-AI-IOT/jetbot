@@ -44,6 +44,10 @@ jupyter lab --generate-config
 #jupyter notebook password
 python3 -c "from notebook.auth.security import set_password; set_password('$password', '$HOME/.jupyter/jupyter_notebook_config.json')"
 
+# Install bokeh
+sudo pip3 install bokeh
+sudo jupyter labextension install @bokeh/jupyter_bokeh
+
 # install jetbot python module
 cd
 sudo apt install -y python3-smbus
