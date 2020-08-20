@@ -57,7 +57,7 @@ sudo -H python3 setup.py install
 # Install traitlets (master, to support the unlink() method)
 echo -e "\e[48;5;172m Install traitlets \e[0m"
 #sudo python3 -m pip install git+https://github.com/ipython/traitlets@master
-sudo -H pip3 install traitlets
+sudo python3 -m pip install git+https://github.com/ipython/traitlets@dead2b8cdde5913572254cf6dc70b5a6065b86f8
 
 # Install jupyter lab
 echo -e "\e[48;5;172m Install Jupyter Lab \e[0m"
