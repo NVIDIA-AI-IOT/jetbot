@@ -73,6 +73,16 @@ python3 -c "from notebook.auth.security import set_password; set_password('$pass
 # fix for permission error
 sudo chown -R jetbot:jetbot ~/.local/share/
 
+# Install jupyter_clickable_image_widget
+echo "\e[42m Install jupyter_clickable_image_widget \e[0m"
+cd
+sudo apt-get install libssl1.0-dev
+git clone https://github.com/jaybdub/jupyter_clickable_image_widget
+cd jupyter_clickable_image_widget
+sudo -H pip3 install -e .
+sudo jupyter labextension install js
+sudo jupyter lab build
+
 # install jetbot python module
 cd
 sudo apt install -y python3-smbus
