@@ -17,6 +17,14 @@ while true; do sudo -n true; sleep 120; kill -0 "$$" || exit; done 2>/dev/null &
 echo -e "\e[100m Enable i2c permissions \e[0m"
 sudo usermod -aG i2c $USER
 
+# Make swapfile
+cd 
+sudo fallocate -l 4G /var/swapfile
+sudo chmod 600 /var/swapfile
+sudo mkswap /var/swapfile
+sudo swapon /var/swapfile
+sudo bash -c 'echo "/var/swapfile swap swap defaults 0 0" >> /etc/fstab'
+
 # Install pip and some python dependencies
 echo -e "\e[104m Install pip and some python dependencies \e[0m"
 sudo apt-get update
@@ -54,6 +62,12 @@ cd vision
 #git checkout v0.4.0
 sudo -H python3 setup.py install
 
+# Install torch2trt
+cd $HOME
+git clone https://github.com/NVIDIA-AI-IOT/torch2trt
+cd torch2trt
+sudo python3 setup.py install
+
 # Install traitlets (master, to support the unlink() method)
 echo -e "\e[48;5;172m Install traitlets \e[0m"
 #sudo python3 -m pip install git+https://github.com/ipython/traitlets@master
@@ -84,6 +98,11 @@ sudo -H pip3 install -e .
 sudo jupyter labextension install js
 sudo jupyter lab build
 
+# Install bokeh
+sudo pip3 install bokeh
+sudo jupyter labextension install @bokeh/jupyter_bokeh
+
+
 # install jetbot python module
 cd
 sudo apt install -y python3-smbus
@@ -102,13 +121,10 @@ sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
 sudo systemctl enable jetbot_jupyter
 sudo systemctl start jetbot_jupyter
 
-# Make swapfile
-cd 
-sudo fallocate -l 4G /var/swapfile
-sudo chmod 600 /var/swapfile
-sudo mkswap /var/swapfile
-sudo swapon /var/swapfile
-sudo bash -c 'echo "/var/swapfile swap swap defaults 0 0" >> /etc/fstab'
+# Optimize the system configuration to create more headroom
+sudo nvpmodel -m 0
+sudo systemctl set-default multi-user
+sudo systemctl disable nvzramconfig.service
 
 # Copy JetBot notebooks to home directory
 cp -r ~/jetbot/notebooks ~/Notebooks
