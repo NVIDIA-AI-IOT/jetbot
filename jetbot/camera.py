@@ -1,68 +1,88 @@
 import traitlets
-from traitlets.config.configurable import SingletonConfigurable
+import gi
+gi.require_version('Gst', '1.0')
+import logging
 import atexit
-import cv2
-import threading
 import numpy as np
+from gi.repository import GObject, Gst
 
 
-class Camera(SingletonConfigurable):
+Gst.init(None)
+
+
+class Camera(traitlets.HasTraits):
     
     value = traitlets.Any()
     
-    # config
-    width = traitlets.Integer(default_value=224).tag(config=True)
-    height = traitlets.Integer(default_value=224).tag(config=True)
-    fps = traitlets.Integer(default_value=21).tag(config=True)
-    capture_width = traitlets.Integer(default_value=816).tag(config=True)
-    capture_height = traitlets.Integer(default_value=616).tag(config=True)
+    def __init__(self, width=224, height=224, fps=21, capture_width=816, capture_height=616):
+        
+        GST_STRING = 'nvarguscamerasrc' + \
+            '! video/x-raw(memory:NVMM), width={capture_width}, height={capture_height}, format=(string)NV12, framerate=(fraction){fps}/1 !'\
+            ' nvvidconv '\
+            '! video/x-raw, width=(int){width}, height=(int){height}, format=(string)BGRx !'\
+            ' videoconvert '\
+            '! video/x-raw, format=(string)BGR !'\
+            ' appsink name=sink'.format(
+            width=width, 
+            height=height, 
+            fps=fps, 
+            capture_width=capture_width,
+            capture_height=capture_height
+        )
+        
+        self.pipeline = Gst.parse_launch(GST_STRING)
+        
+        appsink = self.pipeline.get_by_name('sink')
 
-    def __init__(self, *args, **kwargs):
-        self.value = np.empty((self.height, self.width, 3), dtype=np.uint8)
-        super(Camera, self).__init__(*args, **kwargs)
-
-        try:
-            self.cap = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
-
-            re, image = self.cap.read()
-
-            if not re:
-                raise RuntimeError('Could not read image from camera.')
-
-            self.value = image
-            self.start()
-        except:
-            self.stop()
-            raise RuntimeError(
-                'Could not initialize camera.  Please see error trace.')
-
+        appsink.set_property('emit-signals', True)
+        appsink.set_property('max-buffers', 1)
+        appsink.connect('new-sample', self._on_new_sample)
+        
+        
+        self.bus = self.pipeline.get_bus()
+        self.bus.add_signal_watch()
+        self.bus.connect("message::eos", self._on_eos)
+        self.bus.connect("message::error", self._on_error)
+        
+        self.start()
+        
         atexit.register(self.stop)
+    
+    def __del__(self):
+        self.stop()
+        
+    def _on_new_sample(self, appsink):
+        sample = appsink.emit('pull-sample')
+        buf = sample.get_buffer()
+        caps = sample.get_caps()
+        height = caps.get_structure(0).get_value('height')
+        width = caps.get_structure(0).get_value('width')
+        (result, mapinfo) = buf.map(Gst.MapFlags.READ)
 
-    def _capture_frames(self):
-        while True:
-            re, image = self.cap.read()
-            if re:
-                self.value = image
-            else:
-                break
-                
-    def _gst_str(self):
-        return 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=%d, height=%d, format=(string)NV12, framerate=(fraction)%d/1 ! nvvidconv ! video/x-raw, width=(int)%d, height=(int)%d, format=(string)BGRx ! videoconvert ! appsink' % (
-                self.capture_width, self.capture_height, self.fps, self.width, self.height)
+        image = np.ndarray(
+            shape=(height, width, 3),
+            buffer=buf.extract_dup(0, buf.get_size()),  # extract_dup to copy
+            dtype=np.uint8
+        )
+        
+        self.value = image
+            
+        buf.unmap(mapinfo)
+        
+        return Gst.FlowReturn.OK
     
     def start(self):
-        if not self.cap.isOpened():
-            self.cap.open(self._gst_str(), cv2.CAP_GSTREAMER)
-        if not hasattr(self, 'thread') or not self.thread.isAlive():
-            self.thread = threading.Thread(target=self._capture_frames)
-            self.thread.start()
-
+        self.pipeline.set_state(Gst.State.PLAYING)
+        
     def stop(self):
-        if hasattr(self, 'cap'):
-            self.cap.release()
-        if hasattr(self, 'thread'):
-            self.thread.join()
-            
-    def restart(self):
+        self.pipeline.set_state(Gst.State.NULL)
+        
+    def _on_eos(self, bus, msg):
         self.stop()
-        self.start()
+    
+    def _on_error(self, bus, msg):
+        self.stop()
+    
+    @staticmethod
+    def instance(*args, **kwargs):
+        return Camera(*args, **kwargs)
