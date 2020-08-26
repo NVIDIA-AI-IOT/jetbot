@@ -121,6 +121,19 @@ sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
 sudo systemctl enable jetbot_jupyter
 sudo systemctl start jetbot_jupyter
 
+
+# install python gst dependencies
+sudo apt-get install -y \
+    libwayland-egl1 \
+    gstreamer1.0-plugins-bad \
+    libgstreamer-plugins-bad1.0-0 \
+    gstreamer1.0-plugins-good \
+    python3-gst-1.0
+    
+# install zmq dependency (should actually already be resolved by jupyter)
+sudo -H pip3 install pyzmq
+    
+
 # Optimize the system configuration to create more headroom
 sudo nvpmodel -m 0
 sudo systemctl set-default multi-user
