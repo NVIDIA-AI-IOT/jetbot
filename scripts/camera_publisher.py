@@ -137,4 +137,7 @@ if __name__ == '__main__':
     camera.on_image(publish_image)
     
     print("starting camera")
-    camera.start()  # will run until EOS / error on GST bus
+    try:
+        camera.start()  # will run until EOS / error on GST bus
+    except KeyboardInterrupt:
+        camera.stop()
