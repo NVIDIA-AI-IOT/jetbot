@@ -15,23 +15,26 @@ Gst.init(None)
 
 class GstCamera(object):
     
-    def __init__(self, width=224, height=224, fps=21, capture_width=816, capture_height=616):
+    def __init__(self, sensor_mode=0, width=224, height=224, fps=21, capture_width=816, capture_height=616):
         
         self.mainloop = GObject.MainLoop()
         
-        GST_STRING = 'nvarguscamerasrc' + \
+        print(sensor_mode)
+        GST_STRING = 'nvarguscamerasrc sensor-mode={sensor_mode} '\
             '! video/x-raw(memory:NVMM), width={capture_width}, height={capture_height}, format=(string)NV12, framerate=(fraction){fps}/1 !'\
             ' nvvidconv '\
             '! video/x-raw, width=(int){width}, height=(int){height}, format=(string)BGRx !'\
             ' videoconvert '\
             '! video/x-raw, format=(string)BGR !'\
             ' appsink name=sink'.format(
+            sensor_mode=sensor_mode,
             width=width, 
             height=height, 
             fps=fps, 
             capture_width=capture_width,
             capture_height=capture_height
         )
+        print(GST_STRING)
         
         self.pipeline = Gst.parse_launch(GST_STRING)
         
@@ -100,13 +103,14 @@ def send_topic_numpy(socket, topic, array):
         str(array.dtype).encode('utf-8'),  # data type
         ",".join([str(d) for d in array.shape]).encode('utf-8'), # shape
         array
-    ], copy=False)
+    ], copy=True)
     
     
 if __name__ == '__main__':
     
     parser = argparse.ArgumentParser()
     parser.add_argument('--port', type=int, default=1807)
+    parser.add_argument('--sensor_mode', type=int, default=0)
     parser.add_argument('--width', type=int, default=224)
     parser.add_argument('--height', type=int, default=224)
     parser.add_argument('--fps', type=int, default=21)
@@ -122,6 +126,7 @@ if __name__ == '__main__':
     socket.bind("tcp://*:%d" % args.port)
 
     camera = GstCamera(
+        sensor_mode=args.sensor_mode,
         width=args.width,
         height=args.height,
         fps=args.fps,

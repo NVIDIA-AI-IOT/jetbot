@@ -8,7 +8,7 @@ import atexit
 
 def recv_topic_numpy(socket):
     
-    topic, dtype, shape, data = socket.recv_multipart(copy=False)
+    topic, dtype, shape, data = socket.recv_multipart(copy=True)
     import pdb
     shape = tuple([int(s) for s in bytes(shape).decode('utf-8').split(',')])
     buf = memoryview(data)
