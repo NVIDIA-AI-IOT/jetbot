@@ -1,88 +1,68 @@
+import threading
 import traitlets
-import gi
-gi.require_version('Gst', '1.0')
-import logging
-import atexit
+import sys
+import zmq
 import numpy as np
-from gi.repository import GObject, Gst
+import atexit
 
 
-Gst.init(None)
+def recv_topic_numpy(socket):
+    
+    topic, dtype, shape, data = socket.recv_multipart(copy=False)
+    import pdb
+    shape = tuple([int(s) for s in bytes(shape).decode('utf-8').split(',')])
+    buf = memoryview(data)
+    array = np.frombuffer(buf, dtype=bytes(dtype).decode('utf-8'))
+    return bytes(topic).decode('utf-8'), array.reshape(shape)
 
 
 class Camera(traitlets.HasTraits):
     
-    value = traitlets.Any()
+    value = traitlets.Any(value=np.zeros((224, 224, 3), dtype=np.uint8), default_value=np.zeros((224, 224, 3), dtype=np.uint8))
+    _INSTANCE = None
     
-    def __init__(self, width=224, height=224, fps=21, capture_width=816, capture_height=616):
+    def __init__(self, *args, **kwargs):
         
-        GST_STRING = 'nvarguscamerasrc' + \
-            '! video/x-raw(memory:NVMM), width={capture_width}, height={capture_height}, format=(string)NV12, framerate=(fraction){fps}/1 !'\
-            ' nvvidconv '\
-            '! video/x-raw, width=(int){width}, height=(int){height}, format=(string)BGRx !'\
-            ' videoconvert '\
-            '! video/x-raw, format=(string)BGR !'\
-            ' appsink name=sink'.format(
-            width=width, 
-            height=height, 
-            fps=fps, 
-            capture_width=capture_width,
-            capture_height=capture_height
-        )
-        
-        self.pipeline = Gst.parse_launch(GST_STRING)
-        
-        appsink = self.pipeline.get_by_name('sink')
-
-        appsink.set_property('emit-signals', True)
-        appsink.set_property('max-buffers', 1)
-        appsink.connect('new-sample', self._on_new_sample)
-        
-        
-        self.bus = self.pipeline.get_bus()
-        self.bus.add_signal_watch()
-        self.bus.connect("message::eos", self._on_eos)
-        self.bus.connect("message::error", self._on_error)
-        
+#         self.value = np.zeros((224, 224, 3), dtype=np.uint8)  # set default image
+        self._running = False
+        self._port = 1807
+        self._topic = "image"
         self.start()
-        
         atexit.register(self.stop)
-    
+        
     def __del__(self):
         self.stop()
         
-    def _on_new_sample(self, appsink):
-        sample = appsink.emit('pull-sample')
-        buf = sample.get_buffer()
-        caps = sample.get_caps()
-        height = caps.get_structure(0).get_value('height')
-        width = caps.get_structure(0).get_value('width')
-        (result, mapinfo) = buf.map(Gst.MapFlags.READ)
-
-        image = np.ndarray(
-            shape=(height, width, 3),
-            buffer=buf.extract_dup(0, buf.get_size()),  # extract_dup to copy
-            dtype=np.uint8
-        )
+    def _run(self):
         
-        self.value = image
+        context = zmq.Context()
+        self.socket = context.socket(zmq.SUB)
+        self.socket.setsockopt_string(zmq.SUBSCRIBE, self._topic)
+        self.socket.connect("tcp://localhost:%d" % self._port)
+        
+        while self._running:
+            topic, image = recv_topic_numpy(self.socket)
+            self.value = image
             
-        buf.unmap(mapinfo)
-        
-        return Gst.FlowReturn.OK
-    
+        self.socket.close()
+            
     def start(self):
-        self.pipeline.set_state(Gst.State.PLAYING)
+        if self._running:
+            return
+        self._running = True
+        self._thread = threading.Thread(target=self._run)
+        self._thread.start()
         
     def stop(self):
-        self.pipeline.set_state(Gst.State.NULL)
+        if not self._running:
+            return
+        self._running = False
+        self._thread.join()
         
-    def _on_eos(self, bus, msg):
-        self.stop()
-    
-    def _on_error(self, bus, msg):
-        self.stop()
-    
+        
     @staticmethod
     def instance(*args, **kwargs):
-        return Camera(*args, **kwargs)
+        if Camera._INSTANCE is not None:
+            return Camera._INSTANCE
+        else:
+            return Camera(*args, **kwargs)
