@@ -1,4 +1,8 @@
 #!/bin/bash
 
-git clone https://github.com/NVIDIA-AI-IOT/jetbot
-sudo cp -r ./jetbot/notebooks ./jetbot_dir/Notebooks
+WORKDIR="${HOME}/jetbot_workspace"
+
+if ! [[ -d ${WORKDIR} ]]; then
+    mkdir ${WORKDIR} 
+fi
+sudo cp -r ./notebooks ${WORKDIR}/Notebooks

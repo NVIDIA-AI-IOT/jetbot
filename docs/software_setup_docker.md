@@ -1,6 +1,6 @@
-# docker_jetbot
+# How to set up jetbot using Docker
 
-This is a tool to setup [`jetbot`](https://github.com/NVIDIA-AI-IOT/jetbot) in a container on Jetson.
+This document explains how to set up [`jetbot`](https://github.com/NVIDIA-AI-IOT/jetbot) in a container on Jetson.
 
 This is to provide an alternative path to using the original JetBot dedicated SD card image.<br>
 With this container-based setup, you can quickly start using JetBot on a regular SD card image.
@@ -10,12 +10,12 @@ With this container-based setup, you can quickly start using JetBot on a regular
 On your Jetson machine (container's host);
 
 ```bash
-git clone https://github.com/tokk-nv/docker_jetbot
-cd docker_jetbot
-./copy_local_keyfile.sh
-./docker_setup_workdir.sh
-./docker_build.sh
-./docker_run
+git clone https://github.com/NVIDIA-AI-IOT/jetbot
+cd jetbot
+./scripts/copy_local_keyfile.sh
+./scripts/docker_setup_workdir.sh
+./scripts/docker_build.sh
+./scripts/docker_run.sh
 ```
 
 You should see your JetBot container running and it should look like
