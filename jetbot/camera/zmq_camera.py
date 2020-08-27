@@ -4,6 +4,7 @@ import sys
 import zmq
 import numpy as np
 import atexit
+from .camera import Camera
 
 
 def recv_topic_numpy(socket):
@@ -16,10 +17,9 @@ def recv_topic_numpy(socket):
     return bytes(topic).decode('utf-8'), array.reshape(shape)
 
 
-class Camera(traitlets.HasTraits):
+class ZmqCamera(Camera):
     
     value = traitlets.Any(value=np.zeros((224, 224, 3), dtype=np.uint8), default_value=np.zeros((224, 224, 3), dtype=np.uint8))
-    _INSTANCE = None
     
     def __init__(self, *args, **kwargs):
         
@@ -58,11 +58,3 @@ class Camera(traitlets.HasTraits):
             return
         self._running = False
         self._thread.join()
-        
-        
-    @staticmethod
-    def instance(*args, **kwargs):
-        if Camera._INSTANCE is not None:
-            return Camera._INSTANCE
-        else:
-            return Camera(*args, **kwargs)
