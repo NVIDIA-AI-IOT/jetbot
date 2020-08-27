@@ -7,16 +7,13 @@ import atexit
 from .camera import Camera
 
 
-def recv_topic_numpy(socket):
-    
-    topic, dtype, shape, data = socket.recv_multipart(copy=True)
-    import pdb
-    shape = tuple([int(s) for s in bytes(shape).decode('utf-8').split(',')])
+def recv_image(socket, dtype, shape):
+    data = socket.recv()
     buf = memoryview(data)
-    array = np.frombuffer(buf, dtype=bytes(dtype).decode('utf-8'))
-    return bytes(topic).decode('utf-8'), array.reshape(shape)
+    array = np.frombuffer(buf, dtype=dtype)
+    return array.reshape(shape)
 
-
+    
 class ZmqCamera(Camera):
     
     value = traitlets.Any(value=np.zeros((224, 224, 3), dtype=np.uint8), default_value=np.zeros((224, 224, 3), dtype=np.uint8))
@@ -26,7 +23,8 @@ class ZmqCamera(Camera):
 #         self.value = np.zeros((224, 224, 3), dtype=np.uint8)  # set default image
         self._running = False
         self._port = 1807
-        self._topic = "image"
+        self._image_shape = (224, 224, 3)
+        self._image_dtype = np.uint8
         self.start()
         atexit.register(self.stop)
         
@@ -37,11 +35,12 @@ class ZmqCamera(Camera):
         
         context = zmq.Context()
         self.socket = context.socket(zmq.SUB)
-        self.socket.setsockopt_string(zmq.SUBSCRIBE, self._topic)
+        self.socket.setsockopt(zmq.CONFLATE, 1)  # last msg only.
+        self.socket.setsockopt(zmq.SUBSCRIBE, b'') # all topics
         self.socket.connect("tcp://localhost:%d" % self._port)
         
         while self._running:
-            topic, image = recv_topic_numpy(self.socket)
+            image = recv_image(self.socket, self._image_dtype, self._image_shape)
             self.value = image
             
         self.socket.close()

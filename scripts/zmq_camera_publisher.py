@@ -96,15 +96,6 @@ class GstCamera(object):
     def _on_error(self, bus, msg):
         self.stop()
         
-        
-def send_topic_numpy(socket, topic, array):
-    socket.send_multipart([
-        topic.encode('utf-8'),      # topic
-        str(array.dtype).encode('utf-8'),  # data type
-        ",".join([str(d) for d in array.shape]).encode('utf-8'), # shape
-        array
-    ], copy=True)
-    
     
 if __name__ == '__main__':
     
@@ -116,7 +107,6 @@ if __name__ == '__main__':
     parser.add_argument('--fps', type=int, default=21)
     parser.add_argument('--capture_width', type=int, default=816)
     parser.add_argument('--capture_height', type=int, default=616)
-    parser.add_argument('--topic', type=str, default="image")
     args = parser.parse_args()
     
         
@@ -136,8 +126,7 @@ if __name__ == '__main__':
     
     def publish_image(image):
         global socket, args
-#         print("publishing image")
-        send_topic_numpy(socket, args.topic, image)
+        socket.send(image)
         
     camera.on_image(publish_image)
     
