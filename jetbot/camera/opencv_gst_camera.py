@@ -1,12 +1,12 @@
 import traitlets
-from traitlets.config.configurable import SingletonConfigurable
 import atexit
 import cv2
 import threading
 import numpy as np
+from .camera import Camera
 
 
-class Camera(SingletonConfigurable):
+class OpenCvGstCamera(Camera):
     
     value = traitlets.Any()
     
