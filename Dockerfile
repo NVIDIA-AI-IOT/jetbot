@@ -99,13 +99,25 @@ RUN wget --quiet --show-progress --progress=bar:force:noscroll --no-check-certif
     pip3 install ${TENSORFLOW_WHL} --verbose && \
     rm ${TENSORFLOW_WHL}
 
+# install python gst dependencies
+RUN apt-get install -y && \
+    libwayland-egl1 && \
+    gstreamer1.0-plugins-bad && \
+    libgstreamer-plugins-bad1.0-0 && \
+    gstreamer1.0-plugins-good && \
+    python3-gst-1.0
+
+# install zmq dependency (should actually already be resolved by jupyter)
+RUN pip3 install pyzmq
+
+
 # Make misc tools available on container
 RUN apt-get update && apt-get install -y net-tools vim
 
 # Install Supervisord
 RUN apt-get update && apt-get install -y supervisor
 RUN mkdir -p /var/log/supervisor
-COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY scripts/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 CMD touch /var/run/supervisor.sock
 CMD supervisord -c /etc/supervisor/conf.d/supervisord.conf & \
 	/bin/bash
