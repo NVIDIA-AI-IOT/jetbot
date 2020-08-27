@@ -100,11 +100,11 @@ RUN wget --quiet --show-progress --progress=bar:force:noscroll --no-check-certif
     rm ${TENSORFLOW_WHL}
 
 # install python gst dependencies
-RUN apt-get install -y && \
-    libwayland-egl1 && \
-    gstreamer1.0-plugins-bad && \
-    libgstreamer-plugins-bad1.0-0 && \
-    gstreamer1.0-plugins-good && \
+RUN apt-get install -y \
+    libwayland-egl1 \
+    gstreamer1.0-plugins-bad \
+    libgstreamer-plugins-bad1.0-0 \
+    gstreamer1.0-plugins-good \
     python3-gst-1.0
 
 # install zmq dependency (should actually already be resolved by jupyter)
