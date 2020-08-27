@@ -9,5 +9,6 @@ sudo docker run -it --rm \
     --volume /dev/bus/usb:/dev/bus/usb \
     --volume /tmp/argus_socket:/tmp/argus_socket \
     -p 8888:8888 \
-    -v $WORKSPACE:/workspace
+    -v $WORKSPACE:/workspace \
+    --workdir /workspace \
     $CONTAINER

@@ -83,9 +83,6 @@ RUN apt-get install -y nodejs libffi-dev
 RUN pip3 install jupyter jupyterlab
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
-ENV JUPYTER_PASSWORD=jetbot
-RUN jupyter lab --generate-config
-RUN python3 -c "from notebook.auth.security import set_password; set_password('${JUPYTER_PASSWORD}', '/root/.jupyter/jupyter_notebook_config.json')"
 
 # Install jupyter_clickable_image_widget
 RUN echo "\e[42m Install jupyter_clickable_image_widget \e[0m"
@@ -98,7 +95,10 @@ RUN cd && \
     jupyter labextension install js && \
     jupyter lab build
     
-    
+
+#ENV JUPYTER_PASSWORD=jetbot
+#RUN jupyter lab --generate-config
+#RUN python3 -c "from notebook.auth.security import set_password; set_password('${JUPYTER_PASSWORD}', '/root/.jupyter/jupyter_notebook_config.json')"    
 # ============================
 # INSTALL MISC PYTHON PACKAGES
 # ============================
