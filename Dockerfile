@@ -43,18 +43,17 @@ RUN python3 -c "from notebook.auth.security import set_password; set_password('$
 RUN echo "\e[42m Install jupyter_clickable_image_widget \e[0m"
 RUN cd && \
     apt-get install -y libssl1.0-dev && \
-    git clone https://github.com/tokk-nv/jupyter_clickable_image_widget && \
+    git clone https://github.com/jaybdub/jupyter_clickable_image_widget && \
     cd jupyter_clickable_image_widget && \
-    git checkout dev-jlab2-support && \
+    git checkout tags/v0.1 && \
     pip3 install -e . && \
     jupyter labextension install js && \
     jupyter lab build
 
 # install jetbot python module
 RUN cd /opt && \
-    git clone https://github.com/jaybdub/jetbot/ && \
+    git clone https://github.com/NVIDIA-AI-IOT/jetbot/ && \
     cd jetbot && \
-    git checkout gst_camera && \
     apt install -y python3-smbus && \
     apt-get install -y cmake && \
     python3 setup.py install && \
@@ -100,7 +99,8 @@ RUN wget --quiet --show-progress --progress=bar:force:noscroll --no-check-certif
     rm ${TENSORFLOW_WHL}
 
 # install python gst dependencies
-RUN apt-get install -y \
+RUN apt-get update && \
+    apt-get install -y \
     libwayland-egl1 \
     gstreamer1.0-plugins-bad \
     libgstreamer-plugins-bad1.0-0 \
