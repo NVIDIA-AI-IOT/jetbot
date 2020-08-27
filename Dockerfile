@@ -56,8 +56,7 @@ RUN cd /opt && \
     cd jetbot && \
     apt install -y python3-smbus && \
     apt-get install -y cmake && \
-    python3 setup.py install && \
-    cp -r notebooks ${WORKDIR}/
+    python3 setup.py install 
  
 #    cd jetbot/utils && \
 #    python3 create_stats_service.py && \
