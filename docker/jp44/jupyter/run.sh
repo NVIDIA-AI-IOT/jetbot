@@ -1,6 +1,6 @@
 WORKSPACE=$1
 
-CONTAINER=jetbot-base:jp44
+CONTAINER=jetbot-jupyter:jp44
 
 sudo docker run -it -d --rm\
     --runtime nvidia \

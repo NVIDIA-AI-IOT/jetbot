@@ -1,8 +1,7 @@
+CONTAINER=jetbot-deps:jp44
 WORKSPACE=$1
 
-CONTAINER=jetbot-base:jp44
-
-sudo docker run -it -d --rm\
+sudo docker run -it --rm \
     --runtime nvidia \
     --network host \
     --privileged \

@@ -1,6 +1,5 @@
-CONTAINER=jetbot:jp44-base
+ROOT=../../..  # jetbot dir
 
-cp /etc/apt/trusted.gpg.d/jetson-ota-public.asc ./
-
-sudo docker build -t jetbot:jp44-base -f Dockerfile .
-
+sudo docker build \
+    -t jetbot-base:jp44 \
+    -f Dockerfile $ROOT
