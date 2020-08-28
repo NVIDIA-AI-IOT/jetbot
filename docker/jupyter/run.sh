@@ -1,7 +1,5 @@
 WORKSPACE=$1
 
-CONTAINER=jetbot-base:jp44
-
 sudo docker run -it -d --rm\
     --runtime nvidia \
     --network host \
@@ -12,4 +10,5 @@ sudo docker run -it -d --rm\
     -p 8888:8888 \
     -v $WORKSPACE:/workspace \
     --workdir /workspace \
-    $CONTAINER
+    --name=jetbot_jupyter \
+    jetbot-jupyter:$JETBOT_VERSION

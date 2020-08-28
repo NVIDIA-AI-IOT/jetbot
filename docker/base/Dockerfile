@@ -100,3 +100,11 @@ RUN cd && \
 # ============================
 RUN apt-get update && apt-get install -y supervisor
 RUN apt install -y python3-smbus && pip3 install pyzmq
+
+
+# ==============
+# INSTALL JETBOT
+# ==============
+ENV JETBOT_REPO_DIR=/opt/jetbot
+COPY . ${JETBOT_REPO_DIR}
+RUN cd ${JETBOT_REPO_DIR} && python3 setup.py install

@@ -1,4 +1,3 @@
-CONTAINER=jetbot-deps:jp44
 WORKSPACE=$1
 
 sudo docker run -it --rm \
@@ -11,4 +10,4 @@ sudo docker run -it --rm \
     -p 8888:8888 \
     -v $WORKSPACE:/workspace \
     --workdir /workspace \
-    $CONTAINER
+    jetbot-base:$JETBOT_VERSION
