@@ -14,6 +14,7 @@ cd docker
 ### Step 2 - Enable all containers
 
 ```bash
+sudo systemctl enable docker   # enable docker daemon at boot
 ./enable.sh $HOME   # we'll use home directory as working directory, set this as you please.
 ```
 
