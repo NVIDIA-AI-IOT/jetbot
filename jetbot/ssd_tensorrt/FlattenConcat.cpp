@@ -297,3 +297,24 @@ PluginFieldCollection FlattenConcatPluginCreator::mFC{};
 std::vector<PluginField> FlattenConcatPluginCreator::mPluginAttributes;
 
 REGISTER_TENSORRT_PLUGIN(FlattenConcatPluginCreator);
+
+
+//  Dummy module init to simplify shared object loading
+#include <Python.h>
+
+static PyMethodDef FlattenConcatMethods[] = {
+    {NULL, NULL, 0, NULL}        /* Sentinel */
+};
+
+static struct PyModuleDef flatten_concat_module = {
+    PyModuleDef_HEAD_INIT,
+    "flatten_concat",   /* name of module */
+    NULL, /* module documentation, may be NULL */
+    -1,       /* size of per-interpreter state of the module,
+                 or -1 if the module keeps state in global variables. */
+    FlattenConcatMethods
+};
+
+PyMODINIT_FUNC PyInit_flatten_concat() {
+    return PyModule_Create(&flatten_concat_module);
+};

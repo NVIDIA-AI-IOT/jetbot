@@ -50,9 +50,7 @@ def parse_boxes(outputs):
 
 
 def load_plugins():
-    library_path = os.path.join(
-        os.path.dirname(__file__), 'libssd_tensorrt.so')
-    ctypes.CDLL(library_path)
+    import flatten_concat
 
 
 def _get_feature_map_shape(config):

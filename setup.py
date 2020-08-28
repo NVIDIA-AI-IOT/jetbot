@@ -2,14 +2,26 @@ import glob
 import subprocess
 from setuptools import setup, find_packages, Extension
 
-
-def build_libs():
-    subprocess.call(['cmake', '.'])
-    subprocess.call(['make'])
-    
-
-build_libs()
-
+ext_modules=[
+    Extension(
+        'jetbot.ssd_tensorrt.flatten_concat', 
+        sources=[
+            'jetbot/ssd_tensorrt/FlattenConcat.cpp',
+        ],
+        include_dirs=[
+            '/usr/local/cuda/include'
+        ],
+        library_dirs=[
+            '/usr/lib/aarch64-linux-gnu',
+            '/usr/local/cuda/lib64'
+        ],
+        libraries=[
+            'nvinfer',
+            'cublas'
+        ],
+        optional=True
+    )
+]
 
 setup(
     name='jetbot',
@@ -20,5 +32,5 @@ setup(
         'Adafruit_MotorHat',
         'Adafruit-SSD1306',
     ],
-    package_data={'jetbot': ['ssd_tensorrt/*.so']},
+    ext_modules=ext_modules
 )
