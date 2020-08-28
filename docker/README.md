@@ -11,10 +11,10 @@ cd docker
 ./build.sh
 ```
 
-### Step 2 - Launch all containers
+### Step 2 - Enable all containers
 
 ```bash
-./run.sh $HOME   # we'll use home directory as working directory, set this as you please.
+./enable.sh $HOME   # we'll use home directory as working directory, set this as you please.
 ```
 
 Now you can go to ``https://<jetbot_ip>:8888`` and start programming JetBot from your web browser.
@@ -71,7 +71,7 @@ cd docker/display
 
 ```bash
 cd docker/display
-./run.sh
+./enable.sh
 ```
 
 ### Container 3 - jetbot-camera
@@ -91,7 +91,7 @@ cd docker/camera
 
 ```bash
 cd docker/camera
-./run.sh
+./enable.sh
 ```
 
 ### Container 4 - jetbot-jupyter
@@ -111,5 +111,5 @@ cd docker/jupyter
 
 ```bash
 cd docker/jupyter
-./run.sh $HOME
+./enable.sh $HOME
 ```

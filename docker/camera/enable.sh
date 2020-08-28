@@ -1,6 +1,7 @@
 sudo systemctl restart nvargus-daemon
 
-sudo docker run -it -d --rm\
+sudo docker run -it -d \
+    --restart always \
     --runtime nvidia \
     --network host \
     --privileged \
