@@ -50,7 +50,7 @@ def parse_boxes(outputs):
 
 
 def load_plugins():
-    import flatten_concat
+    import jetbot.ssd_tensorrt.flatten_concat
 
 
 def _get_feature_map_shape(config):
