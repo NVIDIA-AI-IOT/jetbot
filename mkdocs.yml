@@ -9,7 +9,7 @@ repo_url: https://github.com/NVIDIA-AI-IOT/jetbot
 plugins:
   - search
 #   - mkdocstrings
-
+edit_uri: blob/master
 markdown_extensions:
   - pymdownx.superfences
 
