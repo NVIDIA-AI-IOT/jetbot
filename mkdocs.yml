@@ -17,10 +17,10 @@ nav:
 
   - Home: README.md
   - Quick Start:
-      - 'Introduction': platform/nvidia/README.md
-      - 'Bill of Materials': platform/nvidia/bill_of_materials.md
-      - 'Hardware Setup': platform/nvidia/hardware_setup.md
-      - 'Software Setup': platform/nvidia/software_setup.md
+      - 'Introduction': platform/README.md
+      - 'Bill of Materials': platform/bill_of_materials.md
+      - 'Hardware Setup': platform/hardware_setup.md
+      - 'Software Setup': platform/software_setup.md
   - Notebooks:
       - 'Introduction': notebooks/README.md
       - notebooks/basic_motion/README.md
