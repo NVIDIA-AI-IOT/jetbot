@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=jetbot-base:jp44
+ARG BASE_IMAGE=jetbot-models:jp44
 FROM ${BASE_IMAGE}
 
 ARG JUPYTER_PASSWORD=jetbot
