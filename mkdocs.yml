@@ -16,13 +16,11 @@ markdown_extensions:
 nav:
 
   - Home: README.md
-  - Quick Start: quick_start.md
-  - Platforms:
-      - Nvidia Jetbot:
-          - 'Introduction': platforms/nvidia/README.md
-          - 'Bill of Materials': platforms/nvidia/bill_of_materials.md
-          - 'Hardware Setup': platforms/nvidia/hardware_setup.md
-          - 'Software Setup': platforms/nvidia/software_setup.md
+  - Quick Start:
+      - 'Introduction': platform/nvidia/README.md
+      - 'Bill of Materials': platform/nvidia/bill_of_materials.md
+      - 'Hardware Setup': platform/nvidia/hardware_setup.md
+      - 'Software Setup': platform/nvidia/software_setup.md
   - Notebooks:
       - 'Introduction': notebooks/README.md
       - notebooks/basic_motion/README.md
@@ -30,13 +28,15 @@ nav:
       - notebooks/collision_avoidance/README.md
       - notebooks/road_following/README.md
       - notebooks/object_following/README.md
-  - Docker:
-      - 'Introduction': docker/README.md
-      - docker/base/README.md
-      - docker/models/README.md
-      - docker/display/README.md
-      - docker/camera/README.md
-      - docker/jupyter/README.md
+  - Reference:
+      - Docker:
+          - 'Introduction': docker/README.md
+          - docker/base/README.md
+          - docker/models/README.md
+          - docker/display/README.md
+          - docker/camera/README.md
+          - docker/jupyter/README.md
+
 extra_css:
   - css/version-select.css
 extra_javascript:
