@@ -1,4 +1,5 @@
 import argparse
+import signal
 import zmq
 import time
 import numpy as np
@@ -131,7 +132,14 @@ if __name__ == '__main__':
     camera.on_image(publish_image)
     
     print("starting camera")
+    
+    def shutdown(*args, **kwargs):
+        global camera
+        camera.stop()
+        
+    signal.signal(signal.SIGTERM, shutdown)  # shutdown gracefully
+    
     try:
         camera.start()  # will run until EOS / error on GST bus
     except KeyboardInterrupt:
-        camera.stop()
+        shutdown()
