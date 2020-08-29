@@ -1,1 +1,8 @@
-sudo docker run -it --rm --runtime nvidia --network host --privileged --device /dev/video* --volume /dev/bus/usb:/dev/bus/usb --volume /tmp/argus_socket:/tmp/argus_socket -p 8888:8888 -v ${HOME}/jetbot_workspace:/jetbot_dir jetbot_base:jp44
+#!/bin/bash
+
+# Disable GUI to free up more RAM
+sudo systemctl set-default multi-user
+
+# Default to Max-N power mode
+sudo nvpmodel -m 0
+
