@@ -1,0 +1,38 @@
+site_name: JetBot
+theme:
+  name: "material"
+  palette:
+    primary: green
+    secondary: light green
+
+plugins:
+  - search
+#   - mkdocstrings
+
+markdown_extensions:
+  - pymdownx.superfences
+
+nav:
+
+  - Home:  README.md
+  - Quick Start: quick_start.md
+  - Platforms:
+      - Nvidia Jetbot:
+        - 'Introduction': platforms/nvidia/README.md
+        - 'Bill of Materials': platforms/nvidia/bill_of_materials.md
+        - 'Hardware Setup': platforms/nvidia/hardware_setup.md
+        - 'Software Setup': platforms/nvidia/software_setup.md
+  - Notebooks:
+      - 'Introduction': notebooks/README.md
+      - notebooks/basic_motion/README.md
+      - notebooks/teleoperation/README.md
+      - notebooks/collision_avoidance/README.md
+      - notebooks/road_following/README.md
+      - notebooks/object_following/README.md
+  - Docker:
+      - 'Introduction': docker/README.md
+      - docker/base/README.md
+      - docker/models/README.md
+      - docker/display/README.md
+      - docker/camera/README.md
+      - docker/jupyter/README.md
