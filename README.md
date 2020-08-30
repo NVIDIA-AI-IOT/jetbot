@@ -31,8 +31,8 @@ JetBot is programmed from your web browser.  Just connect your JetBot to Wifi an
 
 We built JetBot to make exploring ideas related to robotics as fun as possible.  In effect, it's a portable, battery powered
 AI computer with a camera that's super easy to program.  This makes it the perfect platform for trying new ideas
-related to AI, image processing and robotics.  Our experimentations have led us to new projects like [JetRacer](https://github.com/NVIDIA-AI-IOT/jetracer), 
-and we're excited to see where your experimentation takes you.
+related to AI, image processing and robotics.  Our experiments have led us to new projects like [JetRacer](https://github.com/NVIDIA-AI-IOT/jetracer), 
+and we're excited to see where your experiments take you.
 
 <img src="https://nvidia.box.com/shared/static/rq3a3dkfaqw8zrjxd67csil83hllpuc7.gif" style="height:256px">
 
@@ -40,4 +40,4 @@ and we're excited to see where your experimentation takes you.
 
 To get started with JetBot, follow the [Quick Start](platform/README.md) instructions.
 
-> If you run into any issues while working with JetBot, please [let us know](https://github.com/NVIDIA-AI-IOT/jetbot)!
+> If you run into any issues while working with JetBot, please [let us know](https://github.com/NVIDIA-AI-IOT/jetbot/issues)!
