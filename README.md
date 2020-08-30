@@ -11,7 +11,7 @@ it because...
 ## It's Affordable
 
 JetBot costs less than $250 in parts, *including* Jetson Nano. The DIY kit includes a bill of materials
-which you must purchase and a 3D printed.  If you're looking to get
+which you must purchase and a 3D printed chassis that you can print, or order.  If you're looking to get
 up and running as quick as possible, there are also many [third party kits](platform/third_party) available
 that come pre-bundled.
 
