@@ -41,7 +41,8 @@ nav:
       - notebooks/object_following/README.md
   - Reference:
       - Docker: docker/README.md
-      - Contributing: CONTRIBUTING.md       
+      - Contributing: CONTRIBUTING.md
+      - Changes: CHANGELOG.md
 
 extra_css:
     - css/version-select.css
