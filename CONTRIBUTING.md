@@ -71,3 +71,8 @@ Finally, add the file to our navigation in ``mkdocs.yml``
 
 Now, when you build the documentation you should see the page that
 we've added in the "Reference" section with the title "Maintainers".
+
+### Updating the Changelog
+
+We follow the guidance of  [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) for
+best practices in maintaining a chronological human-readable CHANGELOG.md file.
