@@ -1,9 +1,12 @@
 site_name: JetBot
 theme:
     name: "material"
+    logo: logo.png
+    favicon: favicon.png
     palette:
         primary: green
         secondary: light green
+
 repo_url: https://github.com/NVIDIA-AI-IOT/jetbot
 
 plugins:
