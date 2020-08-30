@@ -28,7 +28,7 @@ nav:
           - 3D Printing: platform/3d_printing.md
           - Hardware Setup: platform/hardware_setup.md
           - Software Setup: platform/software_setup.md
-      - Third Party Kit: platform/third_party_kits.md
+      - Third Party Kits: platform/third_party_kits.md
   - Notebooks:
       - Notebooks: notebooks/README.md
       - notebooks/basic_motion/README.md
