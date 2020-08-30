@@ -17,11 +17,11 @@ To build JetBot you'll need the following tools
 
 ### Step 1 - Clean 3D printed parts
 
-<a href="images/JB3-Assy_01-1.JPG"><img src="images/JB3-Assy_01-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_01-2.JPG"><img src="images/JB3-Assy_01-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_01-3.JPG"><img src="images/JB3-Assy_01-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_01-5.JPG"><img src="images/JB3-Assy_01-5.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_01-4.JPG"><img src="images/JB3-Assy_01-4.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_01-1.JPG"><img src="images/JB3-Assy_01-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_01-2.JPG"><img src="images/JB3-Assy_01-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_01-3.JPG"><img src="images/JB3-Assy_01-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_01-5.JPG"><img src="images/JB3-Assy_01-5.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_01-4.JPG"><img src="images/JB3-Assy_01-4.JPG" style="height:120px"></a>
 
 1. Remove support material from motor sockets using pliers
 
@@ -30,11 +30,11 @@ To build JetBot you'll need the following tools
 
 ### Step 2 - Mount motors
 
-<a href="images/JB3-Assy_02-1.JPG"><img src="images/JB3-Assy_02-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_02-2.JPG"><img src="images/JB3-Assy_02-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_02-3.JPG"><img src="images/JB3-Assy_02-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_02-4.JPG"><img src="images/JB3-Assy_02-4.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_02-5.JPG"><img src="images/JB3-Assy_02-5.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_02-1.JPG"><img src="images/JB3-Assy_02-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_02-2.JPG"><img src="images/JB3-Assy_02-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_02-3.JPG"><img src="images/JB3-Assy_02-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_02-4.JPG"><img src="images/JB3-Assy_02-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_02-5.JPG"><img src="images/JB3-Assy_02-5.JPG" style="height:120px"></a>
 
 1. Cut and remove the zip tie from each motor
 
@@ -44,11 +44,11 @@ To build JetBot you'll need the following tools
 
 ### Step 3 - Solder motor driver
 
-<a href="images/JB3-Assy_03-1.png"><img src="images/JB3-Assy_03-1.png" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_03-2.JPG"><img src="images/JB3-Assy_03-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_03-3.JPG"><img src="images/JB3-Assy_03-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_03-4.JPG"><img src="images/JB3-Assy_03-4.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_03-5.JPG"><img src="images/JB3-Assy_03-5.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_03-1.png"><img src="images/JB3-Assy_03-1.png" style="height:120px"></a>
+<a href="images/JB3-Assy_03-2.JPG"><img src="images/JB3-Assy_03-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_03-3.JPG"><img src="images/JB3-Assy_03-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_03-4.JPG"><img src="images/JB3-Assy_03-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_03-5.JPG"><img src="images/JB3-Assy_03-5.JPG" style="height:120px"></a>
 
 
 1. Break away 3-pin and 2-pin male headers from header link that comes with motor driver package
@@ -63,11 +63,11 @@ To build JetBot you'll need the following tools
 
 ### Step 4 - Strip motor driver power cable
 
-<a href="images/JB3-Assy_04-1.JPG"><img src="images/JB3-Assy_04-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_04-2.JPG"><img src="images/JB3-Assy_04-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_04-4.JPG"><img src="images/JB3-Assy_04-4.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_04-3.JPG"><img src="images/JB3-Assy_04-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_04-5.JPG"><img src="images/JB3-Assy_04-5.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_04-1.JPG"><img src="images/JB3-Assy_04-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_04-2.JPG"><img src="images/JB3-Assy_04-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_04-4.JPG"><img src="images/JB3-Assy_04-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_04-3.JPG"><img src="images/JB3-Assy_04-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_04-5.JPG"><img src="images/JB3-Assy_04-5.JPG" style="height:120px"></a>
 
 1. Select the depicted micro USB from the pack 
 
@@ -81,12 +81,12 @@ To build JetBot you'll need the following tools
 
 ### Step 5 - Mount motor driver 
 
-<a href="images/JB3-Assy_05-1.JPG"><img src="images/JB3-Assy_05-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_05-2.JPG"><img src="images/JB3-Assy_05-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_05-3.JPG"><img src="images/JB3-Assy_05-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_05-4.JPG"><img src="images/JB3-Assy_05-4.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_05-5.JPG"><img src="images/JB3-Assy_05-5.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_05-6.JPG"><img src="images/JB3-Assy_05-6.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_05-1.JPG"><img src="images/JB3-Assy_05-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_05-2.JPG"><img src="images/JB3-Assy_05-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_05-3.JPG"><img src="images/JB3-Assy_05-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_05-4.JPG"><img src="images/JB3-Assy_05-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_05-5.JPG"><img src="images/JB3-Assy_05-5.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_05-6.JPG"><img src="images/JB3-Assy_05-6.JPG" style="height:120px"></a>
 
 1. Route the spliced cable through chassis
 
@@ -99,11 +99,11 @@ To build JetBot you'll need the following tools
 
 ### Step 6 - Mount WiFi antennas
 
-<a href="images/JB3-Assy_06-0.JPG"><img src="images/JB3-Assy_06-0.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_07-1.JPG"><img src="images/JB3-Assy_07-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_07-2.JPG"><img src="images/JB3-Assy_07-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_07-3.JPG"><img src="images/JB3-Assy_07-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_07-4.JPG"><img src="images/JB3-Assy_07-4.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_06-0.JPG"><img src="images/JB3-Assy_06-0.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_07-1.JPG"><img src="images/JB3-Assy_07-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_07-2.JPG"><img src="images/JB3-Assy_07-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_07-3.JPG"><img src="images/JB3-Assy_07-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_07-4.JPG"><img src="images/JB3-Assy_07-4.JPG" style="height:120px"></a>
 
 1. Secure one patch antenna to the underside of top plate
 
@@ -112,10 +112,10 @@ To build JetBot you'll need the following tools
 
 ### Step 7 - Remove Jetson Nano module from developer kit
 
-<a href="images/JB3-Assy_06-1.JPG"><img src="images/JB3-Assy_06-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_06-2.JPG"><img src="images/JB3-Assy_06-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_06-3.JPG"><img src="images/JB3-Assy_06-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_06-4.JPG"><img src="images/JB3-Assy_06-4.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_06-1.JPG"><img src="images/JB3-Assy_06-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_06-2.JPG"><img src="images/JB3-Assy_06-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_06-3.JPG"><img src="images/JB3-Assy_06-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_06-4.JPG"><img src="images/JB3-Assy_06-4.JPG" style="height:120px"></a>
 
 1. Remove standoff screws from Jetson Nano module
 
@@ -124,12 +124,12 @@ To build JetBot you'll need the following tools
 
 ### Step 8 - Attach WiFi module to developer kit
 
-<a href="images/JB3-Assy_08-1.JPG"><img src="images/JB3-Assy_08-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_08-2.JPG"><img src="images/JB3-Assy_08-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_08-3.JPG"><img src="images/JB3-Assy_08-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_08-4.JPG"><img src="images/JB3-Assy_08-4.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_08-5.JPG"><img src="images/JB3-Assy_08-5.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_08-6.JPG"><img src="images/JB3-Assy_08-6.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_08-1.JPG"><img src="images/JB3-Assy_08-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_08-2.JPG"><img src="images/JB3-Assy_08-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_08-3.JPG"><img src="images/JB3-Assy_08-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_08-4.JPG"><img src="images/JB3-Assy_08-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_08-5.JPG"><img src="images/JB3-Assy_08-5.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_08-6.JPG"><img src="images/JB3-Assy_08-6.JPG" style="height:120px"></a>
 
 1. Attach developer kit to chassis using self taping screws
 
@@ -141,10 +141,10 @@ To build JetBot you'll need the following tools
 
 ### Step 9 - Mount ball caster
 
-<a href="images/JB3-Assy_09-1.JPG"><img src="images/JB3-Assy_09-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_09-4.JPG"><img src="images/JB3-Assy_09-4.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_09-3.JPG"><img src="images/JB3-Assy_09-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_09-6.JPG"><img src="images/JB3-Assy_09-6.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_09-1.JPG"><img src="images/JB3-Assy_09-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_09-4.JPG"><img src="images/JB3-Assy_09-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_09-3.JPG"><img src="images/JB3-Assy_09-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_09-6.JPG"><img src="images/JB3-Assy_09-6.JPG" style="height:120px"></a>
 
 1. Place the caster ball inside of shroud
 
@@ -155,8 +155,8 @@ To build JetBot you'll need the following tools
 
 ### Step 10 - Solder header onto *PiOLED* display
 
-<a href="images/JB3-Assy_10-1b.jpg"><img src="images/JB3-Assy_10-1b.jpg" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_10-4.JPG"><img src="images/JB3-Assy_10-4.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_10-1b.jpg"><img src="images/JB3-Assy_10-1b.jpg" style="height:120px"></a>
+<a href="images/JB3-Assy_10-4.JPG"><img src="images/JB3-Assy_10-4.JPG" style="height:120px"></a>
 
 1. Secure the 6-pin right angle header to PiOLED display by some method
 
@@ -165,9 +165,9 @@ To build JetBot you'll need the following tools
 
 ### Step 11 - Wire motor driver to *PiOLED* display
 
-<a href="images/JB3-Assy_11-1.JPG"><img src="images/JB3-Assy_11-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_11-3.JPG"><img src="images/JB3-Assy_11-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_11-5.JPG"><img src="images/JB3-Assy_11-5.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_11-1.JPG"><img src="images/JB3-Assy_11-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_11-3.JPG"><img src="images/JB3-Assy_11-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_11-5.JPG"><img src="images/JB3-Assy_11-5.JPG" style="height:120px"></a>
 
 1. Select 4 wire segment of female-female jumper cables.
     > We use brown, red, orange, yellow segment.  You can map the colors accordingly.
@@ -179,10 +179,10 @@ To build JetBot you'll need the following tools
 
 ### Step 12 - Mount camera
 
-<a href="images/JB3-Assy_12-1.JPG"><img src="images/JB3-Assy_12-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_12-2.JPG"><img src="images/JB3-Assy_12-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_12-3.JPG"><img src="images/JB3-Assy_12-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_12-4.JPG"><img src="images/JB3-Assy_12-4.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_12-1.JPG"><img src="images/JB3-Assy_12-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_12-2.JPG"><img src="images/JB3-Assy_12-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_12-3.JPG"><img src="images/JB3-Assy_12-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_12-4.JPG"><img src="images/JB3-Assy_12-4.JPG" style="height:120px"></a>
 
 1. Attach the camera to the camera mount using 4x self tapping screws
 
@@ -192,12 +192,12 @@ To build JetBot you'll need the following tools
 
 ### Step 13 - Attach wide angle sensor
 
-<a href="images/JB3-Assy_13-1.JPG"><img src="images/JB3-Assy_13-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_13-2.JPG"><img src="images/JB3-Assy_13-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_13-3.JPG"><img src="images/JB3-Assy_13-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_13-4.JPG"><img src="images/JB3-Assy_13-4.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_13-5.JPG"><img src="images/JB3-Assy_13-5.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_13-6.JPG"><img src="images/JB3-Assy_13-6.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_13-1.JPG"><img src="images/JB3-Assy_13-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_13-2.JPG"><img src="images/JB3-Assy_13-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_13-3.JPG"><img src="images/JB3-Assy_13-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_13-4.JPG"><img src="images/JB3-Assy_13-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_13-5.JPG"><img src="images/JB3-Assy_13-5.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_13-6.JPG"><img src="images/JB3-Assy_13-6.JPG" style="height:120px"></a>
 
 1. Peel off the original camera sensor
 
@@ -208,10 +208,10 @@ To build JetBot you'll need the following tools
 
 ### Step 14 - Mount battery
 
-<a href="images/JB3-Assy_14-1.JPG"><img src="images/JB3-Assy_14-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_14-2.JPG"><img src="images/JB3-Assy_14-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_14-3.JPG"><img src="images/JB3-Assy_14-3.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_14-4.JPG"><img src="images/JB3-Assy_14-4.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_14-1.JPG"><img src="images/JB3-Assy_14-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_14-2.JPG"><img src="images/JB3-Assy_14-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_14-3.JPG"><img src="images/JB3-Assy_14-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_14-4.JPG"><img src="images/JB3-Assy_14-4.JPG" style="height:120px"></a>
 
 1. Attach double sided adhesive tabs to each end of battery, leaving some tab exposed
 
@@ -220,9 +220,9 @@ To build JetBot you'll need the following tools
 
 ### Step 15 - Organize wires
 
-<a href="images/JB3-Assy_15-1.JPG"><img src="images/JB3-Assy_15-1.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_15-2.JPG"><img src="images/JB3-Assy_15-2.JPG" witdh="120" height="120"></a>
-<a href="images/JB3-Assy_15-3.JPG"><img src="images/JB3-Assy_15-3.JPG" witdh="120" height="120"></a>
+<a href="images/JB3-Assy_15-1.JPG"><img src="images/JB3-Assy_15-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_15-2.JPG"><img src="images/JB3-Assy_15-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_15-3.JPG"><img src="images/JB3-Assy_15-3.JPG" style="height:120px"></a>
 
 1. Route USB cables through chassis to organize and prevent dragging
 
@@ -230,10 +230,8 @@ To build JetBot you'll need the following tools
 
 Once finished, your JetBot should look similar to this.
 
-<a href="images/JB3-Assy_16-5.JPG"><img src="images/JB3-Assy_16-5.JPG" witdh="220" height="220"></a>
+<a href="images/JB3-Assy_16-5.JPG"><img src="images/JB3-Assy_16-5.JPG"></a>
 
 # Next step
 
-Follow the [software setup](software-setup).
-
-[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/wiki/Hardware-Setup/?pixel)](https://github.com/igrigorik/ga-beacon)
+Follow the [software setup](software_setup.md).
