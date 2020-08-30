@@ -5,8 +5,7 @@
 
 <img src="platform/images/jetson-jetbot-illustration_800x630.png" style="height:256px">
 
-JetBot is an open-source AI robot based on NVIDIA Jetson Nano.  With JetBot you'll learn
-the fundamentals needed to get started making new AI projects with Jetson Nano.  You'll like
+JetBot is an open-source robot based on NVIDIA Jetson Nano.  You'll like
 it because...
 
 ## It's Affordable
