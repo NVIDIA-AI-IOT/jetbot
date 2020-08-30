@@ -48,26 +48,26 @@ mike deploy master --push
 To add a new documentation page, you will need to first add the file
 either directly to the ``docs`` folder, or to a different folder with a symbolic link to the ``docs`` folder.  For example, say we wanted to add a page named ``MAINTAINERS.md`` to the root of the project
 
-1. Create the file at the root of the project
+First, create the file at the root of the project
     
-    ```bash
-    touch MAINTAINERS.md
-    ```
+```bash
+touch MAINTAINERS.md
+```
 
-2. Add a symbolic link to the docs folder
+Next, add a symbolic link to the docs folder
 
-    ```bash
-    cd docs
-    ln -s ../MAINTAINERS.md .
-    ```
+```bash
+cd docs
+ln -s ../MAINTAINERS.md .
+```
     
-3. Add the file to our navigation in ``mkdocs.yml``
+Finally, add the file to our navigation in ``mkdocs.yml``
 
-    ```yaml
-    - nav:
-        - Reference:
-            - 'Maintainers': MAINTAINERS.md
-    ```
+```yaml
+- nav:
+    - Reference:
+        - 'Maintainers': MAINTAINERS.md
+```
 
 Now, when you build the documentation you should see the page that
 we've added in the "Reference" section with the title "Maintainers".

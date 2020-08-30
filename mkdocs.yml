@@ -22,25 +22,25 @@ nav:
 
   - Home: README.md
   - Quick Start:
-      - 'Introduction': platform/README.md
+      - 'Quick Start': platform/README.md
       - 'Bill of Materials': platform/bill_of_materials.md
       - 'Hardware Setup': platform/hardware_setup.md
       - 'Software Setup': platform/software_setup.md
   - Notebooks:
-      - 'Introduction': notebooks/README.md
+      - 'Notebooks': notebooks/README.md
       - notebooks/basic_motion/README.md
       - notebooks/teleoperation/README.md
       - notebooks/collision_avoidance/README.md
       - notebooks/road_following/README.md
       - notebooks/object_following/README.md
   - Reference:
-      - Docker:
-          - 'Introduction': docker/README.md
-          - docker/base/README.md
-          - docker/models/README.md
-          - docker/display/README.md
-          - docker/camera/README.md
-          - docker/jupyter/README.md
+      - Docker: 
+          - docker/README.md
+          - 'Base': docker/base/README.md
+          - 'Display': docker/display/README.md
+          - 'Camera': docker/camera/README.md
+          - 'Jupyter': docker/jupyter/README.md
+      
       - Contributing: CONTRIBUTING.md
               
 
