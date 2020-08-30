@@ -23,10 +23,17 @@
 
 ## [0.4.0] - 1/15/2020
 
+### Added
+
 - Added support for JetPack 4.3 SD card image.  Found [here](https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN).
+
+### Changed
+
 - Updated Object Detector SD card image.  Found [here](https://drive.google.com/open?id=1KjlDMRD8uhgQmQK-nC2CZGHFTbq4qQQH)
 
 ## [0.3.0] - 3/9/2019
+
+### Added
 
 - Initial release with JetPack 4.2 SD card image.  Found [here](https://drive.google.com/open?id=1RgQ99QOqhcNxivSNJpetXdoOCqUWAWH_)
 
