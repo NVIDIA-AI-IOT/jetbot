@@ -2,19 +2,17 @@
 
 <!--[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) -->
 
-> Looking for a quick way to get started with JetBot?  Many third party kits are [now available](../../wiki/third-party-kits)!
 
-<img src="../..//wiki/images/jetson-jetbot-illustration_1600x1260.png" height="256">
+<img src="platform/images/jetson-jetbot-illustration_800x630.png" style="height:256px">
 
 JetBot is an open-source robot based on NVIDIA Jetson Nano that is
 
-* **Affordable** - Less than $150 add-on to Jetson Nano
-* **Educational** - Tutorials from basic motion to AI based collision avoidance
-* **Fun!** - Interactively programmed from your web browser
+* **Affordable** - JetBot costs less than $250 in parts, *including* Jetson Nano. There are also many [third party kits](platform/third_party) available.
+* **Educational** - JetBot covers the basics like motor control, to more advanced topics like using AI for avoiding
+collisions.  
+* **Easy to get Started** -  Just connect your Jetson to Wifi and launch the JetBot [Docker container](docker/README.md).  This enables JetBot's web programming environment, which is available even after the JetBot reboots.  
+* **Fun!** - Using JetBot's Jupyter Lab programming environment, just type your JetBot's IP address into your web browser and start programming.  Learn from the notebooks we've made, tweak them to experiment with ideas, and then create an entirely new program or project of your own!
 
-Building and using JetBot gives the hands on experience needed to create entirely new AI projects.
+Even if you have something other than robotics in mind, you may find the contents in JetBot helpful for learning AI and getting start with Jetson Nano.
 
-To get started, read the [JetBot Wiki](https://github.com/NVIDIA-AI-IOT/jetbot/wiki).
-
-
-[![Analytics](https://ga-beacon.appspot.com/UA-135919510-1/jetbot/README?pixel)](https://github.com/igrigorik/ga-beacon)
+To get started, follow the [Quick Start](platform/README.md) guide.

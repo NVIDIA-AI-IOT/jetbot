@@ -231,7 +231,3 @@ To build JetBot you'll need the following tools
 Once finished, your JetBot should look similar to this.
 
 <a href="images/JB3-Assy_16-5.JPG"><img src="images/JB3-Assy_16-5.JPG"></a>
-
-# Next step
-
-Follow the [software setup](software_setup.md).

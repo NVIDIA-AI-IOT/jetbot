@@ -82,7 +82,3 @@ place the Jetson Nano in ``5W`` mode by calling the following command
     ```bash
     sudo nvpmodel -q
     ```
-    
-## Next
-
-Follow the [Notebooks](/notebooks) to start learning and experimenting with JetBot.

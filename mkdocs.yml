@@ -23,12 +23,14 @@ nav:
 
   - Home: README.md
   - Quick Start:
-      - 'Quick Start': platform/README.md
-      - 'Bill of Materials': platform/bill_of_materials.md
-      - 'Hardware Setup': platform/hardware_setup.md
-      - 'Software Setup': platform/software_setup.md
+      - DIY Kit:
+          - Bill of Materials: platform/bill_of_materials.md
+          - 3D Printing: platform/3d_printing.md
+          - Hardware Setup: platform/hardware_setup.md
+          - Software Setup: platform/software_setup.md
+      - Third Party Kit: platform/third_party_kits.md
   - Notebooks:
-      - 'Notebooks': notebooks/README.md
+      - Notebooks: notebooks/README.md
       - notebooks/basic_motion/README.md
       - notebooks/teleoperation/README.md
       - notebooks/collision_avoidance/README.md
@@ -36,8 +38,6 @@ nav:
       - notebooks/object_following/README.md
   - Reference:
       - Docker: docker/README.md
-      - 3D Printing: platform/3d_printing.md
-      - Third Party Kits: platform/third_party_kits.md
       - Contributing: CONTRIBUTING.md       
 
 extra_css:
