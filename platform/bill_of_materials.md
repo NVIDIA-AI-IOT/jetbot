@@ -1,6 +1,6 @@
 This page lists everything you need to build JetBot, along with purchasing links from popular vendors.
 
-Some of the parts are 3D printed.  We provide the STL files needed to print these parts.  Please see our [3d printing](3d-printing) page for tips on printing.
+Some of the parts are 3D printed.  We provide the STL files needed to print these parts.  Please see our [3d printing](3d_printing.md) page for tips on printing.
 
 ### Common parts
 
@@ -91,4 +91,4 @@ You need the following parts to build JetBot.  They come in packs, so order the 
 
 ## Next
 
-Follow the [hardware setup](hardware-setup).
+Follow the [hardware setup](hardware_setup.md).
