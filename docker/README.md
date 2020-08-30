@@ -1,4 +1,4 @@
-# JetBot Docker
+# Docker
 
 This directory contains scripts to build the JetBot docker containers.  
 
