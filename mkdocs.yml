@@ -35,15 +35,10 @@ nav:
       - notebooks/road_following/README.md
       - notebooks/object_following/README.md
   - Reference:
-      - Docker: 
-          - docker/README.md
-          - 'Base': docker/base/README.md
-          - 'Display': docker/display/README.md
-          - 'Camera': docker/camera/README.md
-          - 'Jupyter': docker/jupyter/README.md
-      
-      - Contributing: CONTRIBUTING.md
-              
+      - Docker: docker/README.md
+      - 3D Printing: platform/3d_printing.md
+      - Third Party Kits: platform/third_party_kits.md
+      - Contributing: CONTRIBUTING.md       
 
 extra_css:
     - css/version-select.css
