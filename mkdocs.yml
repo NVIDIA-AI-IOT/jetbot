@@ -14,6 +14,14 @@ plugins:
 
 edit_uri: blob/master
 markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      use_pygments: true
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
   - attr_list  # for image sizes https://github.com/mkdocs/mkdocs/issues/1678
   

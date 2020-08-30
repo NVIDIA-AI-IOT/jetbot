@@ -25,3 +25,45 @@ Now you can go to ``https://<jetbot_ip>:8888`` and start programming JetBot from
 The directory you specify to ``./run.sh`` will be mounted as a volume in the jupyter container 
 at the location ``/workspace``.  This means the work you in the ``/workspace`` folder inside container
 is saved.  Please note, if you work outside of that directory it will be lost when the container shuts down.
+
+## Build your own Container
+
+If you have configured your JetBot with new software, and want to package a container of your own, we recommend referencing one of the JetBot containers we've developed.  
+
+In JetBot, we package each container in it's own folder.  You can do
+this differently if you please, we've just found it a decent
+form of organization.  In this folder we commonly include three files
+
+* A [Dockerfile](https://docs.docker.com/engine/reference/builder/) which describes the steps to install software inside our container, and perform any environment setup the container needs
+* A ``build.sh``bash script, which is a convenience script for building the container in a typical configuration
+* An ``enable.sh`` (or ``run.sh``) bash script, which is another convenience script for
+running the container in a typical configuration.  We use the notation ``enable.sh`` for containers that automatically restart at boot (``--restart always``), and ``run.sh`` for containers which run once.
+
+For example, we defined the following three files for our Jupyter Lab container.
+
+=== "Dockerfile"
+
+    ```
+    --8<-- "./docker/jupyter/Dockerfile"
+    ```
+
+=== "build.sh"
+
+    ```
+    --8<-- "./docker/jupyter/build.sh"
+    ```
+    
+=== "enable.sh"
+
+    ```
+    --8<-- "./docker/jupyter/enable.sh"
+    ```
+
+Notice we use the ``JETBOT_VERSION`` environment variable to specify
+the tag for our containers.  To build the Jupyter container, based on other containers tagged ``jp44-master`` for example, you would need to set
+
+```bash
+export JETBOT_VERSION=jp44-master
+cd jupyter
+./build.sh
+```
