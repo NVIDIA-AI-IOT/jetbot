@@ -1,6 +1,9 @@
 # Docker
 
-This directory contains scripts to build the JetBot docker containers.  
+Since the release of JetPack 4.4, NVIDIA Jetson has supported [Cloud-Native](https://developer.nvidia.com/embedded/jetson-cloud-native) development. This makes it easy to develop Docker containers which package software along with it's dependencies.  This containerization ensures that no-matter your system setup, it's easy to install and run software in a reproducible way.  
+
+We've included containers which package JetBot and it's various dependencies.  Compared to our previous method of releasing JetBot as a large SD card image, this makes it much easier to install JetBot
+on your existing Jetson system.  Rather than downloading an entirely new SD card image, you just run a command to launch the docker containers and turn your Jetson Nano into a JetBot.
 
 ## Quick Start
 
