@@ -5,8 +5,8 @@
 <img src="platform/images/jetson-jetbot-illustration_800x630.png" style="height:256px">
 
 <div style="text-align: left;">
-    <button class="md-button">Go to GitHub</button>
-    <button class="md-button md-button--primary">Get Started</button>
+    <a href="https://github.com/NVIDIA-AI-IOT/jetbot" class="md-button">Go to GitHub</a>
+    <a href="platform" class="md-button md-button--primary">Get Started</a>
 </div>
 
 JetBot is an open-source robot based on NVIDIA Jetson Nano.  You'll like
@@ -59,9 +59,9 @@ related to AI, image processing and robotics.  Our experiments have led us to ne
 ## Get Started
 
 
-To get started with JetBot, follow the [Getting Started](platform/README.md) instructions.  If you run into any issues along the way, please [let us know](https://github.com/NVIDIA-AI-IOT/jetbot/issues)!
+To get started with JetBot, follow the [Getting Started](platform) instructions.  If you run into any issues along the way, please [let us know](https://github.com/NVIDIA-AI-IOT/jetbot/issues)!
 
 <div style="text-align: right;">
-    <a href="https://github.com/NVIDIA-AI-IOT/jetbot"><button class="md-button">Go to GitHub</button></a>
-    <a href="platform/README.md"><button class="md-button md-button--primary">Get Started</button></a>
+    <a href="https://github.com/NVIDIA-AI-IOT/jetbot" class="md-button">Go to GitHub</a>
+    <a href="platform" class="md-button md-button--primary">Get Started</a>
 </div>
