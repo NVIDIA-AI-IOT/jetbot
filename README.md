@@ -2,17 +2,22 @@
 
 <!--[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) -->
 
-
 <img src="platform/images/jetson-jetbot-illustration_800x630.png" style="height:256px">
+
+<div style="text-align: left;">
+    <button class="md-button">Go to GitHub</button>
+    <button class="md-button md-button--primary">Get Started</button>
+</div>
 
 JetBot is an open-source robot based on NVIDIA Jetson Nano.  You'll like
 it because...
+
 
 ## It's Affordable
 
 <div style="display: inline-block">
     
-JetBot costs less than $250 in parts, *including* Jetson Nano. The DIY kit includes a bill of materials
+JetBot costs less than $250 in parts, <i>including</i> Jetson Nano. The DIY kit includes a bill of materials
 which you must purchase and a 3D printed chassis that you can print, or order.  If you're looking to get
 up and running as quick as possible, there are also many [third party kits](platform/third_party) available
 that come pre-bundled.
@@ -53,6 +58,10 @@ related to AI, image processing and robotics.  Our experiments have led us to ne
 
 ## Get Started
 
-To get started with JetBot, follow the [Quick Start](platform/README.md) instructions.
 
-> If you run into any issues while working with JetBot, please [let us know](https://github.com/NVIDIA-AI-IOT/jetbot/issues)!
+To get started with JetBot, follow the [Getting Started](platform/README.md) instructions.  If you run into any issues along the way, please [let us know](https://github.com/NVIDIA-AI-IOT/jetbot/issues)!
+
+<div style="text-align: right;">
+    <a href="https://github.com/NVIDIA-AI-IOT/jetbot"><button class="md-button">Go to GitHub</button></a>
+    <a href="platform/README.md"><button class="md-button md-button--primary">Get Started</button></a>
+</div>

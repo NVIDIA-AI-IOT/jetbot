@@ -3,6 +3,7 @@ theme:
     name: "material"
     logo: logo.png
     favicon: favicon.png
+    font: Incosolata
     palette:
         primary: green
         secondary: light green
@@ -33,7 +34,7 @@ use_directory_urls: False
 nav:
 
   - Home: README.md
-  - Quick Start:
+  - Getting Started:
       - DIY Kit:
           - Bill of Materials: platform/bill_of_materials.md
           - 3D Printing: platform/3d_printing.md

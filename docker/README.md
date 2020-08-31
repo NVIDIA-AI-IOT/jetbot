@@ -26,7 +26,7 @@ The directory you specify to ``./run.sh`` will be mounted as a volume in the jup
 at the location ``/workspace``.  This means the work you in the ``/workspace`` folder inside container
 is saved.  Please note, if you work outside of that directory it will be lost when the container shuts down.
 
-## Use Individual Containers
+## Using the Individual Containers
 
 It's possible to run the JetBot containers individually as well.  You may want to do this if for example, you are using a different Camera with JetBot, and don't need to run our CSI camera publisher container.  We currently have three executable containers.
 
@@ -34,16 +34,12 @@ It's possible to run the JetBot containers individually as well.  You may want t
 
 This container Launches the Jupyter Lab programming environment at a specified working directory.  
 
-#### Build 
-
 Build this container with the following command
 
 ```bash
 cd docker/jupyter
 ./build.sh
 ```
-
-#### Run
 
 And then enable it to run at boot by calling
 
@@ -56,16 +52,12 @@ cd docker/jupyter
 
 This container displays various JetBot system statistics, including it's IP address on the connected PiOLED screen.
 
-#### Build 
-
 Build this container with the following command
 
 ```bash
 cd docker/display
 ./build.sh
 ```
-
-#### Run
 
 And then enable it to run at boot by calling
 
@@ -78,16 +70,12 @@ cd docker/display
 
 This container publishes Camera images using [ZeroMQ](https://zeromq.org/).  The images may then be received by notebooks using the ``ZmqCamera`` class (or similarily, the ``Camera`` class, since this is the default camera implementation).
 
-#### Build 
-
 Build this container with the following command
 
 ```bash
 cd docker/camera
 ./build.sh
 ```
-
-#### Run
 
 And then enable it to run at boot by calling
 
@@ -96,7 +84,7 @@ cd docker/camera
 ./enable.sh $HOME
 ```
 
-## Make your own Container
+## Making your own Container
 
 If you have configured your JetBot with new software, and want to package a container of your own, we recommend referencing one of the JetBot containers we've developed.  
 
