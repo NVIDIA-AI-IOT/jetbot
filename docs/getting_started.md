@@ -2,18 +2,16 @@
 
 To get started with JetBot follow these steps
 
-## Step 1 - Setup a JetBot
+## Step 1 - Setup your JetBot
 
-Since we released the original JetBot,
-many [third party kits](platforms/third_party_kits.md) have emerged, many of which are largely compatible with the JetBot software and examples.  To get started, you'll need to pick a [platform](platforms) of your choice, and
-following it's vendor's instructions.  To get started with the original original JetBot, follow the
-[instructions](platforms/nvidia_jetbot/README.md).
+To get started with the original JetBot kit, follow the instructions detailed [here]().  We include the bill of materials, hardware setup and software setup needed to get started. 
+
+You can also look into purchasing one of the [third party kits](third_party_kits).  The third party kits may have  alternate software or hardware setup steps.  We recommend referring to their documentation for instructions.
 
 ## Step 2 - Follow the Examples
 
-Once you've got your JetBot all set up, you'll want to
-learn how to use it!  The best way to do this is by following the
-set of interactive [notebooks](notebooks) that we provide.
+After your JetBot is set up properly, it will display it's IP address on the small display screen.  Open up a web browser on your laptop, navigate to ``<jetbot_ip>:8888``, and type in the password ``jetbot`` to connect to your robot.  Then follow the example [notebooks](notebooks) to learn how to program JetBot.
+
 
 ## Step 3 - Create Something New
 
