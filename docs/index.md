@@ -2,9 +2,12 @@
 
 <!--[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) -->
 
-<img src="docs/getting_started/diy_kit/images/jetson-jetbot-illustration_800x630.png" style="height:256px">
+<img src="getting_started/diy_kit/images/jetson-jetbot-illustration_800x630.png" style="height:256px">
 
-<a href="https://NVIDIA-AI-IOT.github.io/jetbot/getting_started"><img src="docs/images/get_started.png" style="height:48px;"/></a>
+<div style="text-align: left;">
+    <a href="https://github.com/NVIDIA-AI-IOT/jetbot" class="md-button">Go to GitHub</a>
+    <a href="getting_started" class="md-button md-button--primary">Get Started</a>
+</div>
 
 JetBot is an open-source robot based on NVIDIA Jetson Nano.  You'll like
 it because...
@@ -20,6 +23,7 @@ JetBot costs less than $250 in parts, <i>including</i> Jetson Nano. The DIY kit 
 which you must purchase and a 3D printed chassis that you can print, or order.  If you're looking to get
 up and running as quick as possible, there are also many <a href="getting_started/third_party_kits.md">third party kits</a> available
 that come pre-bundled.
+
 
 </div>
 
@@ -57,10 +61,10 @@ related to AI, image processing and robotics.  Our experiments have led us to ne
 
 ## Get Started
 
-To get started with JetBot, follow the [Getting Started](https://NVIDIA-AI-IOT.github.io/jetbot/getting_started) instructions.  If you run into any issues along the way, please [let us know](https://github.com/NVIDIA-AI-IOT/jetbot/issues)!
 
-## Links
+To get started with JetBot, follow the [Getting Started](getting_started) instructions.  If you run into any issues along the way, please [let us know](https://github.com/NVIDIA-AI-IOT/jetbot/issues)!
 
-* [Documentation](NVIDIA-AI-IOT.github.io/jetbot)
-* [Contributing Guide](CONTRIBUTING.md)
-* [Changes](CHANGELOG.md)
+<div style="text-align: right;">
+    <a href="https://github.com/NVIDIA-AI-IOT/jetbot" class="md-button">Go to GitHub</a>
+    <a href="getting_started" class="md-button md-button--primary">Get Started</a>
+</div>

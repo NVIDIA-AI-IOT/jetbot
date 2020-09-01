@@ -1,8 +1,8 @@
 site_name: JetBot
 theme:
     name: "material"
-    logo: logo.png
-    favicon: favicon.png
+    logo: images/logo.png
+    favicon: images/favicon.png
     font: Incosolata
     palette:
         primary: green
@@ -33,25 +33,25 @@ markdown_extensions:
 
 nav:
 
-  - Home: README.md
+  - Home: index.md
   - Getting Started:
       - DIY Kit:
-          - Bill of Materials: platform/bill_of_materials.md
-          - 3D Printing: platform/3d_printing.md
-          - Hardware Setup: platform/hardware_setup.md
-          - Software Setup: platform/software_setup.md
-      - Third Party Kits: platform/third_party_kits.md
-  - Notebooks:
-      - Notebooks: notebooks/README.md
-      - notebooks/basic_motion/README.md
-      - notebooks/teleoperation/README.md
-      - notebooks/collision_avoidance/README.md
-      - notebooks/road_following/README.md
-      - notebooks/object_following/README.md
+          - Bill of Materials: getting_started/diy_kit/bill_of_materials.md
+          - 3D Printing: getting_started/diy_kit//3d_printing.md
+          - Hardware Setup: getting_started/diy_kit/hardware_setup.md
+          - Software Setup: getting_started/diy_kit/software_setup.md
+      - Third Party Kits: getting_started/third_party_kits.md
+#   - Notebooks:
+#       - Notebooks: notebooks/README.md
+#       - notebooks/basic_motion/README.md
+#       - notebooks/teleoperation/README.md
+#       - notebooks/collision_avoidance/README.md
+#       - notebooks/road_following/README.md
+#       - notebooks/object_following/README.md
   - Reference:
-      - Docker: docker/README.md
-      - Contributing: CONTRIBUTING.md
-      - Changes: CHANGELOG.md
+      - Docker: reference/docker.md
+      - Contributing: reference/CONTRIBUTING.md
+      - Changes: reference/CHANGELOG.md
 
 extra_css:
     - css/version-select.css
