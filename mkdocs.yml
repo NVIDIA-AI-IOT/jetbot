@@ -41,13 +41,13 @@ nav:
           - Hardware Setup: getting_started/diy_kit/hardware_setup.md
           - Software Setup: getting_started/diy_kit/software_setup.md
       - Third Party Kits: getting_started/third_party_kits.md
-#   - Notebooks:
+  - Notebooks:
 #       - Notebooks: notebooks/README.md
-#       - notebooks/basic_motion/README.md
-#       - notebooks/teleoperation/README.md
-#       - notebooks/collision_avoidance/README.md
-#       - notebooks/road_following/README.md
-#       - notebooks/object_following/README.md
+      - notebooks/basic_motion.md
+      - notebooks/teleoperation.md
+      - notebooks/collision_avoidance.md
+      - notebooks/road_following.md
+      - notebooks/object_following.md
   - Reference:
       - Docker: reference/docker.md
       - Contributing: reference/CONTRIBUTING.md
