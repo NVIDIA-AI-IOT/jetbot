@@ -2,7 +2,7 @@
 
 <!--[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) -->
 
-<img src="docs/getting_started/diy_kit/images/jetson-jetbot-illustration_800x630.png" style="height:256px" height="256">
+<img src="docs/getting_started/diy/images/jetson-jetbot-illustration_800x630.png" style="height:256px" height="256">
 
 <a href="https://NVIDIA-AI-IOT.github.io/jetbot/getting_started"><img src="docs/images/get_started.png" style="height:48px;" height="48"/></a>
 
