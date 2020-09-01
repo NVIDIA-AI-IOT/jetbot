@@ -12,6 +12,7 @@ stdev = 255.0 * np.array([0.5, 0.5, 0.5])
 def bgr8_to_ssd_input(camera_value):
     x = camera_value
     x = cv2.cvtColor(x, cv2.COLOR_BGR2RGB)
+    x = cv2.resize(x, (300, 300))
     x = x.transpose((2, 0, 1)).astype(np.float32)
     x -= mean[:, None, None]
     x /= stdev[:, None, None]
