@@ -34,24 +34,23 @@ markdown_extensions:
 nav:
 
   - Home: index.md
-  - Getting Started:
-      - DIY Kit:
-          - Bill of Materials: getting_started/diy_kit/bill_of_materials.md
-          - 3D Printing: getting_started/diy_kit//3d_printing.md
-          - Hardware Setup: getting_started/diy_kit/hardware_setup.md
-          - Software Setup: getting_started/diy_kit/software_setup.md
-      - Third Party Kits: getting_started/third_party_kits.md
+  - Getting Started: getting_started.md
+  - Platforms:
+      - Nvidia JetBot:
+          - Bill of Materials: platforms/nvidia_jetbot/bill_of_materials.md
+          - 3D Printing: platforms/nvidia_jetbot/3d_printing.md
+          - Hardware Setup: platforms/nvidia_jetbot/hardware_setup.md
+          - Software Setup: platforms/nvidia_jetbot/software_setup.md
+      - Third Party Kits: platforms/third_party_kits.md
   - Notebooks:
-#       - Notebooks: notebooks/README.md
-      - notebooks/basic_motion.md
-      - notebooks/teleoperation.md
-      - notebooks/collision_avoidance.md
-      - notebooks/road_following.md
-      - notebooks/object_following.md
-  - Reference:
-      - Docker: reference/docker.md
-      - Contributing: reference/CONTRIBUTING.md
-      - Changes: reference/CHANGELOG.md
+      - notebooks/basic_motion/README.md
+      - notebooks/teleoperation/README.md
+      - notebooks/collision_avoidance/README.md
+      - notebooks/road_following/README.md
+      - notebooks/object_following/README.md
+  - Docker: docker/README.md
+  - Contributing: CONTRIBUTING.md
+  - Changes: CHANGELOG.md
 
 extra_css:
     - css/version-select.css
