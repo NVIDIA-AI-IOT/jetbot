@@ -37,6 +37,7 @@ nav:
   - Getting Started: getting_started.md
   - Platforms:
       - Nvidia JetBot:
+          - Introduction: platforms/nvidia_jetbot/README.md
           - Bill of Materials: platforms/nvidia_jetbot/bill_of_materials.md
           - 3D Printing: platforms/nvidia_jetbot/3d_printing.md
           - Hardware Setup: platforms/nvidia_jetbot/hardware_setup.md
