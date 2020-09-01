@@ -1,6 +1,6 @@
 # JetBot
 
-<img src="docs/getting_started/diy/images/jetson-jetbot-illustration_1600x1260.png" height="256">
+<img src="docs/images/jetbot_800x630.png" height="256">
 
 JetBot is an open-source robot based on NVIDIA Jetson Nano that is
 
