@@ -4,7 +4,7 @@ To get started with JetBot follow these steps
 
 ## Step 1 - Setup your JetBot
 
-To get started with the original JetBot kit, follow the instructions detailed [here]().  We include the bill of materials, hardware setup and software setup needed to get started. 
+To get started with the original JetBot kit, follow the instructions detailed [here](platforms/nvidia_jetbot).  We include the bill of materials, hardware setup and software setup needed to get started. 
 
 You can also look into purchasing one of the [third party kits](third_party_kits).  The third party kits may have  alternate software or hardware setup steps.  We recommend referring to their documentation for instructions.
 

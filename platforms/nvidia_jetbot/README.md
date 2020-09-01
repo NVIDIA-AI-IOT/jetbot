@@ -2,7 +2,7 @@
 
 <a href="images/JB3-Assy_16-5.JPG"><img src="images/JB3-Assy_16-5.JPG" height="256" style="height:256px;"></a>
 
-The NVIDIA JetBot is the original JetBot.  It is a DIY kit that costs
+NVIDIA JetBot is a DIY kit that costs
 roughly $250 in parts *including* Jetson Nano.  Most parts are purchased
 from popular online vendors, while a few parts like the Chassis
 are 3D printed.  
