@@ -66,8 +66,8 @@ You need wheels with a "TT" motor shaft connector for each JetBot.  Select an op
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
 | Wheel | 2 | $5.00 | [Adafruit](http://adafru.it/3757) | 60mm diameter |
-| Caster base | 1 | -- | [STL file](../../jetbot/blob/master/assets/caster_base_60mm.stl) | for 60mm wheel |
-| Caster shroud | 1 | -- | [STL file](../../jetbot/blob/master/assets/caster_shroud_60mm.stl) | for 60mm wheel |
+| Caster base | 1 | -- | [STL file](cad/caster_base_60mm.stl) | for 60mm wheel |
+| Caster shroud | 1 | -- | [STL file](cad/caster_shroud_60mm.stl) | for 60mm wheel |
 
 #### Option 2 - 65mm
 
