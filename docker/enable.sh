@@ -13,6 +13,8 @@ sudo docker run -it -d \
 	-p 8888:8888 \
 	-v ${JUPYTER_WORKSPACE}:/workspace \
 	--workdir /workspace \
-	--name=jetbot \
-	jetbot:${JETBOT_VERSION}
+	--name=jetbot_uni \
+	--memory=1000m \
+	--memory-swap=3G \
+	jetbot_uni:${JETBOT_VERSION}
 

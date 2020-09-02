@@ -140,7 +140,6 @@ RUN cd ${JETBOT_REPO_DIR} && python3 setup.py install
 
 ARG JUPYTER_PASSWORD=jetbot
 ENV JUPYTER_WORKDIR=/workspace
-WORKDIR /workspace
 
 # ====================
 # SET JUPYTER PASSWORD
@@ -157,7 +156,8 @@ RUN apt-get update && \
     apt-get install -y supervisor && \
     rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /var/log/supervisor
-COPY scripts/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+CMD pwd
+COPY ./docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 CMD touch /var/run/supervisor.sock
 CMD supervisord -c /etc/supervisor/conf.d/supervisord.conf & \
 	/bin/bash
