@@ -102,9 +102,20 @@ RUN apt-get update && apt-get install -y supervisor
 RUN apt install -y python3-smbus && pip3 install pyzmq
 
 
+# =================
+# INSTALL TORCH2TRT
+# =================
+ENV TORCH2TRT_REPO_DIR=/opt/
+RUN cd ${TORCH2TRT_REPO_DIR} && \
+    git clone https://github.com/NVIDIA-AI-IOT/torch2trt && \
+    cd torch2trt && \
+    python3 setup.py install
+
+
 # ==============
 # INSTALL JETBOT
 # ==============
 ENV JETBOT_REPO_DIR=/opt/jetbot
 COPY . ${JETBOT_REPO_DIR}
 RUN cd ${JETBOT_REPO_DIR} && python3 setup.py install
+
