@@ -14,6 +14,7 @@ git clone https://github.com/NVIDIA-AI-IOT/jetbot
 cd jetbot/
 ./script/configure_jetson.sh
 cd docker/
+./set_nvidia_runtime.sh
 ./build.sh
 ./enable.sh
 ```
