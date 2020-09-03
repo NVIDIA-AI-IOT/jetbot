@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # find L4T_VERSION
-source scripts/l4t-version.sh
+source ../scripts/l4t-version.sh
 
 # local container:tag name
 CONTAINER_IMAGE="jetbot_uni:r$L4T_VERSION"

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # find container tag from L4T version
-source docker/tag.sh
+source tag.sh
 
 JUPYTER_WORKSPACE=${1:-$HOME}  # default to $HOME
 
