@@ -11,17 +11,18 @@ On your Jetson machine (container's host);
 
 ```bash
 git clone https://github.com/NVIDIA-AI-IOT/jetbot
-cd jetbot
-./scripts/copy_local_keyfile.sh
-./scripts/docker_setup_workdir.sh
-./scripts/docker_build.sh
-./scripts/docker_run.sh
+cd jetbot/
+./script/configure_jetson.sh
+cd docker/
+./build.sh
+./enable.sh
 ```
 
 You should see your JetBot container running and it should look like
 
 ```bash
-root@nano-4-4:/jetbot_dir#
+$ sudo docker ps 
+
 ```
 ## How to start using JetBot in container
 
