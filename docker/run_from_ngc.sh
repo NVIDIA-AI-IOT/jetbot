@@ -1,4 +1,7 @@
-export JETBOT_VERSION=r32.4.3
+#!/usr/bin/env bash
+
+# find container tag from L4T version
+source docker/tag.sh
 
 JUPYTER_WORKSPACE=${1:-$HOME}  # default to $HOME
 
@@ -15,5 +18,4 @@ sudo docker run -it -d \
 	--name=jetbot_uni \
 	--memory=1000m \
 	--memory-swap=3G \
-	nvcr.io/ea-linux4tegra/jetbot_uni:${JETBOT_VERSION}
-
+	$CONTAINER_IMAGE
