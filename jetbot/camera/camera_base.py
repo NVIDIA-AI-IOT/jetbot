@@ -1,19 +1,14 @@
 import traitlets
-
+import os
 
     
-class Camera(traitlets.HasTraits):
+class CameraBase(traitlets.HasTraits):
     
     value = traitlets.Any()
     
     @staticmethod
-    def default_camera_class():
-        from .zmq_camera import ZmqCamera
-        return ZmqCamera
-    
-    @staticmethod
     def instance(*args, **kwargs):
-        return Camera.default_camera_class()(*args, **kwargs)
+        raise NotImplementedError
     
     def widget(self):
         if hasattr(self, '_widget'):
@@ -24,3 +19,4 @@ class Camera(traitlets.HasTraits):
         traitlets.dlink((self, 'value'), (image, 'value'), transform=bgr8_to_jpeg)
         self._widget = image
         return image
+    

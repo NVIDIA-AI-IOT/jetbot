@@ -1,4 +1,5 @@
 WORKSPACE=$1
+JETBOT_CAMERA={$2:-opencv_gst_camera}
 
 sudo docker run -it -d \
     --restart always \
@@ -12,4 +13,5 @@ sudo docker run -it -d \
     -v $WORKSPACE:/workspace \
     --workdir /workspace \
     --name=jetbot_jupyter \
+    --env JETBOT_DEFAULT_CAMERA=$JETBOT_CAMERA \
     jetbot-jupyter:$JETBOT_VERSION

@@ -4,7 +4,7 @@ import sys
 import zmq
 import numpy as np
 import atexit
-from .camera import Camera
+from .camera_base import CameraBase
 
 
 def recv_image(socket, dtype, shape):
@@ -14,13 +14,14 @@ def recv_image(socket, dtype, shape):
     return array.reshape(shape)
 
     
-class ZmqCamera(Camera):
+class ZmqCamera(CameraBase):
     
     value = traitlets.Any(value=np.zeros((224, 224, 3), dtype=np.uint8), default_value=np.zeros((224, 224, 3), dtype=np.uint8))
     
     def __init__(self, *args, **kwargs):
+        self.value = np.zeros((224, 224, 3), dtype=np.uint8)  # set default image
+        super().__init__(self, *args, **kwargs)
         
-#         self.value = np.zeros((224, 224, 3), dtype=np.uint8)  # set default image
         self._running = False
         self._port = 1807
         self._image_shape = (224, 224, 3)
@@ -57,3 +58,7 @@ class ZmqCamera(Camera):
             return
         self._running = False
         self._thread.join()
+        
+    @staticmethod
+    def instance(*args, **kwargs):
+        return ZmqCamera(*args, **kwargs)

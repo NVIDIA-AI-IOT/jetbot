@@ -3,10 +3,10 @@ import atexit
 import cv2
 import threading
 import numpy as np
-from .camera import Camera
+from .camera_base import CameraBase
 
 
-class OpenCvGstCamera(Camera):
+class OpenCvGstCamera(CameraBase):
     
     value = traitlets.Any()
     
@@ -19,7 +19,7 @@ class OpenCvGstCamera(Camera):
 
     def __init__(self, *args, **kwargs):
         self.value = np.empty((self.height, self.width, 3), dtype=np.uint8)
-        super(Camera, self).__init__(*args, **kwargs)
+        super().__init__(self, *args, **kwargs)
 
         try:
             self.cap = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
@@ -66,3 +66,7 @@ class OpenCvGstCamera(Camera):
     def restart(self):
         self.stop()
         self.start()
+        
+    @staticmethod
+    def instance(*args, **kwargs):
+        return OpenCvGstCamera(*args, **kwargs)
