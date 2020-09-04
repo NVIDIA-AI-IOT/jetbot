@@ -6,8 +6,6 @@ class Camera(traitlets.HasTraits):
     
     value = traitlets.Any()
     
-    DEFAULT_CAMERA_CLASS = 'OpenCvGstCamera'
-    
     @staticmethod
     def default_camera_class():
         try:
