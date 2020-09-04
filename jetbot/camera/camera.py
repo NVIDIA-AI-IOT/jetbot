@@ -6,10 +6,12 @@ class Camera(traitlets.HasTraits):
     
     value = traitlets.Any()
     
+    DEFAULT_CAMERA_CLASS = 'OpenCvGstCamera'
+    
     @staticmethod
     def default_camera_class():
-        from .zmq_camera import ZmqCamera
-        return ZmqCamera
+        from .opencv_gst_camera import OpenCvGstCamera
+        return OpenCvGstCamera
     
     @staticmethod
     def instance(*args, **kwargs):
