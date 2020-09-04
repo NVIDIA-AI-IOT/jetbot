@@ -1,5 +1,5 @@
 import traitlets
-
+import os
 
     
 class Camera(traitlets.HasTraits):
@@ -10,8 +10,17 @@ class Camera(traitlets.HasTraits):
     
     @staticmethod
     def default_camera_class():
-        from .opencv_gst_camera import OpenCvGstCamera
-        return OpenCvGstCamera
+        try:
+            default = os.environ['JETBOT_DEFAULT_CAMERA']
+        except:
+            default = 'opencv_gst_camera'
+            
+        if default == 'zmq_camera':
+            from .zmq_camera import ZmqCamera
+            return ZmqCamera
+        else:
+            from .opencv_gst_camera import OpenCvGstCamera
+            return OpenCvGstCamera
     
     @staticmethod
     def instance(*args, **kwargs):
