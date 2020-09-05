@@ -98,7 +98,7 @@ RUN cd && \
 # ============================
 # INSTALL MISC DEPENDENCIES
 # ============================
-RUN apt-get update && apt-get install -y supervisor
+RUN apt-get update && apt-get install -y supervisor unzip
 RUN apt install -y python3-smbus && pip3 install pyzmq
 
 
