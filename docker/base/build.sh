@@ -10,7 +10,7 @@ fi
 
 sudo docker build \
     --build-arg BASE_IMAGE=$BASE_IMAGE \
-    -t jetbot:base-$JETBOT_VERSION-$L4T_VERSION \
+    -t jetbot/jetbot:base-$JETBOT_VERSION-$L4T_VERSION \
     -f Dockerfile \
     ../..  # jetbot repo root as context
 

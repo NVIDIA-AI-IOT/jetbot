@@ -14,4 +14,4 @@ sudo docker run -it -d \
     --workdir /workspace \
     --name=jetbot_jupyter \
     --env JETBOT_DEFAULT_CAMERA=$JETBOT_CAMERA \
-    jetbot:jupyter-$JETBOT_VERSION-$L4T_VERSION
+    jetbot/jetbot:jupyter-$JETBOT_VERSION-$L4T_VERSION
