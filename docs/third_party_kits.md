@@ -9,7 +9,7 @@ In addition to the open-source DIY version, several third party JetBot kits usin
 
 <div style="display: inline-block">
     
-<img src="../docs/images/waveshare_jetbot_green.jpg" style="max-height:200px; margin:10px 50px" align="left">
+<img src="images/waveshare_jetbot_green.jpg" style="max-height:200px; margin:10px 50px" align="left">
 
 | Kit      | URL |
 |----------|-----|
