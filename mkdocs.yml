@@ -1,0 +1,44 @@
+site_name: JetBot
+theme:
+    name: "material"
+    logo: images/logo.png
+    favicon: images/favicon.png
+    font: Incosolata
+    palette:
+        primary: green
+        secondary: light green
+
+repo_url: https://github.com/NVIDIA-AI-IOT/jetbot
+
+plugins:
+  - search
+use_directory_urls: false
+
+edit_uri: blob/master
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+        use_pygments: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list  # for image sizes https://github.com/mkdocs/mkdocs/issues/1678
+# use_directory_urls - False to fix broken raw html image links
+# https://github.com/mkdocs/mkdocs/issues/991
+
+
+nav:
+
+  - Home: index.md
+
+extra_css:
+  - css/version-select.css
+extra_javascript:
+  - js/version-select.js
+
+google_analytics:
+  - UA-135919510-2
+  - auto
