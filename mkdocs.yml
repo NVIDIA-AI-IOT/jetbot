@@ -33,6 +33,7 @@ markdown_extensions:
 nav:
 
   - Home: index.md
+  - Third Party Kits: third_party_kits.md
 
 extra_css:
   - css/version-select.css
