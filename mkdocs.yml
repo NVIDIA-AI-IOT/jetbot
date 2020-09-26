@@ -33,6 +33,7 @@ markdown_extensions:
 nav:
 
   - Home: index.md
+  - Getting Started: getting_started.md
   - Bill of Materials: bill_of_materials.md
   - Hardware Setup: hardware_setup.md
   - Software Setup: 
