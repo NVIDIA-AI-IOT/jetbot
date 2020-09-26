@@ -1,28 +1,29 @@
 # Docker
 
 In addition to the pre-built SD card image, we also provide a docker container
-in case you want to install JetBot on an existing Jetson Nano SD card image.
+in case you want to install JetBot on an existing Jetson Nano SD card.
 
-> For this, we'll assume you've set up your Jetson Nano using the Jetson Nano
-getting started guide.
+> For this, we'll assume you've set up your Jetson Nano using the **online Getting Started guide**.
+> 
+> - [Getting Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 
 ### Step 1 - Configure System
 
-First, call the ``scripts/configure_jetson.sh`` script to configure the power mode and other parameters.
+First, call the [``scripts/configure_jetson.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/scripts/configure_jetson.sh) script to configure the power mode and other parameters.
 
 ```bash
 cd jetbot
 ./scripts/configure_jetson.sh
 ```
 
-Next, source the ``docker/configure.sh`` script to configure various environment variables related to JetBot docker.
+Next, source the [``docker/configure.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/configure.sh) script to configure various environment variables related to JetBot docker.
 
 ```bash
 cd docker
 source configure.sh
 ```
 
-Finally, if you haven't already, set the default docker runtime to NVIDIA.  This is needed to use
+Finally, if you haven't already, set the default docker runtime to NVIDIA using [``docker/set_nvidia_runtime.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/set_nvidia_runtime.sh).  This is needed to use
 CUDA related components with the containers.
 
 ```bash
