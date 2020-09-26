@@ -7,9 +7,9 @@ To get started with JetBot, just follow these steps
 
     > You can also start from one of the pre-bundled [third party kits](third_party_kits.md). 
 
-2. Follow the [hardware setup](hardware_setup)
-2. Follow the [software setup](software_setup)
-4. Run through the [examples](examples)
+2. Follow the [hardware setup](hardware_setup.md)
+2. Follow the [software setup](software_setup/docker.md)
+4. Run through the [examples](examples/basic_motion.md)
 
 After that, the rest is up to you! 
 
