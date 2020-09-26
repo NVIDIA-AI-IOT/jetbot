@@ -4,4 +4,4 @@ sudo docker run -it -d \
     --network host \
     --privileged \
     --name=jetbot_display \
-    jetbot-display:$JETBOT_VERSION
+    $JETBOT_DOCKER_REMOTE/jetbot:display-$JETBOT_VERSION-$L4T_VERSION
