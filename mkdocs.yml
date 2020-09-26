@@ -34,6 +34,12 @@ nav:
 
   - Home: index.md
   - Third Party Kits: third_party_kits.md
+  - Examples: 
+      - Basic Motion: examples/basic_motion.md
+      - Teleoperation: examples/teleoperation.md
+      - Collision Avoidance: examples/collision_avoidance.md
+      - Road Following: examples/road_following.md
+      - Object Following: examples/object_following.md
 
 extra_css:
   - css/version-select.css
