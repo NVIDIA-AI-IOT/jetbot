@@ -45,6 +45,8 @@ nav:
   - Third Party Kits: third_party_kits.md
   - Reference:
       - 3D Printing: 3d_printing.md
+      - Contributing: CONTRIBUTING.md
+      - Changes: CHANGELOG.md
 
 extra_css:
   - css/version-select.css
