@@ -5,8 +5,7 @@ theme:
     favicon: images/favicon.png
     font: Incosolata
     palette:
-        primary: green
-        secondary: light green
+        scheme: nvgreen 
 
 repo_url: https://github.com/NVIDIA-AI-IOT/jetbot
 
@@ -53,6 +52,7 @@ nav:
 
 extra_css:
   - css/version-select.css
+  - css/colors.css
 extra_javascript:
   - js/version-select.js
 
