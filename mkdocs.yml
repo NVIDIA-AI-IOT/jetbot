@@ -5,8 +5,9 @@ theme:
     favicon: images/favicon.png
     font: Incosolata
     palette:
-        primary: green
-        secondary: light green
+        scheme: nvgreen 
+    features:
+       - navigation.expand
 
 repo_url: https://github.com/NVIDIA-AI-IOT/jetbot
 
@@ -34,8 +35,11 @@ nav:
 
   - Home: index.md
   - Getting Started: getting_started.md
-  - Bill of Materials: bill_of_materials.md
-  - Hardware Setup: hardware_setup.md
+  - Hardware:
+      - DIY open-source JetBot:
+          - Bill of Materials: bill_of_materials.md
+          - Hardware Setup: hardware_setup.md
+      - Third Party Kits: third_party_kits.md
   - Software Setup: 
       - Using SD Card Image: software_setup/sd_card.md
       - Using Docker Container: software_setup/docker.md
@@ -45,7 +49,6 @@ nav:
       - Collision Avoidance: examples/collision_avoidance.md
       - Road Following: examples/road_following.md
       - Object Following: examples/object_following.md
-  - Third Party Kits: third_party_kits.md
   - Reference:
       - 3D Printing: 3d_printing.md
       - Contributing: CONTRIBUTING.md
@@ -53,9 +56,11 @@ nav:
 
 extra_css:
   - css/version-select.css
+  - css/colors.css
 extra_javascript:
   - js/version-select.js
 
 google_analytics:
   - UA-135919510-2
   - auto
+

@@ -1,0 +1,1192 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+    
+    
+      
+        <title>Hardware Setup - JetBot</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.d3202873.min.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/palette.ff0a5ce4.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#4cae4f">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="css/version-select.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-135919510-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tools-needed" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="." title="JetBot" class="md-header-nav__button md-logo" aria-label="JetBot">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            JetBot
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Hardware Setup
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/NVIDIA-AI-IOT/jetbot/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="JetBot" class="md-nav__button md-logo" aria-label="JetBot">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    JetBot
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/NVIDIA-AI-IOT/jetbot/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="getting_started.html" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="bill_of_materials.html" title="Bill of Materials" class="md-nav__link">
+      Bill of Materials
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Hardware
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Hardware" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" checked>
+    
+    <label class="md-nav__link" for="nav-4-1">
+      DIY open-source JetBot
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="DIY open-source JetBot" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        DIY open-source JetBot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="bill_of_materials.html" title="Bill of Materials" class="md-nav__link">
+      Bill of Materials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Hardware Setup
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="hardware_setup.html" title="Hardware Setup" class="md-nav__link md-nav__link--active">
+      Hardware Setup
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tools-needed" class="md-nav__link">
+    Tools needed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    Assembly
+  </a>
+  
+    <nav class="md-nav" aria-label="Assembly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-clean-3d-printed-parts" class="md-nav__link">
+    Step 1 - Clean 3D printed parts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-mount-motors" class="md-nav__link">
+    Step 2 - Mount motors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-solder-motor-driver" class="md-nav__link">
+    Step 3 - Solder motor driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-strip-motor-driver-power-cable" class="md-nav__link">
+    Step 4 - Strip motor driver power cable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-mount-motor-driver" class="md-nav__link">
+    Step 5 - Mount motor driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-mount-wifi-antennas" class="md-nav__link">
+    Step 6 - Mount WiFi antennas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-remove-jetson-nano-module-from-developer-kit" class="md-nav__link">
+    Step 7 - Remove Jetson Nano module from developer kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-attach-wifi-module-to-developer-kit" class="md-nav__link">
+    Step 8 - Attach WiFi module to developer kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-mount-ball-caster" class="md-nav__link">
+    Step 9 - Mount ball caster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-solder-header-onto-pioled-display" class="md-nav__link">
+    Step 10 - Solder header onto PiOLED display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-wire-motor-driver-to-pioled-display" class="md-nav__link">
+    Step 11 - Wire motor driver to PiOLED display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-12-mount-camera" class="md-nav__link">
+    Step 12 - Mount camera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-13-attach-wide-angle-sensor" class="md-nav__link">
+    Step 13 - Attach wide angle sensor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-14-mount-battery" class="md-nav__link">
+    Step 14 - Mount battery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-15-organize-wires" class="md-nav__link">
+    Step 15 - Organize wires
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finished-jetbot" class="md-nav__link">
+    Finished JetBot
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="third_party_kits.html" title="Third Party Kits" class="md-nav__link">
+      Third Party Kits
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Software Setup
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Software Setup" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Software Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="software_setup/sd_card.html" title="Using SD Card Image" class="md-nav__link">
+      Using SD Card Image
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="software_setup/docker.html" title="Using Docker Container" class="md-nav__link">
+      Using Docker Container
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Examples
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Examples" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Examples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="examples/basic_motion.html" title="Basic Motion" class="md-nav__link">
+      Basic Motion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="examples/teleoperation.html" title="Teleoperation" class="md-nav__link">
+      Teleoperation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="examples/collision_avoidance.html" title="Collision Avoidance" class="md-nav__link">
+      Collision Avoidance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="examples/road_following.html" title="Road Following" class="md-nav__link">
+      Road Following
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="examples/object_following.html" title="Object Following" class="md-nav__link">
+      Object Following
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Reference" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="3d_printing.html" title="3D Printing" class="md-nav__link">
+      3D Printing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="CONTRIBUTING.html" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="CHANGELOG.html" title="Changes" class="md-nav__link">
+      Changes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tools-needed" class="md-nav__link">
+    Tools needed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    Assembly
+  </a>
+  
+    <nav class="md-nav" aria-label="Assembly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-clean-3d-printed-parts" class="md-nav__link">
+    Step 1 - Clean 3D printed parts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-mount-motors" class="md-nav__link">
+    Step 2 - Mount motors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-solder-motor-driver" class="md-nav__link">
+    Step 3 - Solder motor driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-strip-motor-driver-power-cable" class="md-nav__link">
+    Step 4 - Strip motor driver power cable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-mount-motor-driver" class="md-nav__link">
+    Step 5 - Mount motor driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-mount-wifi-antennas" class="md-nav__link">
+    Step 6 - Mount WiFi antennas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-remove-jetson-nano-module-from-developer-kit" class="md-nav__link">
+    Step 7 - Remove Jetson Nano module from developer kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-attach-wifi-module-to-developer-kit" class="md-nav__link">
+    Step 8 - Attach WiFi module to developer kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-mount-ball-caster" class="md-nav__link">
+    Step 9 - Mount ball caster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-solder-header-onto-pioled-display" class="md-nav__link">
+    Step 10 - Solder header onto PiOLED display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-wire-motor-driver-to-pioled-display" class="md-nav__link">
+    Step 11 - Wire motor driver to PiOLED display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-12-mount-camera" class="md-nav__link">
+    Step 12 - Mount camera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-13-attach-wide-angle-sensor" class="md-nav__link">
+    Step 13 - Attach wide angle sensor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-14-mount-battery" class="md-nav__link">
+    Step 14 - Mount battery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-15-organize-wires" class="md-nav__link">
+    Step 15 - Organize wires
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finished-jetbot" class="md-nav__link">
+    Finished JetBot
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/hardware_setup.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                  <h1>Hardware Setup</h1>
+                
+                <p>This page details the hardware setup instructions for creating JetBot</p>
+<h2 id="tools-needed">Tools needed</h2>
+<p>To build JetBot you'll need the following tools</p>
+<p><img alt="Long-nose-pliers_Hakko" src="images/Long-nose-pliers_Hakko.jpg" /><img alt="wire-stripper_hakko_30-20" src="images/wire-stripper_hakko_30-20.jpg" /><img alt="screw-driver-set_63" src="images/screw-driver-set_63.jpg" /><img alt="soldering-iron-station" src="images/soldering-iron-station.jpg" /><img alt="XOOL-Tweezers" src="images/XOOL-Tweezers.jpg" /></p>
+<ul>
+<li>
+<p>Pliers</p>
+</li>
+<li>
+<p>Wire flush cutters/wire stripper</p>
+</li>
+<li>Phillips screwdriver (+ <a href="https://amzn.com/B00CP2GGBI/">Hex screwdriver for M2 hex socket screws</a> )</li>
+<li>Soldering iron and solder</li>
+<li>(optional) <a href="https://amzn.to/2t4AWg7">Precision Electronics Tweezers</a></li>
+</ul>
+<h2 id="assembly">Assembly</h2>
+<h3 id="step-1-clean-3d-printed-parts">Step 1 - Clean 3D printed parts</h3>
+<p><a href="images/JB3-Assy_01-1.JPG"><img src="images/JB3-Assy_01-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_01-2.JPG"><img src="images/JB3-Assy_01-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_01-3.JPG"><img src="images/JB3-Assy_01-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_01-5.JPG"><img src="images/JB3-Assy_01-5.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_01-4.JPG"><img src="images/JB3-Assy_01-4.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Remove support material from motor sockets using pliers</p>
+</li>
+<li>
+<p>Remove support material from all surfaces, openings and screw holes using pliers, tweezers, and/or fingernails</p>
+</li>
+<li>File material from openings if they are too tight</li>
+</ol>
+<h3 id="step-2-mount-motors">Step 2 - Mount motors</h3>
+<p><a href="images/JB3-Assy_02-1.JPG"><img src="images/JB3-Assy_02-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_02-2.JPG"><img src="images/JB3-Assy_02-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_02-3.JPG"><img src="images/JB3-Assy_02-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_02-4.JPG"><img src="images/JB3-Assy_02-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_02-5.JPG"><img src="images/JB3-Assy_02-5.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Cut and remove the zip tie from each motor</p>
+</li>
+<li>
+<p>Tuck the wires beneath transparent band to prevent stress on solder joints</p>
+</li>
+<li>Insert each motor into the 3D printed chassis</li>
+<li>Secure each motor with 2x M3x25mm screws</li>
+</ol>
+<h3 id="step-3-solder-motor-driver">Step 3 - Solder motor driver</h3>
+<p><a href="images/JB3-Assy_03-1.png"><img src="images/JB3-Assy_03-1.png" style="height:120px"></a>
+<a href="images/JB3-Assy_03-2.JPG"><img src="images/JB3-Assy_03-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_03-3.JPG"><img src="images/JB3-Assy_03-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_03-4.JPG"><img src="images/JB3-Assy_03-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_03-5.JPG"><img src="images/JB3-Assy_03-5.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Break away 3-pin and 2-pin male headers from header link that comes with motor driver package</p>
+</li>
+<li>
+<p>Join two of the screw terminal blocks to create a 4-pin screw terminal</p>
+</li>
+<li>Solder the 2-pin and 4-pin screw terminals to motor driver</li>
+<li>
+<p>Solder the 2-pin and 3-pin male headers to motor driver</p>
+<blockquote>
+<p>Pay careful attention to the position of the 3-pin header.  It is 
+offset by 1-pin from the corner.</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="step-4-strip-motor-driver-power-cable">Step 4 - Strip motor driver power cable</h3>
+<p><a href="images/JB3-Assy_04-1.JPG"><img src="images/JB3-Assy_04-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_04-2.JPG"><img src="images/JB3-Assy_04-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_04-4.JPG"><img src="images/JB3-Assy_04-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_04-3.JPG"><img src="images/JB3-Assy_04-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_04-5.JPG"><img src="images/JB3-Assy_04-5.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Select the depicted micro USB from the pack </p>
+<blockquote>
+<p>Pay careful attention to the image.  The cables are not identical.  The other micro USB cable will be used to power the Jetson Nano.  Using the wrong power cable for Nano will block it's Ethernet port.</p>
+</blockquote>
+</li>
+<li>
+<p>Cut the depicted cable roughly ~20cm from the type-A terminal</p>
+</li>
+<li>Strip the rubber coating ~3cm from the cut</li>
+<li>Remove the green / white wires and metal shielding.</li>
+<li>Strip the red and black wires about ~5mm from cut</li>
+<li>(optional) Twist the exposed strand wire and coat with solder</li>
+</ol>
+<h3 id="step-5-mount-motor-driver">Step 5 - Mount motor driver</h3>
+<p><a href="images/JB3-Assy_05-1.JPG"><img src="images/JB3-Assy_05-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_05-2.JPG"><img src="images/JB3-Assy_05-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_05-3.JPG"><img src="images/JB3-Assy_05-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_05-4.JPG"><img src="images/JB3-Assy_05-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_05-5.JPG"><img src="images/JB3-Assy_05-5.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_05-6.JPG"><img src="images/JB3-Assy_05-6.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Route the spliced cable through chassis</p>
+</li>
+<li>
+<p>Secure exposed red (+) and black (-) wires to the power terminals on motor driver
+    &gt; Pay attention to the markings on the motor driver.  Incorrect wiring could damage the driver.</p>
+</li>
+<li>Route the spliced cable under the motor driver to organize and prevent stress on screw terminal</li>
+<li>Secure motor driver to chassis using self taping screws</li>
+<li>Secure left and right motor wires to motor screw terminals
+    &gt; <strong><em>Notice (3/11/2019):</em></strong> We made a slight mistake: the red and black wires for the left and right motor are actually flipped in the image shown above.  This will not cause damage, but the motors will spin backwards.  Please flip them to the correct orientation.</li>
+</ol>
+<h3 id="step-6-mount-wifi-antennas">Step 6 - Mount WiFi antennas</h3>
+<p><a href="images/JB3-Assy_06-0.JPG"><img src="images/JB3-Assy_06-0.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_07-1.JPG"><img src="images/JB3-Assy_07-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_07-2.JPG"><img src="images/JB3-Assy_07-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_07-3.JPG"><img src="images/JB3-Assy_07-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_07-4.JPG"><img src="images/JB3-Assy_07-4.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Secure one patch antenna to the underside of top plate</p>
+</li>
+<li>
+<p>Secure the other patch antenna at edge of battery bay</p>
+</li>
+<li>Route connectors as shown</li>
+</ol>
+<h3 id="step-7-remove-jetson-nano-module-from-developer-kit">Step 7 - Remove Jetson Nano module from developer kit</h3>
+<p><a href="images/JB3-Assy_06-1.JPG"><img src="images/JB3-Assy_06-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_06-2.JPG"><img src="images/JB3-Assy_06-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_06-3.JPG"><img src="images/JB3-Assy_06-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_06-4.JPG"><img src="images/JB3-Assy_06-4.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Remove standoff screws from Jetson Nano module</p>
+</li>
+<li>
+<p>Release the side latches of SODIMM connector using hands</p>
+</li>
+<li>Slide Jetson Nano module out of SODIMM connector</li>
+</ol>
+<h3 id="step-8-attach-wifi-module-to-developer-kit">Step 8 - Attach WiFi module to developer kit</h3>
+<p><a href="images/JB3-Assy_08-1.JPG"><img src="images/JB3-Assy_08-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_08-2.JPG"><img src="images/JB3-Assy_08-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_08-3.JPG"><img src="images/JB3-Assy_08-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_08-4.JPG"><img src="images/JB3-Assy_08-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_08-5.JPG"><img src="images/JB3-Assy_08-5.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_08-6.JPG"><img src="images/JB3-Assy_08-6.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Attach developer kit to chassis using self taping screws</p>
+</li>
+<li>
+<p>Snap antennae on to WiFi module using fingers</p>
+</li>
+<li>Remove the screw from developer kit by the M.2 socket</li>
+<li>Insert WiFi module into M.2 slot on developer kit</li>
+<li>Fasten WiFi module to developer kit with screw removed in (3)</li>
+<li>Re-attach the Jetson Nano module to developer kit</li>
+</ol>
+<h3 id="step-9-mount-ball-caster">Step 9 - Mount ball caster</h3>
+<p><a href="images/JB3-Assy_09-1.JPG"><img src="images/JB3-Assy_09-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_09-4.JPG"><img src="images/JB3-Assy_09-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_09-3.JPG"><img src="images/JB3-Assy_09-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_09-6.JPG"><img src="images/JB3-Assy_09-6.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Place the caster ball inside of shroud</p>
+</li>
+<li>
+<p>Insert the caster base into shroud, securing the ball
+    &gt; If the socket is too tight, file it some.</p>
+</li>
+<li>Attach the assembled caster onto the chassis with self taping screws
+    &gt; It will share two screw holes with the motor driver.</li>
+</ol>
+<h3 id="step-10-solder-header-onto-pioled-display">Step 10 - Solder header onto <em>PiOLED</em> display</h3>
+<p><a href="images/JB3-Assy_10-1b.jpg"><img src="images/JB3-Assy_10-1b.jpg" style="height:120px"></a>
+<a href="images/JB3-Assy_10-4.JPG"><img src="images/JB3-Assy_10-4.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Secure the 6-pin right angle header to PiOLED display by some method</p>
+</li>
+<li>
+<p>Solder the pins depicted (3.3V, SDA, SCL, and GND solder seen when zoomed in on right image)
+    &gt; The pins are close to the display screen, be careful to avoid the screen with soldering iron tip. </p>
+</li>
+</ol>
+<h3 id="step-11-wire-motor-driver-to-pioled-display">Step 11 - Wire motor driver to <em>PiOLED</em> display</h3>
+<p><a href="images/JB3-Assy_11-1.JPG"><img src="images/JB3-Assy_11-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_11-3.JPG"><img src="images/JB3-Assy_11-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_11-5.JPG"><img src="images/JB3-Assy_11-5.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Select 4 wire segment of female-female jumper cables.
+    &gt; We use brown, red, orange, yellow segment.  You can map the colors accordingly.</p>
+</li>
+<li>
+<p>Attach 3.3V (red), GND (brown), SDA (orange), and SCL (yellow) to motor driver as shown</p>
+</li>
+<li>Route the 4 wire jumper cable segment through chassis</li>
+<li>Attach red, brown, orange and yellow wires to right angle header as depicted<blockquote>
+<p>Pay close attention!  Reversing the red / brown wires could damage the system.</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="step-12-mount-camera">Step 12 - Mount camera</h3>
+<p><a href="images/JB3-Assy_12-1.JPG"><img src="images/JB3-Assy_12-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_12-2.JPG"><img src="images/JB3-Assy_12-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_12-3.JPG"><img src="images/JB3-Assy_12-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_12-4.JPG"><img src="images/JB3-Assy_12-4.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Attach the camera to the camera mount using 4x self tapping screws</p>
+</li>
+<li>
+<p>Attach the camera mount to chassis with 4x self tapping screws</p>
+</li>
+<li>Insert the other end of ribbon cable into Jetson Nano developer kit</li>
+<li>(optional) Tuck the ribbon cable against heat sink to organize</li>
+</ol>
+<h3 id="step-13-attach-wide-angle-sensor">Step 13 - Attach wide angle sensor</h3>
+<p><a href="images/JB3-Assy_13-1.JPG"><img src="images/JB3-Assy_13-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_13-2.JPG"><img src="images/JB3-Assy_13-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_13-3.JPG"><img src="images/JB3-Assy_13-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_13-4.JPG"><img src="images/JB3-Assy_13-4.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_13-5.JPG"><img src="images/JB3-Assy_13-5.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_13-6.JPG"><img src="images/JB3-Assy_13-6.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Peel off the original camera sensor</p>
+</li>
+<li>
+<p>Remove any excess adhesive material</p>
+</li>
+<li>Remove the adhesive film cover from wide angle replacement sensor</li>
+<li>Attach wide angle replacement sensor to camera module</li>
+<li>Ensure the sensor connector is fastened to camera module</li>
+</ol>
+<h3 id="step-14-mount-battery">Step 14 - Mount battery</h3>
+<p><a href="images/JB3-Assy_14-1.JPG"><img src="images/JB3-Assy_14-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_14-2.JPG"><img src="images/JB3-Assy_14-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_14-3.JPG"><img src="images/JB3-Assy_14-3.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_14-4.JPG"><img src="images/JB3-Assy_14-4.JPG" style="height:120px"></a></p>
+<ol>
+<li>
+<p>Attach double sided adhesive tabs to each end of battery, leaving some tab exposed</p>
+</li>
+<li>
+<p>Holding robot upside down, slide battery into battery bay</p>
+</li>
+<li>Holding the battery in place, flip the robot and secure battery to chassis</li>
+</ol>
+<h3 id="step-15-organize-wires">Step 15 - Organize wires</h3>
+<p><a href="images/JB3-Assy_15-1.JPG"><img src="images/JB3-Assy_15-1.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_15-2.JPG"><img src="images/JB3-Assy_15-2.JPG" style="height:120px"></a>
+<a href="images/JB3-Assy_15-3.JPG"><img src="images/JB3-Assy_15-3.JPG" style="height:120px"></a></p>
+<ol>
+<li>Route USB cables through chassis to organize and prevent dragging</li>
+</ol>
+<h2 id="finished-jetbot">Finished JetBot</h2>
+<p>Once finished, your JetBot should look similar to this.</p>
+<p><a href="images/JB3-Assy_16-5.JPG"><img src="images/JB3-Assy_16-5.JPG"></a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="bill_of_materials.html" title="Bill of Materials" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Bill of Materials
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="third_party_kits.html" title="Third Party Kits" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Third Party Kits
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.2d1db4bd.min.js"></script>
+      <script src="assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: ['navigation.expand'],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="js/version-select.js"></script>
+      
+    
+  </body>
+</html>
