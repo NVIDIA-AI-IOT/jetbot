@@ -33,13 +33,18 @@ markdown_extensions:
 nav:
 
   - Home: index.md
-  - Third Party Kits: third_party_kits.md
+  - Bill of Materials: bill_of_materials.md
+  - Hardware Setup: hardware_setup.md
+  - Software Setup: software_setup.md
   - Examples: 
       - Basic Motion: examples/basic_motion.md
       - Teleoperation: examples/teleoperation.md
       - Collision Avoidance: examples/collision_avoidance.md
       - Road Following: examples/road_following.md
       - Object Following: examples/object_following.md
+  - Third Party Kits: third_party_kits.md
+  - Reference:
+      - 3D Printing: 3d_printing.md
 
 extra_css:
   - css/version-select.css
