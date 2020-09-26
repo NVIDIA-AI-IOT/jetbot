@@ -3,6 +3,7 @@ This page details the software setup required to run JetBot.
 ### Step 1 - Flash JetBot image onto SD card
 
 1. Download the expandable JetBot SD card image [jetbot_image_v0p4p0.zip](https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN)
+
     > The above image is based on JetPack 4.3.  The previous image based on JetPack 4.2 may be found here: [jetbot_image_v0p3p2.zip](https://drive.google.com/open?id=1GF2D814hkViwluZ5SgNKW56cQu_5Ekt5).
 
 2. Insert an SD card into your desktop machine
