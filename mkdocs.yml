@@ -33,9 +33,12 @@ markdown_extensions:
 nav:
 
   - Home: index.md
+  - Getting Started: 
   - Bill of Materials: bill_of_materials.md
   - Hardware Setup: hardware_setup.md
-  - Software Setup: software_setup.md
+  - Software Setup: 
+      - Using SD Card Image: software_setup/sd_card.md
+      - Using Docker Container: software_setup/docker.md
   - Examples: 
       - Basic Motion: examples/basic_motion.md
       - Teleoperation: examples/teleoperation.md
