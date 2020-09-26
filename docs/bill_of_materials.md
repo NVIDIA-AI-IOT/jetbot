@@ -31,7 +31,13 @@ You need a camera with appropriate sensor and field of view for each JetBot.  Se
 | --- | --: | --: | --- | --- |
 | Camera | 1 | $29.00 | [Leopard Imaging](https://leopardimaging.com/product/li-imx219-mipi-ff-nano/) | LI-IMX219-MIPI-FF-NANO-**H145**|
 
-#### Option 2 - RPi Camera V2 + Lens Attachment
+#### Option 2 - IMX219-160 Camera
+
+|  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
+| --- | --: | --: | --- | --- |
+| Camera | 1 | $29.90 | [Amazon](http://amzn.com/B07T43K7LC/) | IMX219-160 Camera |
+
+#### Option 3 - RPi Camera V2 + Lens Attachment
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
