@@ -9,10 +9,9 @@ JetBot safe!  We'll teach JetBot to detect two scenarios ``free`` and ``blocked`
 
 > We provide a [pre-trained model](https://drive.google.com/open?id=1UsRax8bR3R-e-0-80KfH2zAt-IyRPtnW) so you can skip to step 3 if desired.  This model was trained on a limited dataset using the Raspberry Pi V2 Camera with wide angle attachment.
 
-<a href="images/JL03a_Data-Collection.png"><img src="images/JL03a_Data-Collection.png" height="320"></a>
+<a href="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03a_Data-Collection.png"><img src="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03a_Data-Collection.png" height="320"></a>
 
 1. Connect to your robot by navigating to ``http://<jetbot_ip_address>:8888``
-
 2. Sign in with the default password ``jetbot``
 2. Shutdown all other running notebooks by selecting ``Kernel`` -> ``Shutdown All Kernels...``
 3. Navigate to ``~/Notebooks/collision_avoidance/``
@@ -20,33 +19,38 @@ JetBot safe!  We'll teach JetBot to detect two scenarios ``free`` and ``blocked`
 
 #### Step 2 - Train neural network
 
-<a href="images/JL03b_Training.png"><img src="images/JL03b_Training.png" height="320"></a>
+<a href="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03b_Training.png"><img src="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03b_Training.png" height="320"></a>
 
 ##### Option 1 - Train on Jetson nano
 1. Shutdown your robot and remove the micro USB power cable.
-
 2. Power the Jetson Nano by using the 5V wall power supply.
 3. Connect to your robot by navigating to ``http://<jetbot_ip_address>:8888``
 4. Sign in with the default password ``jetbot``
 5. In the Jupyter Lab tab, navigate to ``~/collision_avoidance``
-6. Upload the collision avoidance [training notebook](../../jetbot/blob/master/notebooks/collision_avoidance/train_model.ipynb) to this folder
-7. Open and follow the ``train_model.ipynb`` notebook
+6. Upload the collision avoidance [training notebook](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/notebooks/collision_avoidance/train_model_resnet18.ipynb) to this folder
+7. Open and follow the ``train_model_resnet18.ipynb`` notebook
 
 ##### Option 2 - Train on other GPU machine
 1. Connect to a GPU machine with PyTorch installed and a Jupyter Lab server running
+2. Upload the collision avoidance [training notebook](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/notebooks/collision_avoidance/train_model_resnet18.ipynb) to this machine
+3. Open and follow the ``train_model_resnet18.ipynb`` notebook
 
-2. Upload the collision avoidance [training notebook](../../jetbot/blob/master/notebooks/collision_avoidance/train_model.ipynb) to this machine
-3. Open and follow the ``train_model.ipynb`` notebook
 
-#### Step 3 - Run live demo on JetBot
+#### Step 3 - Optimize the model on Jetson Nano
 
-<a href="images/JL03c_Live-demo.png"><img src="images/JL03c_Live-demo.png" height="320"></a>
+1. Connect to your robot by navigating to ``https://<jetbot_ip_address>:8888``
+2. Sign in with the default password jetbot
+3. Shutdown all other running notebooks by selecting Kernel -> Shutdown All Kernels...
+4. Navigate to ``~/Notebooks/road_following``
+5. Open and follow the [``live_demo_resnet18_build_trt.ipynb``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/notebooks/collision_avoidance/live_demo_resnet18_build_trt.ipynb) notebook to optimize the model with TensorRT
 
-1. Power your robot from the USB battery pack
+#### Step 4 - Run live demo on JetBot
 
-2. Connect back to your robot by navigating to ``http://<jetbot_ip_address>:8888``
-3. Sign in with the default password ``jetbot``
-4. Shutdown all other running notebooks by selecting ``Kernel`` -> ``Shutdown All Kernels...``
-5. Navigate to ``~/Notebooks/collision_avoidance``
-6. Open and follow the ``live_demo.ipynb`` notebook
+<a href="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03c_Live-demo.png"><img src="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03c_Live-demo.png" height="320"></a>
+
+1. Connect back to your robot by navigating to ``http://<jetbot_ip_address>:8888``
+2. Sign in with the default password ``jetbot``
+3. Shutdown all other running notebooks by selecting ``Kernel`` -> ``Shutdown All Kernels...``
+4. Navigate to ``~/Notebooks/collision_avoidance``
+5. Open and follow the [``live_demo_resnet18_trt.ipynb``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/notebooks/collision_avoidance/live_demo_resnet18_trt.ipynb) notebook to run the optimized model
     > Start cautious and give JetBot enough space to move around.
