@@ -2,6 +2,7 @@
 
 To get started with JetBot, just follow these steps
 
+![JetBot Getting Started Steps](images/jetbot_getting_started_steps.png)
 
 1. Get the parts from the [bill of materials](bill_of_materials.md).
 
