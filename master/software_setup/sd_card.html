@@ -25,10 +25,6 @@
         <link rel="stylesheet" href="../assets/stylesheets/palette.ff0a5ce4.min.css">
       
       
-        
-        
-        <meta name="theme-color" content="#4cae4f">
-      
     
     
     
@@ -41,6 +37,8 @@
     
     
       <link rel="stylesheet" href="../css/version-select.css">
+    
+      <link rel="stylesheet" href="../css/colors.css">
     
     
       
@@ -56,7 +54,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="nvgreen" data-md-color-primary="" data-md-color-accent="">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -214,22 +212,86 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Hardware
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Hardware" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      DIY open-source JetBot
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="DIY open-source JetBot" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        DIY open-source JetBot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../bill_of_materials.html" title="Bill of Materials" class="md-nav__link">
       Bill of Materials
     </a>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
     <a href="../hardware_setup.html" title="Hardware Setup" class="md-nav__link">
       Hardware Setup
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../third_party_kits.html" title="Third Party Kits" class="md-nav__link">
+      Third Party Kits
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -242,14 +304,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-4">
       Software Setup
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Software Setup" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-4">
         <span class="md-nav__icon md-icon"></span>
         Software Setup
       </label>
@@ -361,14 +423,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Examples
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Examples" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Examples
       </label>
@@ -445,28 +507,16 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../third_party_kits.html" title="Third Party Kits" class="md-nav__link">
-      Third Party Kits
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
-    <label class="md-nav__link" for="nav-8">
+    <label class="md-nav__link" for="nav-6">
       Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon"></span>
         Reference
       </label>
@@ -599,14 +649,16 @@
                 
                   <h1>Using SD Card Image</h1>
                 
-                <p>This page details the software setup required to run JetBot.</p>
+                <details class="caution" open="open"><summary>Caution</summary><p>If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.  </p>
+<p>Please check the manufacture's set up instruction.</p>
+</details>
+<p>This page details the software setup required to run JetBot.</p>
 <h3 id="step-1-flash-jetbot-image-onto-sd-card">Step 1 - Flash JetBot image onto SD card</h3>
 <ol>
 <li>
 <p>Download the expandable JetBot SD card image <a href="https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN">jetbot_image_v0p4p0.zip</a></p>
-<blockquote>
-<p>The above image is based on JetPack 4.3.  The previous image based on JetPack 4.2 may be found here: <a href="https://drive.google.com/open?id=1GF2D814hkViwluZ5SgNKW56cQu_5Ekt5">jetbot_image_v0p3p2.zip</a>.</p>
-</blockquote>
+<details class="info" open="open"><summary>Info</summary><p>The above image is based on JetPack 4.3.  The previous image based on JetPack 4.2 may be found here: <a href="https://drive.google.com/open?id=1GF2D814hkViwluZ5SgNKW56cQu_5Ekt5">jetbot_image_v0p3p2.zip</a>.</p>
+</details>
 </li>
 <li>
 <p>Insert an SD card into your desktop machine</p>
@@ -623,12 +675,11 @@
 <li>
 <p>Connect the monitor, keyboard, and mouse to the Nano</p>
 </li>
-<li>Power on the Jetson Nano by connecting the micro USB charger to the micro USB port<blockquote>
-<p>Important! We recommend first booting the Jetson Nano once without the piOLED / motor driver connected.
-This way you can check to make sure the system boots properly from the SD card image without 
-worrying about hardware issues.  After you've verified that it boots, reconnect the piOLED, 
-double check your wiring, and boot again.</p>
-</blockquote>
+<li>
+<p>Power on the Jetson Nano by connecting the micro USB charger to the micro USB port</p>
+<details class="danger" open="open"><summary>Danger</summary><p>Important! We recommend first booting the Jetson Nano once without the piOLED / motor driver connected.
+This way you can check to make sure the system boots properly from the SD card image without worrying about hardware issues.  After you've verified that it boots, reconnect the piOLED, double check your wiring, and boot again.</p>
+</details>
 </li>
 </ol>
 <h3 id="step-3-connect-jetbot-to-wifi">Step 3 - Connect JetBot to WiFi</h3>
@@ -655,9 +706,8 @@ double check your wiring, and boot again.</p>
 <li>Check the IP address of your robot on the <em>piOLED</em> display screen.  Enter this in place of <code>&lt;jetbot_ip_address&gt;</code> in the next command</li>
 <li>Navigate to <code>http://&lt;jetbot_ip_address&gt;:8888</code> from your desktop's web browser</li>
 </ol>
-<blockquote>
-<p>You shouldn't need to connect your robot to a monitor past this step! </p>
-</blockquote>
+<details class="info" open="open"><summary>Info</summary><p>You shouldn't need to connect your robot to a monitor past this step! </p>
+</details>
 <h3 id="step-5-install-latest-software-optional">Step 5 - Install latest software (optional)</h3>
 <p>The JetBot GitHub repository may contain software that is newer than that pre-installed
 on the SD card image.  To install the latest software:</p>
@@ -717,7 +767,7 @@ place the Jetson Nano in <code>5W</code> mode by calling the following command</
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../hardware_setup.html" title="Hardware Setup" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../third_party_kits.html" title="Third Party Kits" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -726,7 +776,7 @@ place the Jetson Nano in <code>5W</code> mode by calling the following command</
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Hardware Setup
+                Third Party Kits
               </div>
             </div>
           </a>
@@ -771,7 +821,7 @@ place the Jetson Nano in <code>5W</code> mode by calling the following command</
       <script>
         app = initialize({
           base: "..",
-          features: [],
+          features: ['navigation.expand'],
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)

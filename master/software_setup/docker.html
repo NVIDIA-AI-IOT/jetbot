@@ -25,10 +25,6 @@
         <link rel="stylesheet" href="../assets/stylesheets/palette.ff0a5ce4.min.css">
       
       
-        
-        
-        <meta name="theme-color" content="#4cae4f">
-      
     
     
     
@@ -41,6 +37,8 @@
     
     
       <link rel="stylesheet" href="../css/version-select.css">
+    
+      <link rel="stylesheet" href="../css/colors.css">
     
     
       
@@ -56,7 +54,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="nvgreen" data-md-color-primary="" data-md-color-accent="">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -214,22 +212,86 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Hardware
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Hardware" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      DIY open-source JetBot
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="DIY open-source JetBot" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        DIY open-source JetBot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../bill_of_materials.html" title="Bill of Materials" class="md-nav__link">
       Bill of Materials
     </a>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
     <a href="../hardware_setup.html" title="Hardware Setup" class="md-nav__link">
       Hardware Setup
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../third_party_kits.html" title="Third Party Kits" class="md-nav__link">
+      Third Party Kits
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -242,14 +304,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-4">
       Software Setup
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Software Setup" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-4">
         <span class="md-nav__icon md-icon"></span>
         Software Setup
       </label>
@@ -337,14 +399,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Examples
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Examples" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Examples
       </label>
@@ -421,28 +483,16 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../third_party_kits.html" title="Third Party Kits" class="md-nav__link">
-      Third Party Kits
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
-    <label class="md-nav__link" for="nav-8">
+    <label class="md-nav__link" for="nav-6">
       Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon"></span>
         Reference
       </label>
@@ -548,14 +598,16 @@
                 
                 
                 <h1 id="docker">Docker</h1>
+<details class="caution" open="open"><summary>Caution</summary><p>If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.</p>
+<p>Please check the manufacture's set up instruction.</p>
+</details>
 <p>In addition to the pre-built SD card image, we also provide a docker container
 in case you want to install JetBot on an existing Jetson Nano SD card.</p>
-<blockquote>
-<p>For this, we'll assume you've set up your Jetson Nano using the <strong>online Getting Started guide</strong>.</p>
+<details class="hint" open="open"><summary>Hint</summary><p>For this, we'll assume you've set up your Jetson Nano using the <strong>online Getting Started guide</strong>.</p>
 <ul>
 <li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">Getting Started With Jetson Nano Developer Kit</a></li>
 </ul>
-</blockquote>
+</details>
 <h3 id="step-1-configure-system">Step 1 - Configure System</h3>
 <p>First, call the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/scripts/configure_jetson.sh"><code>scripts/configure_jetson.sh</code></a> script to configure the power mode and other parameters.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span> jetbot
@@ -586,11 +638,8 @@ CUDA related components with the containers.</p>
 <p>Now you can go to <code>https://&lt;jetbot_ip&gt;:8888</code> from a web browser and start programming JetBot!
 You can do this from any machine on your local network.  The password to log in is <code>jetbot</code>.</p>
 <p><img alt="" src="https://user-images.githubusercontent.com/25759564/92091965-51ae4f00-ed86-11ea-93d5-09d291ccfa95.png" /></p>
-<blockquote>
-<p>Note: The directory you specify to <code>./enable.sh</code> will be mounted as a volume in the jupyter container 
-at the location <code>/workspace</code>.  This means the work you in the <code>/workspace</code> folder inside container
-is saved.  This is set to the root directory of Jupyter Lab.  Please note, if you work outside of that directory it will be lost when the container shuts down.</p>
-</blockquote>
+<details class="note" open="open"><summary>Note</summary><p>The directory you specify to <code>./enable.sh</code> will be mounted as a volume in the jupyter container at the location <code>/workspace</code>.  This means the work you in the <code>/workspace</code> folder inside container is saved.  This is set to the root directory of Jupyter Lab.  Please note, if you work outside of that directory it will be lost when the container shuts down.</p>
+</details>
                 
               
               
@@ -663,7 +712,7 @@ is saved.  This is set to the root directory of Jupyter Lab.  Please note, if yo
       <script>
         app = initialize({
           base: "..",
-          features: [],
+          features: ['navigation.expand'],
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
