@@ -15,12 +15,23 @@ in case you want to install JetBot on an existing Jetson Nano SD card.
 
 ### Step 1 - Configure System
 
-First, call the [``scripts/configure_jetson.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/scripts/configure_jetson.sh) script to configure the power mode and other parameters.
+First, call the [``scripts/configure_jetson.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/scripts/configure_jetson.sh) script to configure Jetson to opitimal configuration for Jetson operation.
 
 ```bash
 cd jetbot
 ./scripts/configure_jetson.sh
 ```
+
+???+ info
+    To bring back the GUI, run `./scripts/re_enable_gui.sh`.
+
+Optionally, if you have not set up swap, you can create swap with this script.<br>
+We recommend having 4GB swap.
+
+```bash
+./script/enable_swap.sh
+```
+
 
 Next, source the [``docker/configure.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/configure.sh) script to configure various environment variables related to JetBot docker.
 
