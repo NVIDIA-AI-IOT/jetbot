@@ -44,4 +44,6 @@ In this example we'll collect an *image regression* dataset that will enable Jet
 3. Shutdown all other running notebooks by selecting ``Kernel`` -> ``Shutdown All Kernels...``
 4. Navigate to ``~/Notebooks/road_following``
 5. Open and follow the ``live_demo_trt.ipynb`` notebook to run the optimized model
-    > Start cautious and give JetBot enough space to move around.
+
+???+ warning
+    Start cautious and give JetBot enough space to move around.

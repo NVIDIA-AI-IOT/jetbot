@@ -19,11 +19,13 @@ Follow these steps to jump into the fun of learning AI with JetBot.
 
 #### 1. Get the parts from the [bill of materials](bill_of_materials.md).
 
-> You can also start from one of the pre-bundled [third party kits](third_party_kits.md). 
+???+ hint
+    You can also start from one of the pre-bundled **[third party kits](third_party_kits.md)**. 
 
 #### 2. Follow the [hardware setup](hardware_setup.md)
 
-> If you are using a third party JetBot kit, follow the manufacture's assembly instruction.  
+???+ hint
+    If you are using a third party JetBot kit, follow the manufacture's assembly instruction.  
 
 #### 3. Follow the [software setup](software_setup/docker.md)
 #### 4. Run through the [examples](examples/basic_motion.md)
