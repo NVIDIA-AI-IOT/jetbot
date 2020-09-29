@@ -1,2 +1,5 @@
 *.asc
 .ipynb_checkpoints
+
+# MkDocs documentation
+site/
