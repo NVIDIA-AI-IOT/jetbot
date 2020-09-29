@@ -1,5 +1,10 @@
 # Docker
 
+???+ caution
+    If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.
+
+    Please check the manufacture's set up instruction.
+
 In addition to the pre-built SD card image, we also provide a docker container
 in case you want to install JetBot on an existing Jetson Nano SD card.
 
