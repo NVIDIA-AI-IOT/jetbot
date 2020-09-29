@@ -1,10 +1,17 @@
+???+ caution
+    If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.  
+    
+    Please check the manufacture's set up instruction.
+
+
 This page details the software setup required to run JetBot.
 
 ### Step 1 - Flash JetBot image onto SD card
 
 1. Download the expandable JetBot SD card image [jetbot_image_v0p4p0.zip](https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN)
 
-    > The above image is based on JetPack 4.3.  The previous image based on JetPack 4.2 may be found here: [jetbot_image_v0p3p2.zip](https://drive.google.com/open?id=1GF2D814hkViwluZ5SgNKW56cQu_5Ekt5).
+    ???+ info
+        The above image is based on JetPack 4.3.  The previous image based on JetPack 4.2 may be found here: [jetbot_image_v0p3p2.zip](https://drive.google.com/open?id=1GF2D814hkViwluZ5SgNKW56cQu_5Ekt5).
 
 2. Insert an SD card into your desktop machine
 3. Using [Etcher](https://www.balena.io/etcher/), select the ``jetbot_image_v0p4p0.zip`` image and flash it onto the SD card
@@ -17,10 +24,10 @@ This page details the software setup required to run JetBot.
 
 2. Connect the monitor, keyboard, and mouse to the Nano
 3. Power on the Jetson Nano by connecting the micro USB charger to the micro USB port
-   > Important! We recommend first booting the Jetson Nano once without the piOLED / motor driver connected.
-   > This way you can check to make sure the system boots properly from the SD card image without 
-   > worrying about hardware issues.  After you've verified that it boots, reconnect the piOLED, 
-   > double check your wiring, and boot again.
+
+    ???+ danger
+        Important! We recommend first booting the Jetson Nano once without the piOLED / motor driver connected.
+        This way you can check to make sure the system boots properly from the SD card image without worrying about hardware issues.  After you've verified that it boots, reconnect the piOLED, double check your wiring, and boot again.
 
 ### Step 3 - Connect JetBot to WiFi
 
@@ -42,7 +49,8 @@ After your robot is connected to WiFi, you can connect to the robot from a web b
 2. Check the IP address of your robot on the *piOLED* display screen.  Enter this in place of ``<jetbot_ip_address>`` in the next command
 3. Navigate to ``http://<jetbot_ip_address>:8888`` from your desktop's web browser
 
->  You shouldn't need to connect your robot to a monitor past this step! 
+???+ info
+    You shouldn't need to connect your robot to a monitor past this step! 
 
 ### Step 5 - Install latest software (optional)
 

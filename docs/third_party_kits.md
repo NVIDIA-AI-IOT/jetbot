@@ -2,7 +2,8 @@
 
 In addition to the open-source DIY version, several third party JetBot kits using Jetson Nano have emerged.  This page details the kits that we're aware of
 
-> Please note, we do not officially maintain these kits in this GitHub project.  Please refer to the vendor's documentation. Please refer to the vendor URL for cost and availability.  Some kits may have additional vendors that we aren't aware of or haven't listed yet.  If you think these would be helpful for other developers to know, please [let us know](../../issues).
+???+ warning
+    Please note, we do not officially maintain these kits in this GitHub project.  Please refer to the vendor's documentation. Please refer to the vendor URL for cost and availability.  Some kits may have additional vendors that we aren't aware of or haven't listed yet.  If you think these would be helpful for other developers to know, please [let us know](../../issues).
 
 
 ## Waveshare JetBot

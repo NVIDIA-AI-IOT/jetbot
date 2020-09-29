@@ -1,10 +1,11 @@
 # Object Following
 
+???+ attention 
+    Please note that example for now only works with the SD card image based software setup.
+
 In this example we'll have JetBot follow an object using a pre-trained model capable of detecting common objects like``Person``, ``Cup``, and ``Dog``.  While doing this, JetBot will run the collision avoidance model from Example 3 to make sure it stays safe!
 
 [![](http://img.youtube.com/vi/MBUEbU9Q6wg/0.jpg)](http://www.youtube.com/watch?v=MBUEbU9Q6wg "Dancing with JetBot")
-
-> Please note that example for now only works with the SD card image based software setup.
 
 
 1. Download the object detection model according to the table below
@@ -23,8 +24,12 @@ In this example we'll have JetBot follow an object using a pre-trained model cap
 4. Navigate to ``~/Notebooks/object_following/``
 5. Upload the pre-trained ``ssd_mobilenet_v2_coco.engine`` model to this folder
 
-    > Also make sure the collision avoidance model from Example 3 is in ``~/Notebooks/collision_avoidance``
-4. Open and follow the ``live_demo.ipynb`` notebook
-    > Start cautious and give JetBot enough space to move around.
+    ???+ info
+        Also make sure the collision avoidance model from Example 3 is in ``~/Notebooks/collision_avoidance``
+
+6. Open and follow the ``live_demo.ipynb`` notebook
+    
+    ???+ warning
+        Start cautious and give JetBot enough space to move around.
 
 
