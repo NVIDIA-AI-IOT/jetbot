@@ -1,11 +1,17 @@
 # Docker
 
+???+ caution
+    If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.
+
+    Please check the manufacture's set up instruction.
+
 In addition to the pre-built SD card image, we also provide a docker container
 in case you want to install JetBot on an existing Jetson Nano SD card.
 
-> For this, we'll assume you've set up your Jetson Nano using the **online Getting Started guide**.
-> 
-> - [Getting Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
+???+ hint
+    For this, we'll assume you've set up your Jetson Nano using the **online Getting Started guide**.
+        
+     - [Getting Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 
 ### Step 1 - Configure System
 
@@ -52,7 +58,6 @@ You can do this from any machine on your local network.  The password to log in 
 ![](https://user-images.githubusercontent.com/25759564/92091965-51ae4f00-ed86-11ea-93d5-09d291ccfa95.png)
 
 
-> Note: The directory you specify to ``./enable.sh`` will be mounted as a volume in the jupyter container 
-at the location ``/workspace``.  This means the work you in the ``/workspace`` folder inside container
-is saved.  This is set to the root directory of Jupyter Lab.  Please note, if you work outside of that directory it will be lost when the container shuts down.
+???+ note
+    The directory you specify to ``./enable.sh`` will be mounted as a volume in the jupyter container at the location ``/workspace``.  This means the work you in the ``/workspace`` folder inside container is saved.  This is set to the root directory of Jupyter Lab.  Please note, if you work outside of that directory it will be lost when the container shuts down.
 

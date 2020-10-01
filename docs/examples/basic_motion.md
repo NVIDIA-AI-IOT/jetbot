@@ -9,4 +9,6 @@ In this notebook we'll control JetBot by programming from a web browser.
 2. Sign in with the default password ``jetbot``
 3. Navigate to ``~/Notebooks/basic_motion/``
 4. Open and follow the [``basic_motion.ipynb``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/notebooks/basic_motion/basic_motion.ipynb) notebook
-    > Make sure JetBot has enough space to move around.
+    
+???+ warning
+    Make sure JetBot has enough space to move around.
