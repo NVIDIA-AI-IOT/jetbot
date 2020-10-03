@@ -40,9 +40,10 @@ nav:
           - Bill of Materials: bill_of_materials.md
           - Hardware Setup: hardware_setup.md
       - Third Party Kits: third_party_kits.md
-  - Software Setup: 
-      - Using SD Card Image: software_setup/sd_card.md
+  - Software Setup:
+      - Wi-Fi setup: software_setup/wifi_setup.md
       - Using Docker Container: software_setup/docker.md
+      - Using SD Card Image: software_setup/sd_card.md
   - Examples: 
       - Basic Motion: examples/basic_motion.md
       - Teleoperation: examples/teleoperation.md

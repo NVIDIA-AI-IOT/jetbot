@@ -8,12 +8,29 @@
 In addition to the pre-built SD card image, we also provide a docker container
 in case you want to install JetBot on an existing Jetson Nano SD card.
 
+???+ caution
+    The following Docker container based setup method is for **JetPack 4.4** (L4T R32.4.3) and above.
+
+## Initial setup
+
+You can use your existing Jetson Nano set up (microSD card), as long as you have enough storage space left.
+
 ???+ hint
     For this, we'll assume you've set up your Jetson Nano using the **online Getting Started guide**.
         
      - [Getting Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 
-### Step 1 - Configure System
+## Docker container setup
+
+### Step 1 - Clone the GitHub repo
+
+Clone the [official JetBot GitHub repo](https://github.com/NVIDIA-AI-IOT/jetbot).
+
+```bash
+git clone http://github.com/NVIDIA-AI-IOT/jetbot.git
+```
+
+### Step 2 - Configure System
 
 First, call the [``scripts/configure_jetson.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/scripts/configure_jetson.sh) script to configure the power mode and other parameters.
 
@@ -21,6 +38,15 @@ First, call the [``scripts/configure_jetson.sh``](https://github.com/NVIDIA-AI-I
 cd jetbot
 ./scripts/configure_jetson.sh
 ```
+
+???+ hint
+    `configure_jetson.sh` also disables the GUI for the interest of saving system memory (DRAM) consumption.<br>
+    If you want to re-enable the GUI, you can execute the following command.
+    
+    ```bash
+    ./scripts/re_enable_gui.sh
+    ```
+     
 
 Next, source the [``docker/configure.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/configure.sh) script to configure various environment variables related to JetBot docker.
 
@@ -43,7 +69,26 @@ export JETBOT_JUPYTER_MEMORY=500m
 export JETBOT_JUPYTER_MEMORY_SWAP=3G
 ```
 
-### Step 2 - Enable all containers
+### (Optional) Log in to NGC
+
+???+ hint
+    If you are testing a repo/branch that has containers images hosted on NGC, you need to log into the NGC rfegistry first.
+    
+    Log into NGC, and go to the [Setup > API Key](https://ngc.nvidia.com/setup/api-key) section.
+    If you have not generated your API Key, click on the button "**Generate API Key**" at the right upper corner of the page, and save the API key for the future use.
+    
+    Then, enter the following command on your Jetson and follow the prompts.
+
+    ```bash
+    $ sudo docker login nvcr.io
+    
+    Username: $oauthtoken
+    Password: <You Key>
+    ```
+
+    For the username, enter `$oauthtoken` exactly as shown. It is a special authentication token for all users.
+
+### Step 3 - Enable all containers
 
 Call the following to enable the JetBot docker containers 
 
@@ -53,6 +98,7 @@ sudo systemctl enable docker   # enable docker daemon at boot
 ```
 
 Now you can go to ``https://<jetbot_ip>:8888`` from a web browser and start programming JetBot!
+
 You can do this from any machine on your local network.  The password to log in is ``jetbot``.
 
 ![](https://user-images.githubusercontent.com/25759564/92091965-51ae4f00-ed86-11ea-93d5-09d291ccfa95.png)
@@ -60,4 +106,23 @@ You can do this from any machine on your local network.  The password to log in 
 
 ???+ note
     The directory you specify to ``./enable.sh`` will be mounted as a volume in the jupyter container at the location ``/workspace``.  This means the work you in the ``/workspace`` folder inside container is saved.  This is set to the root directory of Jupyter Lab.  Please note, if you work outside of that directory it will be lost when the container shuts down.
+
+
+## JetBot operation with containers
+
+Once you execute the `enable.sh` script, the containers are set to restart automatically when the system boots (with `docker run --restart always` option).
+
+So the next time you turn-on your JetBot, even without logging in, you will see the IP address of your JetBot conveniently displayed on the small OLED display (if it is configured to connect to the Wi-Fi network).
+
+## Stopping the containers
+
+If you need to stop the JetBot containers, execute the following command.
+
+```bash
+cd ~/jetbot/docker
+./disable.sh
+```
+
+This stops and removes the runnig JetBot containers.<br>
+JetBot containers will not come back on when you restart the system.
 
