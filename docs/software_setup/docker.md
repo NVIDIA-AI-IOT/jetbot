@@ -20,6 +20,10 @@ You can use your existing Jetson Nano set up (microSD card), as long as you have
         
      - [Getting Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 
+???+ info
+    For getting the Wi-Fi connection to Jetson from your computer, check the [Wi-fi setup](wifi_setup.md) documentation.
+
+
 ## Docker container setup
 
 ### Step 1 - Clone the GitHub repo

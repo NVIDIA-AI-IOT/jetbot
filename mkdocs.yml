@@ -41,7 +41,6 @@ nav:
           - Hardware Setup: hardware_setup.md
       - Third Party Kits: third_party_kits.md
   - Software Setup:
-      - Wi-Fi setup: software_setup/wifi_setup.md
       - Using Docker Container: software_setup/docker.md
       - Using SD Card Image: software_setup/sd_card.md
   - Examples: 
@@ -54,6 +53,7 @@ nav:
       - 3D Printing: 3d_printing.md
       - Contributing: CONTRIBUTING.md
       - Changes: CHANGELOG.md
+      - Wi-Fi setup: software_setup/wifi_setup.md
 
 extra_css:
   - css/version-select.css

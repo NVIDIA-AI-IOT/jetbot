@@ -6,6 +6,10 @@
 
 This page details the software setup required to run JetBot.
 
+???+ info
+    For getting the Wi-Fi connection to Jetson from your computer, check the [Wi-fi setup](wifi_setup.md) documentation.
+
+
 ### Step 1 - Flash JetBot image onto SD card
 
 1. Download the expandable JetBot SD card image [jetbot_image_v0p4p0.zip](https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN)
