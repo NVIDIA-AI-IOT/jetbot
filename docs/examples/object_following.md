@@ -1,7 +1,7 @@
 # Object Following
 
 ???+ attention 
-    Please note that example for now only works with the SD card image based software setup.
+    Please note, the latest object detection engine targets Jetson Nano running software bundled with JetPack 4.3. This engine not be compatible with other versions of JetPack. For this reason, we recommend starting from the JetPack 4.3 JetBot SD Card image, or using the JetPack 4.3 base SD card image if you want to run the object detection example.
 
 In this example we'll have JetBot follow an object using a pre-trained model capable of detecting common objects like``Person``, ``Cup``, and ``Dog``.  While doing this, JetBot will run the collision avoidance model from Example 3 to make sure it stays safe!
 
@@ -25,7 +25,7 @@ In this example we'll have JetBot follow an object using a pre-trained model cap
 5. Upload the pre-trained ``ssd_mobilenet_v2_coco.engine`` model to this folder
 
     ???+ info
-        Also make sure the collision avoidance model from Example 3 is in ``~/Notebooks/collision_avoidance``
+        This example also uses the collision avoidance model from example 3. We assume that it is already located at ~/Notebooks/collision_avoidance/best_model.pth
 
 6. Open and follow the ``live_demo.ipynb`` notebook
     

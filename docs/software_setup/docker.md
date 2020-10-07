@@ -44,9 +44,10 @@ cd jetbot
     If you want to re-enable the GUI, you can execute the following command.
     
     ```bash
-    ./scripts/re_enable_gui.sh
+    sudo systemctl set-default graphical.target
     ```
-     
+    
+    Optionally, you can execute this script (`./scripts/re_enable_gui.sh`). 
 
 Next, source the [``docker/configure.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/configure.sh) script to configure various environment variables related to JetBot docker.
 
