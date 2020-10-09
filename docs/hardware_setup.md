@@ -71,7 +71,7 @@ To build JetBot you'll need the following tools
 
 1. Select the depicted micro USB from the pack 
 
-    ???+ danger
+    ???+ warning
         Pay careful attention to the image.  The cables are not identical.  
         The other micro USB cable will be used to power the Jetson Nano.  Using the wrong power cable for Nano will block it's Ethernet port.
 
@@ -94,7 +94,7 @@ To build JetBot you'll need the following tools
 
 2. Secure exposed red (+) and black (-) wires to the power terminals on motor driver
 
-    ???+ danger
+    ???+ warning
         Pay attention to the markings on the motor driver.  Incorrect wiring could damage the driver.
 
 3. Route the spliced cable under the motor driver to organize and prevent stress on screw terminal
