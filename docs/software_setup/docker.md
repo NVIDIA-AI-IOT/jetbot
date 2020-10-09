@@ -1,12 +1,12 @@
 # Docker
 
+In addition to the pre-built SD card image, we also provide a docker container
+in case you want to install JetBot on an existing Jetson Nano SD card.
+
 ???+ info
     If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.
 
     Please check the manufacture's set up instruction.
-
-In addition to the pre-built SD card image, we also provide a docker container
-in case you want to install JetBot on an existing Jetson Nano SD card.
 
 ???+ caution
     The following Docker container based setup method is for **JetPack 4.4** (L4T R32.4.3) and above.
@@ -114,8 +114,8 @@ You can do this from any machine on your local network.  The password to log in 
 ![](https://user-images.githubusercontent.com/25759564/92091965-51ae4f00-ed86-11ea-93d5-09d291ccfa95.png)
 
 
-???+ note
-    The directory you specify to ``./enable.sh`` will be mounted as a volume in the jupyter container at the location ``/workspace``.  This means the work you in the ``/workspace`` folder inside container is saved.  This is set to the root directory of Jupyter Lab.  Please note, if you work outside of that directory it will be lost when the container shuts down.
+???+ caution
+    If you do work outside the /workspace directory, it will be lost when the container shuts down.
 
 ???+ note
     Once you execute the `enable.sh` script, the containers are set to restart automatically when the system boots (with `docker run --restart always` option).
