@@ -52,5 +52,7 @@ JetBot safe!  We'll teach JetBot to detect two scenarios ``free`` and ``blocked`
 4. Navigate to ``~/Notebooks/collision_avoidance``
 5. Open and follow the [``live_demo_resnet18_trt.ipynb``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/notebooks/collision_avoidance/live_demo_resnet18_trt.ipynb) notebook to run the optimized model
 
-???+ warning    
-    Start cautious and give JetBot enough space to move around.
+???+ caution   
+    JetBot will physically move in this notebook, make sure it has enough space to move around.
+
+ 

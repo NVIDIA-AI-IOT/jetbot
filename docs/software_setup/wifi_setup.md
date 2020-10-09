@@ -206,8 +206,9 @@ Once you confirm you can connect to your Jetson remotely from your PC via Wi-Fi,
 
 ???+ info
     Next, you move on to either page below.
-    - [Software setup using Docker container](docker.html) 
-    - [Software setup using SD card image](sdcard.html)
+
+    - [Software setup using Docker container](docker.md) 
+    - [Software setup using SD card image](sd_card.md)
     
     Once your JetBot software is configure, you should see JetBot's IP address on the small OLED display.<br>
     You would only need to come back to this step to re-connect to the network or to find the IP address when your JetBot fails to get the IP address and show the current IP address on the OLED display.
