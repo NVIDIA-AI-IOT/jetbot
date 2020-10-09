@@ -1,13 +1,12 @@
-???+ caution
+This page details the software setup required to run JetBot.
+
+???+ info
     If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.  
     
     Please check the manufacture's set up instruction.
 
-
-This page details the software setup required to run JetBot.
-
-???+ info
-    For getting the Wi-Fi connection to Jetson from your computer, check the [Wi-fi setup](wifi_setup.md) documentation.
+???+ tip
+    If you're having trouble figuring out how to get connected to Wi-Fi, check out the [Wi-Fi setup](wifi_setup.md) page for more detailed instructions 
 
 
 ### Step 1 - Flash JetBot image onto SD card

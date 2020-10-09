@@ -7,9 +7,6 @@ JetBot safe!  We'll teach JetBot to detect two scenarios ``free`` and ``blocked`
 
 #### Step 1 - Collect data on JetBot
 
-???+ Hint
-    We provide a [pre-trained model](https://drive.google.com/open?id=1UsRax8bR3R-e-0-80KfH2zAt-IyRPtnW) so you can skip to step 3 if desired.  This model was trained on a limited dataset using the Raspberry Pi V2 Camera with wide angle attachment.
-
 <a href="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03a_Data-Collection.png"><img src="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03a_Data-Collection.png" height="320"></a>
 
 1. Connect to your robot by navigating to ``http://<jetbot_ip_address>:8888``
@@ -17,6 +14,9 @@ JetBot safe!  We'll teach JetBot to detect two scenarios ``free`` and ``blocked`
 2. Shutdown all other running notebooks by selecting ``Kernel`` -> ``Shutdown All Kernels...``
 3. Navigate to ``~/Notebooks/collision_avoidance/``
 4. Open and follow the [``data_collection.ipynb``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/notebooks/collision_avoidance/data_collection.ipynb) notebook
+
+???+ tip 
+    We provide a [pre-trained model](https://drive.google.com/open?id=1UsRax8bR3R-e-0-80KfH2zAt-IyRPtnW) so you can skip to step 3 if desired.  This model was trained on a limited dataset using the Raspberry Pi V2 Camera with wide angle attachment.
 
 #### Step 2 - Train neural network
 

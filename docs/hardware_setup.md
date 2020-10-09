@@ -57,7 +57,7 @@ To build JetBot you'll need the following tools
 3. Solder the 2-pin and 4-pin screw terminals to motor driver
 4. Solder the 2-pin and 3-pin male headers to motor driver
 
-    ???+ danger  
+    ???+ warning  
         Pay careful attention to the position of the 3-pin header.  It is offset by 1-pin from the corner.
 
 
@@ -157,8 +157,8 @@ To build JetBot you'll need the following tools
 
 2. Insert the caster base into shroud, securing the ball
 
-    ???+ info
-        If the socket is too tight, file it some.
+    ???+ tip 
+        Depending on how the print turns out, the ball socket enclosure may fit too tight. If this is the case, you can easily use a file to remove some excess material.
 
 3. Attach the assembled caster onto the chassis with self taping screws
 
@@ -189,7 +189,7 @@ To build JetBot you'll need the following tools
 3. Route the 4 wire jumper cable segment through chassis
 4. Attach red, brown, orange and yellow wires to right angle header as depicted
 
-    ???+ danger
+    ???+ warning 
         Pay close attention!  Reversing the red / brown wires could damage the system.
 
 ### Step 12 - Mount camera
