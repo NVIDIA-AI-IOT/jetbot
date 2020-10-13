@@ -85,24 +85,6 @@ sudo systemctl enable docker   # enable docker daemon at boot
 ./enable.sh $HOME   # we'll use home directory as working directory, set this as you please.
 ```
 
-???+ info
-    If you are testing a repo/branch that has containers images hosted on NGC, you need to log into the NGC rfegistry first.
-    
-    Log into NGC, and go to the [Setup > API Key](https://ngc.nvidia.com/setup/api-key) section.
-    If you have not generated your API Key, click on the button "**Generate API Key**" at the right upper corner of the page, and save the API key for the future use.
-    
-    Then, enter the following command on your Jetson and follow the prompts.
-
-    ```bash
-    $ sudo docker login nvcr.io
-    
-    Username: $oauthtoken
-    Password: <You Key>
-    ```
-
-    For the username, enter `$oauthtoken` exactly as shown. It is a special authentication token for all users.
-
-
 Now you can go to ``https://<jetbot_ip>:8888`` from a web browser and start programming JetBot!
 
 You can do this from any machine on your local network.  The password to log in is ``jetbot``.
