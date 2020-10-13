@@ -1,5 +1,7 @@
 # Docker Tips
 
+This page provides various information related to using docker with JetBot.
+
 ## Using Nvidia GPU Cloud (NGC)
 
 The standard JetBot containers are hosted on docker hub, but for development or testing purposes, you may wish to use Nvidia GPU Cloud. To access containers on NGC, you need to sign into the NGC registry. To do this:
@@ -24,9 +26,14 @@ The standard JetBot containers are hosted on docker hub, but for development or 
 For the username, enter `$oauthtoken` exactly as shown. It is a special authentication token for all users.
 
 
-## Using custome Jupyter Lab workspace directory
+## Using custom Jupyter Lab workspace directory
 
-If you do work outside the /workspace directory, it will be lost when the container shuts down.
+The argument you provide to the enable.sh script is mounted as a volume inside the docker container. Inside the docker container, this volume is located at /workspace. Any changes that you make inside this directory will be saved outside of the docker container. To use a different directory as the workspace for the Jupyter contianer, just provide the path as an argument when calling enable.sh. For example, to set the workspace to your home directory, you would do
+
+```bash
+cd jetbot/docker
+./enable.sh $HOME
+```
 
 ## Disabling containers
 
