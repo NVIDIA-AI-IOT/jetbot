@@ -52,6 +52,7 @@ nav:
       - Contributing: CONTRIBUTING.md
       - Changes: CHANGELOG.md
       - Wi-Fi setup: software_setup/wifi_setup.md
+      - Docker Tips: reference/docker_tips.md
 
 extra_css:
   - css/version-select.css
