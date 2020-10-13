@@ -20,9 +20,6 @@ You can use your existing Jetson Nano set up (microSD card), as long as you have
         
      - [Getting Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 
-???+ info
-    For getting the Wi-Fi connection to Jetson from your computer, check the [Wi-fi setup](wifi_setup.md) documentation.
-
 ## Step 2. Connect to Wi-Fi
 
 If you haven't already, connect your Jetson Nano to your Wi-Fi network.
