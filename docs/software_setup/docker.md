@@ -1,15 +1,14 @@
-# Docker
+# Software Setup (Docker)
 
-In addition to the pre-built SD card image, we also provide a docker container
-in case you want to install JetBot on an existing Jetson Nano SD card.
+This page details how to set up JetBot using the pre-built JetBot docker containers. This is the best option if you want to use JetBot with an existing Jetson Nano SD card image.
+
+???+ note
+    Please note, the JetBot containers described in this page currently target a Jetson Nano SD card image flashed with JetPack 4.4. These containers will not work with other version of JetPack.
 
 ???+ info
     If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.
 
     Please check the manufacture's set up instruction.
-
-???+ caution
-    The following Docker container based setup method is for **JetPack 4.4** (L4T R32.4.3) and above.
 
 ## Step 1. Setup Jetson Nano
 
