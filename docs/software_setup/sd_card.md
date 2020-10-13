@@ -28,8 +28,8 @@ This page details the software setup required to run JetBot.
 2. Connect the monitor, keyboard, and mouse to the Nano
 3. Power on the Jetson Nano by connecting the micro USB charger to the micro USB port
 
-    ???+ danger
-        Important! We recommend first booting the Jetson Nano once without the piOLED / motor driver connected.
+    ???+ attention 
+        We recommend first booting the Jetson Nano once without the piOLED / motor driver connected.
         This way you can check to make sure the system boots properly from the SD card image without worrying about hardware issues.  After you've verified that it boots, reconnect the piOLED, double check your wiring, and boot again.
 
 ### Step 3 - Connect JetBot to WiFi
