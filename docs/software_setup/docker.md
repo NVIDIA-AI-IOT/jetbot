@@ -109,23 +109,9 @@ You can do this from any machine on your local network.  The password to log in 
 
 ![](https://user-images.githubusercontent.com/25759564/92091965-51ae4f00-ed86-11ea-93d5-09d291ccfa95.png)
 
+The `enable.sh` script causes the docker containers to restart at boot. This means the next time you power on your JetBot, the containers will automatically start, and you should see the IP address displayed on the PiOLED display screen. All you need to do is type this into your web browser and start programming!
 
-???+ caution
-    If you do work outside the /workspace directory, it will be lost when the container shuts down.
+???+ tip
+    For more information on configuring and using docker with JetBot, check out the [Docker Tips](reference/docker_tips.md) page.
 
-???+ note
-    Once you execute the `enable.sh` script, the containers are set to restart automatically when the system boots (with `docker run --restart always` option).
-
-    So the next time you turn-on your JetBot, even without logging in, you will see the IP address of your JetBot conveniently displayed on the small OLED display (if it is configured to connect to the Wi-Fi network).
-
-???+ note
-    Calling `enable.sh` will cause the containers to automatically start at boot. To disable this behavior, call
-
-    ```bash
-    cd ~/jetbot/docker
-    ./disable.sh
-    ```
-
-    This stops and removes the runnig JetBot containers.<br>
-    JetBot containers will not come back on when you restart the system.
 
