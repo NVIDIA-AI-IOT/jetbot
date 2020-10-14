@@ -16,7 +16,7 @@ After you've decided which vehicle you want to build, you'll need to source the 
 
 ![JetBot Getting Started Steps](images/steps_nvjetbot_vs_3rdparty.png)
 
-### Setup DIY JetBot Kit
+### Option 1 - DIY JetBot Kit
 
 To get started with the DIY open-source JetBot, follow these steps.
 
@@ -26,7 +26,7 @@ To get started with the DIY open-source JetBot, follow these steps.
 
 3. Follow the [software setup](software_setup/docker.md)
 
-### Setup Third Party JetBot Kit
+### Option 2 - Third Party JetBot Kit
 
 Third party JetBot kits may have different setup instructions from the DIY JetBot. To get started with a third party jetbot, we recommend referring to the third party kit's setup instructions for details on how to setup.
 
