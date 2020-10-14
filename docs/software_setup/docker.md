@@ -6,7 +6,7 @@ This page details how to set up JetBot using the pre-built JetBot docker contain
     Please note, the JetBot containers described in this page currently target a Jetson Nano SD card image flashed with JetPack 4.4. These containers will not work with other version of JetPack.
 
 
-## Step 1. Setup Jetson Nano
+## Step 1 - Setup Jetson Nano
 
 If you haven't already, go through the initial setup of Jetson Nano.<br>
 You can use your existing Jetson Nano set up (microSD card), as long as you have enough storage space left.
@@ -16,7 +16,7 @@ You can use your existing Jetson Nano set up (microSD card), as long as you have
         
      - [Getting Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 
-## Step 2. Connect to Wi-Fi
+## Step 2 - Connect to Wi-Fi
 
 If you haven't already, connect your Jetson Nano to your Wi-Fi network.
 
