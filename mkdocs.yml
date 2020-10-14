@@ -15,7 +15,7 @@ plugins:
   - search
 use_directory_urls: false
 
-edit_uri: blob/master
+edit_uri: blob/master/docs
 markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.keys
