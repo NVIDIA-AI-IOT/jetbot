@@ -21,7 +21,7 @@ The standard JetBot containers are hosted on docker hub, but for development or 
     
     Username: $oauthtoken
     Password: <Your Generated Key>
-    ````
+    ```
 
 For the username, enter `$oauthtoken` exactly as shown. It is a special authentication token for all users.
 
@@ -42,8 +42,8 @@ This means you can shut down your Jetson, and when you reboot the containers wil
 
 To prevent the containers from starting automatically, just call the disable.sh script.
 
-    ```bash
-    cd ~/jetbot/docker
-    ./disable.sh
-    ```
+```bash
+cd ~/jetbot/docker
+./disable.sh
+```
 
