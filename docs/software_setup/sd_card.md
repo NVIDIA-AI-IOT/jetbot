@@ -93,4 +93,4 @@ place the Jetson Nano in ``5W`` mode by calling the following command
     sudo nvpmodel -q
     ```
 
-Now that you're finished setting up your JetBot, you're ready to run the [examples](examples/basic_motion.md).
+Now that you're finished setting up your JetBot, you're ready to run the [examples](../examples/basic_motion.md).

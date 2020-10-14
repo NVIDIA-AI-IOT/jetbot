@@ -33,7 +33,7 @@ that come pre-bundled.
 
 <img src="https://nvidia.box.com/shared/static/w88yo1c4bbzya2jxu11ncakt8kvqskpv.gif" style="max-width:256px;" align="left">
 
-JetBot includes a set of <a href="https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks">Jupyter notebooks</a> which cover basic robotics concepts like programatic motor control, to more advanced topics like training a custom AI for avoiding collisions.  What you'll learn isn't limited to JetBot.  You'll learn concepts related to neural network data collection and training that extend as far as your imagination.
+JetBot includes a set of <a href="https://jupyter.org/">Jupyter notebooks</a> which cover basic robotics concepts like programatic motor control, to more advanced topics like training a custom AI for avoiding collisions.  What you'll learn isn't limited to JetBot.  You'll learn concepts related to neural network data collection and training that extend as far as your imagination.
 
 </div>
 

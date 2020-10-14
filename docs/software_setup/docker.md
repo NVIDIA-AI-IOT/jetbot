@@ -90,8 +90,8 @@ You can do this from any machine on your local network.  The password to log in 
 The `enable.sh` script causes the docker containers to restart at boot. This means the next time you power on your JetBot, the containers will automatically start, and you should see the IP address displayed on the PiOLED display screen. All you need to do is type this into your web browser and start programming!
 
 ???+ tip
-    For more information on configuring and using docker with JetBot, check out the [Docker Tips](reference/docker_tips.md) page.
+    For more information on configuring and using docker with JetBot, check out the [Docker Tips](../reference/docker_tips.md) page.
     
-Now that you've finished setting up you're JetBot, you're ready to run through the [examples](examples/basic_motion.md)!
+Now that you've finished setting up you're JetBot, you're ready to run through the [examples](../examples/basic_motion.md)!
 
 
