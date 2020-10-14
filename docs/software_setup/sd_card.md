@@ -1,12 +1,9 @@
-???+ caution
-    If you are using a 3rd party JetBot kit, depending on the kit, it may require a customized software setup specific to the kit.  
-    
-    Please check the manufacture's set up instruction.
+# Software Setup (SD Card Image)
+
+This page details how to set up JetBot using the pre-built JetBot SD card image. You may prefer this option if you are new to Jetson Nano, and do not have an existing SD card configured.
 
 
-This page details the software setup required to run JetBot.
-
-### Step 1 - Flash JetBot image onto SD card
+## Step 1 - Flash JetBot image onto SD card
 
 1. Download the expandable JetBot SD card image [jetbot_image_v0p4p0.zip](https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN)
 
@@ -17,7 +14,7 @@ This page details the software setup required to run JetBot.
 3. Using [Etcher](https://www.balena.io/etcher/), select the ``jetbot_image_v0p4p0.zip`` image and flash it onto the SD card
 4. Remove the SD card from your desktop machine
 
-### Step 2 - Boot Jetson Nano
+## Step 2 - Boot Jetson Nano
 
 1. Insert the SD card into your Jetson Nano (the micro SD card slot is located 
    under the module)
@@ -25,11 +22,12 @@ This page details the software setup required to run JetBot.
 2. Connect the monitor, keyboard, and mouse to the Nano
 3. Power on the Jetson Nano by connecting the micro USB charger to the micro USB port
 
-    ???+ danger
-        Important! We recommend first booting the Jetson Nano once without the piOLED / motor driver connected.
+    ???+ attention 
+        We recommend first booting the Jetson Nano once without the piOLED / motor driver connected.
+
         This way you can check to make sure the system boots properly from the SD card image without worrying about hardware issues.  After you've verified that it boots, reconnect the piOLED, double check your wiring, and boot again.
 
-### Step 3 - Connect JetBot to WiFi
+## Step 3 - Connect JetBot to WiFi
 
 1. Log in using the user ``jetbot`` and password ``jetbot``
 
@@ -37,7 +35,10 @@ This page details the software setup required to run JetBot.
 
 Your Jetson Nano should now automatically connect to the WiFi at boot and display it's IP address on the piOLED display.
 
-### Step 4 - Connect to JetBot from web browser
+???+ tip
+    If you're having trouble figuring out how to get connected to Wi-Fi, check out the [Wi-Fi setup](wifi_setup.md) page for more detailed instructions 
+
+## Step 4 - Connect to JetBot from web browser
 
 After your robot is connected to WiFi, you can connect to the robot from a web browser by performing the following steps
 
@@ -52,7 +53,7 @@ After your robot is connected to WiFi, you can connect to the robot from a web b
 ???+ info
     You shouldn't need to connect your robot to a monitor past this step! 
 
-### Step 5 - Install latest software (optional)
+## Step 5 - Install latest software (optional)
 
 The JetBot GitHub repository may contain software that is newer than that pre-installed
 on the SD card image.  To install the latest software:
@@ -73,7 +74,7 @@ on the SD card image.  To install the latest software:
     rsync jetbot/notebooks ~/Notebooks
     ```
 
-### Step 6 - Configure power mode
+## Step 6 - Configure power mode
 
 To ensure that the Jetson Nano doesn't draw more current than the battery pack can supply,
 place the Jetson Nano in ``5W`` mode by calling the following command
@@ -91,3 +92,5 @@ place the Jetson Nano in ``5W`` mode by calling the following command
     ```bash
     sudo nvpmodel -q
     ```
+
+Now that you're finished setting up your JetBot, you're ready to run the [examples](../examples/basic_motion.md).

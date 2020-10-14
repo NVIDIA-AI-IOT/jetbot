@@ -31,7 +31,13 @@ You need a camera with appropriate sensor and field of view for each JetBot.  Se
 | --- | --: | --: | --- | --- |
 | Camera | 1 | $29.00 | [Leopard Imaging](https://leopardimaging.com/product/li-imx219-mipi-ff-nano/) | LI-IMX219-MIPI-FF-NANO-**H145**|
 
-#### Option 2 - RPi Camera V2 + Lens Attachment
+#### Option 2 - IMX219-160 Camera
+
+|  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
+| --- | --: | --: | --- | --- |
+| Camera | 1 | $29.90 | [Amazon](http://amzn.com/B07T43K7LC/) | IMX219-160 Camera |
+
+#### Option 3 - RPi Camera V2 + Lens Attachment
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
@@ -51,7 +57,7 @@ You need a WiFi solution for each JetBot.  Select an option and get the parts sp
 
 #### Option 2 - USB Dongle
 
-???+ info
+???+ bug 
     Notice (5/17/2019):  We're currently tracking an issue with the Linux driver for the below USB WiFi dongle that may cause connectivity issues.  You can find information in [this forum post](https://devtalk.nvidia.com/default/topic/1049303/jetson-nano/jetson-nano-wifi-/post/5329699/#5329699).  For now, we recommend using Option 1 listed above.  Thank you to those who discovered this issue!
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
