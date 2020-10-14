@@ -21,7 +21,7 @@ The standard JetBot containers are hosted on docker hub, but for development or 
     
     Username: $oauthtoken
     Password: <Your Generated Key>
-    ````
+    ```
 
 For the username, enter `$oauthtoken` exactly as shown. It is a special authentication token for all users.
 
