@@ -5,6 +5,14 @@
 We use [mkdocs-material](https://github.com/squidfunk/mkdocs-material)
 to easily generate documentation from markdown.  
 
+### Installing Dependencies
+
+```bash
+sudo apt-get install mkdocs
+pip3 install mkdocs-material mike
+```
+
+
 ### Testing
 
 To quickly test the version of the documentation you're using, without commiting
