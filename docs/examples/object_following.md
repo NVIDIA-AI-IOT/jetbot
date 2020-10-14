@@ -1,5 +1,8 @@
 # Object Following
 
+???+ attention 
+    Please note that example for now only works with the SD card image based software setup.
+
 In this example we'll have JetBot follow an object using a pre-trained model capable of detecting common objects like``Person``, ``Cup``, and ``Dog``.  While doing this, JetBot will run the collision avoidance model from Example 3 to make sure it stays safe!
 
 [![](http://img.youtube.com/vi/MBUEbU9Q6wg/0.jpg)](http://www.youtube.com/watch?v=MBUEbU9Q6wg "Dancing with JetBot")
@@ -25,6 +28,7 @@ In this example we'll have JetBot follow an object using a pre-trained model cap
 
     ???+ info
         This example also uses the collision avoidance model from example 3. We assume that it is already located at ~/Notebooks/collision_avoidance/best_model.pth
+
 
 6. Open and follow the ``live_demo.ipynb`` notebook
     

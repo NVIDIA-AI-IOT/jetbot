@@ -5,6 +5,7 @@ This page details how to set up JetBot using the pre-built JetBot docker contain
 ???+ note
     Please note, the JetBot containers described in this page currently target a Jetson Nano SD card image flashed with JetPack 4.4. These containers will not work with other version of JetPack.
 
+
 ## Step 1. Setup Jetson Nano
 
 If you haven't already, go through the initial setup of Jetson Nano.<br>
@@ -92,4 +93,5 @@ The `enable.sh` script causes the docker containers to restart at boot. This mea
     For more information on configuring and using docker with JetBot, check out the [Docker Tips](reference/docker_tips.md) page.
     
 Now that you've finished setting up you're JetBot, you're ready to run through the [examples](examples/basic_motion.md)!
+
 

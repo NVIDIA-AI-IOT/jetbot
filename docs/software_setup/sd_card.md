@@ -2,6 +2,7 @@
 
 This page details how to set up JetBot using the pre-built JetBot SD card image. You may prefer this option if you are new to Jetson Nano, and do not have an existing SD card configured.
 
+
 ### Step 1 - Flash JetBot image onto SD card
 
 1. Download the expandable JetBot SD card image [jetbot_image_v0p4p0.zip](https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN)
@@ -23,6 +24,7 @@ This page details how to set up JetBot using the pre-built JetBot SD card image.
 
     ???+ attention 
         We recommend first booting the Jetson Nano once without the piOLED / motor driver connected.
+
         This way you can check to make sure the system boots properly from the SD card image without worrying about hardware issues.  After you've verified that it boots, reconnect the piOLED, double check your wiring, and boot again.
 
 ### Step 3 - Connect JetBot to WiFi

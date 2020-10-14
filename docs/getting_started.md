@@ -10,7 +10,6 @@ For details of NVIDIA-designed open-source JetBot hardware, check [Bill of Mater
 
 To find kits available from third parties, check [Third Party Kits](third_party_kits.md) page.
 
-
 ## Step 2 - Setup your JetBot
 
 After you've decided which vehicle you want to build, you'll need to source the parts and follow the setup instructions. After that, you're ready to move on to the JetBot examples!
