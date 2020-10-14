@@ -42,8 +42,8 @@ This means you can shut down your Jetson, and when you reboot the containers wil
 
 To prevent the containers from starting automatically, just call the disable.sh script.
 
-    ```bash
-    cd ~/jetbot/docker
-    ./disable.sh
-    ```
+```bash
+cd ~/jetbot/docker
+./disable.sh
+```
 
