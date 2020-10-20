@@ -85,7 +85,7 @@ Now you can go to ``https://<jetbot_ip>:8888`` from a web browser and start prog
 
 You can do this from any machine on your local network.  The password to log in is ``jetbot``.
 
-![](https://user-images.githubusercontent.com/25759564/92091965-51ae4f00-ed86-11ea-93d5-09d291ccfa95.png)
+![](../images/docker_jupyter-on-browser.png)
 
 The `enable.sh` script causes the docker containers to restart at boot. This means the next time you power on your JetBot, the containers will automatically start, and you should see the IP address displayed on the PiOLED display screen. All you need to do is type this into your web browser and start programming!
 
