@@ -8,9 +8,13 @@ to easily generate documentation from markdown.
 ### Installing Dependencies
 
 ```bash
-sudo apt-get install mkdocs
+sydo apt-get update
+sudo apt-get -y install python3-pip
+sudo apt-get -y install mkdocs
 pip3 install mkdocs-material mike
 ```
+
+Then, reboot your Jetson.
 
 
 ### Testing
