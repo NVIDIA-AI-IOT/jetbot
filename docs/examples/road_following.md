@@ -4,7 +4,7 @@ In this example we'll collect an *image regression* dataset that will enable Jet
 
 #### Step 1 - Collect data on JetBot
 
-<a href="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03a_Data-Collection.png"><img src="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03a_Data-Collection.png" height="320"></a>
+<a href="../images/JL05_Road-Following_Data-Collection.png"><img src="../images/JL05_Road-Following_Data-Collection.png" height="320"></a>
 
 1. Connect to your robot by navigating to ``http://<jetbot_ip_address>:8888``
 2. Sign in with the default password ``jetbot``
@@ -37,7 +37,8 @@ In this example we'll collect an *image regression* dataset that will enable Jet
 
 #### Step 4 - Run live demo on JetBot
 
-<a href="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03c_Live-demo.png"><img src="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL03c_Live-demo.png" height="320"></a>
+
+<a href="../images/JL05_Road-Following_live-demo-trt.png"><img src="../images/JL05_Road-Following_live-demo-trt.png" height="320"></a>
 
 1. Connect to your robot by navigating to ``http://<jetbot_ip_address>:8888``
 2. Sign in with the default password ``jetbot``
