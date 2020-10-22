@@ -38,8 +38,8 @@ nav:
   - Bill of Materials: bill_of_materials.md
   - Hardware Setup: hardware_setup.md
   - Software Setup:
-      - Using Docker Container: software_setup/docker.md
       - Using SD Card Image: software_setup/sd_card.md
+      - Using Docker Container: software_setup/docker.md
   - Examples: 
       - Basic Motion: examples/basic_motion.md
       - Teleoperation: examples/teleoperation.md
