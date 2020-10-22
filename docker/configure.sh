@@ -14,7 +14,19 @@ then
     export JETBOT_DOCKER_REMOTE=jetbot
 elif [[ "$L4T_VERSION" == "32.4.4" ]]
 then
-    export JETBOT_DOCKER_REMOTE=nvcr.io/ea-linux4tegra
+    export JETBOT_DOCKER_REMOTE=jetbot
 fi
+
+./set_nvidia_runtime.sh
+
+# check system memory
+SYSTEM_RAM_KILOBYTES=$(awk '/^MemTotal:/{print $2}' /proc/meminfo)
+
+if [ $SYSTEM_RAM_KILOBYTES -gt 3000000 ]
+then
+    export JETBOT_JUPYTER_MEMORY=500m
+    export JETBOT_JUPYTER_MEMORY_SWAP=3G
+fi
+
 
 
