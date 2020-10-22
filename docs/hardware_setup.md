@@ -106,6 +106,10 @@ To build JetBot you'll need the following tools
 
 ### Step 6 - Mount WiFi antennas
 
+!!! check ""
+    This step is for Jetson Nano (4GB) Developer Kit.<br>
+    Skip if you are using Jetson Nano 2GB Developer Kit which requires a USB Wi-Fi dongle.
+
 <a href="images/JB3-Assy_06-0.JPG"><img src="images/JB3-Assy_06-0.JPG" style="height:120px"></a>
 <a href="images/JB3-Assy_07-1.JPG"><img src="images/JB3-Assy_07-1.JPG" style="height:120px"></a>
 <a href="images/JB3-Assy_07-2.JPG"><img src="images/JB3-Assy_07-2.JPG" style="height:120px"></a>
@@ -119,6 +123,10 @@ To build JetBot you'll need the following tools
 
 ### Step 7 - Remove Jetson Nano module from developer kit
 
+!!! check ""
+    This step is for Jetson Nano (4GB) Developer Kit.<br>
+    Skip if you are using Jetson Nano 2GB Developer Kit which requires a USB Wi-Fi dongle.
+
 <a href="images/JB3-Assy_06-1.JPG"><img src="images/JB3-Assy_06-1.JPG" style="height:120px"></a>
 <a href="images/JB3-Assy_06-2.JPG"><img src="images/JB3-Assy_06-2.JPG" style="height:120px"></a>
 <a href="images/JB3-Assy_06-3.JPG"><img src="images/JB3-Assy_06-3.JPG" style="height:120px"></a>
@@ -130,6 +138,10 @@ To build JetBot you'll need the following tools
 3. Slide Jetson Nano module out of SODIMM connector
 
 ### Step 8 - Attach WiFi module to developer kit
+
+!!! check ""
+    This step is for Jetson Nano (4GB) Developer Kit.<br>
+    Skip if you are using Jetson Nano 2GB Developer Kit which requires a USB Wi-Fi dongle.
 
 <a href="images/JB3-Assy_08-1.JPG"><img src="images/JB3-Assy_08-1.JPG" style="height:120px"></a>
 <a href="images/JB3-Assy_08-2.JPG"><img src="images/JB3-Assy_08-2.JPG" style="height:120px"></a>
