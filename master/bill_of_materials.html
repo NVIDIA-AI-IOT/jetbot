@@ -394,8 +394,8 @@
 
 
   <li class="md-nav__item">
-    <a href="software_setup/docker.html" class="md-nav__link">
-      Using Docker Container
+    <a href="software_setup/sd_card.html" class="md-nav__link">
+      Using SD Card Image
     </a>
   </li>
 
@@ -406,8 +406,8 @@
 
 
   <li class="md-nav__item">
-    <a href="software_setup/sd_card.html" class="md-nav__link">
-      Using SD Card Image
+    <a href="software_setup/docker.html" class="md-nav__link">
+      Using Docker Container
     </a>
   </li>
 
@@ -919,6 +919,9 @@
 <h3 id="wifi">WiFi</h3>
 <p>You need a WiFi solution for each JetBot.  Select an option and get the parts specified.</p>
 <h4 id="option-1-default-m2-card-antennas">Option 1 (default) - M2 Card + Antennas</h4>
+<p>This option is a good choice if you're building JetBot with the original Jetson Nano 4GB.  It has been widely tested and used for JetBot.</p>
+<details class="attention" open="open"><summary>Attention</summary><p>Jetson Nano 2GB does not have a M.2 connector, so this option will not work with it.</p>
+</details>
 <table>
 <thead>
 <tr>
@@ -947,8 +950,7 @@
 </tbody>
 </table>
 <h4 id="option-2-usb-dongle">Option 2 - USB Dongle</h4>
-<details class="bug" open="open"><summary>Bug</summary><p>Notice (5/17/2019):  We're currently tracking an issue with the Linux driver for the below USB WiFi dongle that may cause connectivity issues.  You can find information in <a href="https://devtalk.nvidia.com/default/topic/1049303/jetson-nano/jetson-nano-wifi-/post/5329699/#5329699">this forum post</a>.  For now, we recommend using Option 1 listed above.  Thank you to those who discovered this issue!</p>
-</details>
+<p>This option is compatible with both the original Jetson Nano (4GB) and Jetson Nano 2GB.</p>
 <table>
 <thead>
 <tr>
@@ -961,14 +963,26 @@
 </thead>
 <tbody>
 <tr>
-<td>WiFi Dongle</td>
+<td>WiFi Dongle - TP-Link Archer T2U Nano</td>
 <td align="right">1</td>
-<td align="right">$9.99</td>
-<td><a href="https://amzn.com/B003MTTJOY/">Amazon</a></td>
-<td>RTL8192U chipset</td>
+<td align="right">$17.99</td>
+<td><a href="https://amzn.com/B07PB1X4CN/">Amazon</a></td>
+<td>RTL8811AU chipset</td>
+</tr>
+<tr>
+<td>WiFi Dongle - TP-Link Archer T2U Plus</td>
+<td align="right">1</td>
+<td align="right">$19.99</td>
+<td><a href="https://amzn.com/B07P5PRK7J/">Amazon</a></td>
+<td>RTL8811AU chipset</td>
 </tr>
 </tbody>
 </table>
+<details class="info" open="open"><summary>Info</summary><p>For other possible USB Wi-fi dongles that you can use on Jetson Nano, please check the Suported Components List.</p>
+<ul>
+<li><a href="https://developer.nvidia.com/embedded/learn/jetson-nano-2gb-devkit-user-guide#id-.JetsonNano2GBDeveloperKitUserGuidevbatuu_v1.0-SupportedComponentList">Jetson Nano 2GB Developer Kit User Guide - Supported Component List</a></li>
+</ul>
+</details>
 <h3 id="wheels">Wheels</h3>
 <p>You need wheels with a "TT" motor shaft connector for each JetBot.  Select an option and get the parts specified.</p>
 <h4 id="option-1-60mm">Option 1 - 60mm</h4>
