@@ -50,8 +50,11 @@ You need a WiFi solution for each JetBot.  Select an option and get the parts sp
 
 #### Option 1 (default) - M2 Card + Antennas
 
-This is the good option for Jetson Nano (4GB) Developr Kit.<br>
-If you are using Jetson Nano 2GB Developer Kit, you need to use the Option 2 below, as the carrier board of the 2GB Dev Kit does not have the M.2 slot.
+This option is a good choice if you're building JetBot with the original Jetson Nano 4GB.  It has been widely tested and used for JetBot.
+
+???+ important
+
+    Jetson Nano 2GB does not have a M.2 connector, so this option will not work with it.
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
@@ -60,8 +63,7 @@ If you are using Jetson Nano 2GB Developer Kit, you need to use the Option 2 bel
 
 #### Option 2 - USB Dongle
 
-If you are using Jetson Nano 2GB Developer Kit, you can either use the USB Wi-fi dongle that is bundled (depending on the region), or one of the USB wifi dongle listed below.<br>
-They should work on Jetson Nano (4GB) Developer Kit as well.
+This option is compatible with both the original Jetson Nano (4GB) and Jetson Nano 2GB.
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
