@@ -52,7 +52,7 @@ You need a WiFi solution for each JetBot.  Select an option and get the parts sp
 
 This option is a good choice if you're building JetBot with the original Jetson Nano 4GB.  It has been widely tested and used for JetBot.
 
-???+ important
+???+ attention
 
     Jetson Nano 2GB does not have a M.2 connector, so this option will not work with it.
 
