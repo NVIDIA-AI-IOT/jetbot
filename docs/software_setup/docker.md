@@ -55,6 +55,7 @@ cd jetbot
 Call the following to enable the JetBot docker containers 
 
 ```bash
+cd docker
 ./enable.sh $HOME   # we'll use home directory as working directory, set this as you please.
 ```
 
