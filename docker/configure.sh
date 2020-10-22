@@ -18,6 +18,7 @@ then
 fi
 
 ./set_nvidia_runtime.sh
+sudo systemctl enable docker
 
 # check system memory
 SYSTEM_RAM_KILOBYTES=$(awk '/^MemTotal:/{print $2}' /proc/meminfo)
