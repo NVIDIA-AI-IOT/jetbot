@@ -44,7 +44,7 @@ Download the pre-built JetBot SD card image from the table below.  Make sure to 
 
 ## Step 4 - Connect JetBot to WiFi
 
-Next you'll need to connect to WiFi.  To reduce memory consumption, we disable the Ubuntu GUI in the JetBot SD card image.  For this reason, you'll need to use the command line to connect to WiFi.
+Next you'll need to connect to WiFi.  To reduce memory consumption, we disable the Ubuntu GUI in the latest JetBot SD card image.  For this reason, you'll need to use the command line to connect to WiFi.
 
 1. Log in using the user ``jetbot`` and password ``jetbot``
     
