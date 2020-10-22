@@ -621,7 +621,6 @@ You can use your existing Jetson Nano set up (microSD card), as long as you have
 <details class="hint" open="open"><summary>Hint</summary><p>For this, we'll assume you've set up your Jetson Nano using the <strong>online Getting Started guide</strong>.</p>
 <ul>
 <li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">Getting Started With Jetson Nano Developer Kit</a></li>
-<li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit">Getting Started with Jetson Nano 2GB Developer Kit</a></li>
 </ul>
 </details>
 <h2 id="step-2-connect-to-wi-fi">Step 2 - Connect to Wi-Fi</h2>
@@ -642,21 +641,9 @@ If you want to re-enable the GUI, you can execute the following command.</p>
 </code></pre></div>
 <p>Optionally, you can execute this script (<code>./scripts/re_enable_gui.sh</code>). </p>
 </details>
-<p>Next, source the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/configure.sh"><code>docker/configure.sh</code></a> script to configure various environment variables related to JetBot docker.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> docker
-<span class="nb">source</span> configure.sh
-</code></pre></div>
-<p>Finally, if you haven't already, set the default docker runtime to NVIDIA using <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/set_nvidia_runtime.sh"><code>docker/set_nvidia_runtime.sh</code></a>.  This is needed to use
-CUDA related components with the containers.</p>
-<div class="highlight"><pre><span></span><code>./set_nvidia_runtime.sh
-</code></pre></div>
-<p>If needed, you can also set memory limits on the Jupyter container.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">JETBOT_JUPYTER_MEMORY</span><span class="o">=</span>500m
-<span class="nb">export</span> <span class="nv">JETBOT_JUPYTER_MEMORY_SWAP</span><span class="o">=</span>3G
-</code></pre></div>
 <h2 id="step-5-enable-all-containers">Step 5 - Enable all containers</h2>
 <p>Call the following to enable the JetBot docker containers </p>
-<div class="highlight"><pre><span></span><code>sudo systemctl <span class="nb">enable</span> docker   <span class="c1"># enable docker daemon at boot</span>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> docker
 ./enable.sh <span class="nv">$HOME</span>   <span class="c1"># we&#39;ll use home directory as working directory, set this as you please.</span>
 </code></pre></div>
 <p>Now you can go to <code>https://&lt;jetbot_ip&gt;:8888</code> from a web browser and start programming JetBot!</p>
