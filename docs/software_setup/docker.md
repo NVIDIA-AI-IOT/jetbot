@@ -50,34 +50,12 @@ cd jetbot
     
     Optionally, you can execute this script (`./scripts/re_enable_gui.sh`). 
 
-Next, source the [``docker/configure.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/configure.sh) script to configure various environment variables related to JetBot docker.
-
-```bash
-cd docker
-source configure.sh
-```
-
-Finally, if you haven't already, set the default docker runtime to NVIDIA using [``docker/set_nvidia_runtime.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docker/set_nvidia_runtime.sh).  This is needed to use
-CUDA related components with the containers.
-
-```bash
-./set_nvidia_runtime.sh
-```
-
-If needed, you can also set memory limits on the Jupyter container.
-
-```bash
-export JETBOT_JUPYTER_MEMORY=500m
-export JETBOT_JUPYTER_MEMORY_SWAP=3G
-```
-
-
 ## Step 5 - Enable all containers
 
 Call the following to enable the JetBot docker containers 
 
 ```bash
-sudo systemctl enable docker   # enable docker daemon at boot
+cd docker
 ./enable.sh $HOME   # we'll use home directory as working directory, set this as you please.
 ```
 
