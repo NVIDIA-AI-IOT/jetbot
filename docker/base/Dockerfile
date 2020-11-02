@@ -117,5 +117,6 @@ RUN cd ${TORCH2TRT_REPO_DIR} && \
 # ==============
 ENV JETBOT_REPO_DIR=/opt/jetbot
 COPY . ${JETBOT_REPO_DIR}
+COPY ./notebooks ${HOME}/Notebooks
 RUN cd ${JETBOT_REPO_DIR} && python3 setup.py install
 
