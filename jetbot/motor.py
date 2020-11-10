@@ -17,6 +17,12 @@ class Motor(Configurable):
 
         self._driver = driver
         self._motor = self._driver.getMotor(channel)
+        if(channel == 1):
+            self._ina = 1
+            self._inb = 0
+        else:
+            self._ina = 2
+            self._inb = 3
         atexit.register(self._release)
         
     @traitlets.observe('value')
@@ -30,9 +36,15 @@ class Motor(Configurable):
         self._motor.setSpeed(speed)
         if mapped_value < 0:
             self._motor.run(Adafruit_MotorHAT.FORWARD)
+            self._driver._pwm.setPWM(self._ina,0,0)
+            self._driver._pwm.setPWM(self._inb,0,speed*16)
         else:
             self._motor.run(Adafruit_MotorHAT.BACKWARD)
+            self._driver._pwm.setPWM(self._ina,0,speed*16)
+            self._driver._pwm.setPWM(self._inb,0,0)
 
     def _release(self):
         """Stops motor by releasing control"""
         self._motor.run(Adafruit_MotorHAT.RELEASE)
+        self._driver._pwm.setPWM(self._ina,0,0)
+        self._driver._pwm.setPWM(self._inb,0,0)
