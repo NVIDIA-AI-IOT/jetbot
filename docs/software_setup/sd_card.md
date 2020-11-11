@@ -11,10 +11,19 @@ Download the pre-built JetBot SD card image from the table below.  Make sure to 
 
 | Platform | JetPack Version | JetBot Version | Download |
 |--------|-----------------|----------------|--------|
+| Jetson Nano 2GB | 4.4.1 | 0.4.2 | [jetbot-042_nano-2gb-jp441.zip](https://drive.google.com/file/d/1uiWz6QTcqB3wzN81gdv_zY8t_V3ZzkNE/view) |
+| Jetson Nano (4GB) | 4.4.1 | 0.4.2 | [jetbot-042_nano-4gb-jp441.zip](https://drive.google.com/file/d/1MAX1ibJvcLulKQeMtxbjMhsrOevBfUJd/view) |
+
+### Old releases
+
+#### With Docker
+
+| Platform | JetPack Version | JetBot Version | Download |
+|--------|-----------------|----------------|--------|
 | Jetson Nano 2GB | 4.4.1 | 0.4.1 | [jetbot-041_nano-2gb-jp441.zip](https://drive.google.com/file/d/1d03TOrQyffxFsv_Nhp-XQ7Q3-nCHbT9a/view) |
 | Jetson Nano (4GB) | 4.4.1 | 0.4.1 | [jetbot-041_nano-4gb-jp441.zip](https://drive.google.com/file/d/1yQ5MEiiBxbytCXHFPPBi-5SAxWklhZQA/view) |
 
-### Old releases
+#### Without Docker
 
 | Platform | JetPack Version | JetBot Version | Download |
 |--------|-----------------|----------------|--------|
