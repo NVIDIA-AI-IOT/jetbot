@@ -2,6 +2,14 @@
 
 ## [Master]
 
+## [0.4.2] - 11/10/2020
+
+### Fixed
+
+- Resolved software issue which affected certain motor driver variants
+
+## [0.4.1] - 10/22/2020
+
 ### Added
 
 - ZMQ Camera publisher to improve stability of Camera and allow camera use in multiple notebooks
