@@ -16,4 +16,5 @@ Building and using JetBot gives the hands on experience needed to create entirel
 
 To get started, read the [JetBot documentation](https://jetbot.org).
 
+To connect with other members of our JetBot community, use [JetBot GitHub Discussions](https://github.com/NVIDIA-AI-IOT/jetbot/discussions).
 

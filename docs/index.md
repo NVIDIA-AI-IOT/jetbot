@@ -77,3 +77,4 @@ We really appreciate any feedback related to JetBot, and also just enjoy seeing 
 <!--* Join the [chat server](https://discord.gg/Ady6NtF)-->
 * Ask a question or report a bug by [creating an issue](https://github.com/NVIDIA-AI-IOT/jetbot/issues)
 * Share your project or ask a question on the [Jetson Developer Forums](https://devtalk.nvidia.com/default/board/139/jetson-embedded-systems/)
+* To connect with other members of our JetBot community, use [JetBot GitHub Discussions](https://github.com/NVIDIA-AI-IOT/jetbot/discussions)
