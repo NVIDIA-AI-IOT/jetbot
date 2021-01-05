@@ -81,28 +81,25 @@ class LocalController(ipywidgets.VBox):
             
             events = pygame.event.get()
             
+            timestamp = time.monotonic_ns()
+            
             for event in events:
-                
-                has_one = False
                 
                 if event.type == pygame.JOYAXISMOTION and event.joy == self.index:
                     axis = event.axis
+                    self.set_trait('timestamp', timestamp)
                     self.axes[axis].set_trait('value', _clamp(event.value))
-                    has_one = True
                 elif event.type == pygame.JOYBUTTONDOWN and event.joy == self.index:
                     button = event.button
+                    self.set_trait('timestamp', timestamp)
                     self.buttons[button].set_trait('value', 1.0)
                     self.buttons[button].set_trait('pressed', True)
-                    has_one = True
                 elif event.type == pygame.JOYBUTTONUP and event.joy == self.index:
                     button = event.button
+                    self.set_trait('timestamp', timestamp)
                     self.buttons[button].set_trait('value', 0.0)
                     self.buttons[button].set_trait('pressed', False)
-                    has_one = True
                 
-                if has_one:
-                    self.set_trait('timestamp', time.monotonic_ns())
-            
             time.sleep(0.01)
                 
     
