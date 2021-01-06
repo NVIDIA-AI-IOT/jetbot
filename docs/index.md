@@ -17,7 +17,7 @@ it because...
 
 <div style="display: inline-block">
     
-<img src="https://nvidia.box.com/shared/static/rdwg38i6wqmw1ikfpcoia8a26nlneuih.gif" style="max-width:256px;" align="right">
+<img src="images/jetbot_affordable.gif" style="max-width:256px;" align="right">
     
 JetBot costs less than $250 in parts, <i>including</i> Jetson Nano. The DIY kit includes a bill of materials
 which you must purchase and a 3D printed chassis that you can print, or order.  If you're looking to get
@@ -31,7 +31,7 @@ that come pre-bundled.
 
 <div style="display: inline-block">
 
-<img src="https://nvidia.box.com/shared/static/w88yo1c4bbzya2jxu11ncakt8kvqskpv.gif" style="max-width:256px;" align="left">
+<img src="images/jetbot_educational.gif" style="max-width:256px;" align="left">
 
 JetBot includes a set of <a href="https://jupyter.org/">Jupyter notebooks</a> which cover basic robotics concepts like programatic motor control, to more advanced topics like training a custom AI for avoiding collisions.  What you'll learn isn't limited to JetBot.  You'll learn concepts related to neural network data collection and training that extend as far as your imagination.
 
@@ -41,7 +41,7 @@ JetBot includes a set of <a href="https://jupyter.org/">Jupyter notebooks</a> wh
 
 <div style="display: inline-block">
 
-<img src="https://nvidia.box.com/shared/static/4kpi7p75z7evukuda83ymnyh2vwyjw5w.gif" style="max-width:256px;" align="right">
+<img src="images/jetbot_setup.gif" style="max-width:256px;" align="right">
 
 JetBot is programmed from your web browser.  Just connect your JetBot to Wifi and launch the JetBot <a href="software_setup/docker.html">Docker container</a>.  This enables JetBot's web programming environment, which is available even after the JetBot reboots.  Once your JetBot boots, just type it's IP address into your web browser and start programming.  
 
@@ -51,7 +51,7 @@ JetBot is programmed from your web browser.  Just connect your JetBot to Wifi an
 
 <div style="display: inline-block">
 
-<img src="https://nvidia.box.com/shared/static/rq3a3dkfaqw8zrjxd67csil83hllpuc7.gif" style="max-width:256px;" align="left">
+<img src="images/jetbot_fun.gif" style="max-width:256px;" align="left">
 
 We built JetBot to make exploring ideas related to robotics as fun as possible.  In effect, it's a portable, battery powered
 AI computer with a camera that's super easy to program.  This makes it the perfect platform for trying new ideas
@@ -75,5 +75,6 @@ To get started with JetBot, follow the [Getting Started](getting_started.md) ins
 We really appreciate any feedback related to JetBot, and also just enjoy seeing what you're working on!  There is a growing community of Jetson Nano and JetBot users.  It's easy to get involved involved...
 
 <!--* Join the [chat server](https://discord.gg/Ady6NtF)-->
-* Ask a question or report a bug by [creating an issue](https://github.com/NVIDIA-AI-IOT/jetbot/issues)
+* Ask a question and discuss JetBot related topics on the [JetBot GitHub Discussions](https://github.com/NVIDIA-AI-IOT/jetbot/discussions)
+* Report a bug by [creating an issue](https://github.com/NVIDIA-AI-IOT/jetbot/issues)
 * Share your project or ask a question on the [Jetson Developer Forums](https://devtalk.nvidia.com/default/board/139/jetson-embedded-systems/)
