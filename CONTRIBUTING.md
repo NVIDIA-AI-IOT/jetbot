@@ -8,7 +8,7 @@ to easily generate documentation from markdown.
 ### Installing Dependencies
 
 ```bash
-sydo apt-get update
+sudo apt-get update
 sudo apt-get -y install python3-pip
 sudo apt-get -y install mkdocs
 pip3 install mkdocs-material mike
