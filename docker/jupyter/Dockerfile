@@ -5,6 +5,9 @@ ARG JUPYTER_PASSWORD=jetbot
 ENV JUPYTER_WORKDIR=/workspace
 WORKDIR /workspace
 
+RUN apt-get update && \
+    apt-get install -y ssh
+
 # ====================
 # SET JUPYTER PASSWORD
 # ====================

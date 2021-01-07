@@ -15,6 +15,8 @@ In this example we'll have JetBot follow an object using a pre-trained model cap
     | v0.3           | [ssd_mobilenet_v2_coco.engine](https://drive.google.com/open?id=1RnNBHPDphIOWwHCSfeMCWQ7XN3w3tKFD) |
     | v0.4 (latest)  | [ssd_mobilenet_v2_coco.engine](https://drive.google.com/open?id=1KjlDMRD8uhgQmQK-nC2CZGHFTbq4qQQH) |
 
+???+ attention 
+    Please note, the latest object detection engine targets Jetson Nano running software bundled with JetPack 4.3. This engine not be compatible with other versions of JetPack. For this reason, we recommend starting from the JetPack 4.3 JetBot SD Card image, or using the JetPack 4.3 base SD card image if you want to run the object detection example.
 
 <a href="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL04_Object-Following.png"><img src="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL04_Object-Following.png" height="320"></a>
 
@@ -25,7 +27,8 @@ In this example we'll have JetBot follow an object using a pre-trained model cap
 5. Upload the pre-trained ``ssd_mobilenet_v2_coco.engine`` model to this folder
 
     ???+ info
-        Also make sure the collision avoidance model from Example 3 is in ``~/Notebooks/collision_avoidance``
+        This example also uses the collision avoidance model from example 3. We assume that it is already located at ~/Notebooks/collision_avoidance/best_model.pth
+
 
 6. Open and follow the ``live_demo.ipynb`` notebook
     

@@ -31,7 +31,13 @@ You need a camera with appropriate sensor and field of view for each JetBot.  Se
 | --- | --: | --: | --- | --- |
 | Camera | 1 | $29.00 | [Leopard Imaging](https://leopardimaging.com/product/li-imx219-mipi-ff-nano/) | LI-IMX219-MIPI-FF-NANO-**H145**|
 
-#### Option 2 - RPi Camera V2 + Lens Attachment
+#### Option 2 - IMX219-160 Camera
+
+|  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
+| --- | --: | --: | --- | --- |
+| Camera | 1 | $29.90 | [Amazon](http://amzn.com/B07T43K7LC/) | IMX219-160 Camera |
+
+#### Option 3 - RPi Camera V2 + Lens Attachment
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
@@ -44,6 +50,12 @@ You need a WiFi solution for each JetBot.  Select an option and get the parts sp
 
 #### Option 1 (default) - M2 Card + Antennas
 
+This option is a good choice if you're building JetBot with the original Jetson Nano 4GB.  It has been widely tested and used for JetBot.
+
+???+ attention
+
+    Jetson Nano 2GB does not have a M.2 connector, so this option will not work with it.
+
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
 | WiFi card | 1 | $18.95 | [Amazon](https://amzn.to/2WKEkum), [NewEgg](https://www.neweggbusiness.com/Product/Product.aspx?Item=9SIV21M85N2699) | M2, Intel Wireless-AC 8265 |
@@ -51,12 +63,17 @@ You need a WiFi solution for each JetBot.  Select an option and get the parts sp
 
 #### Option 2 - USB Dongle
 
-???+ info
-    Notice (5/17/2019):  We're currently tracking an issue with the Linux driver for the below USB WiFi dongle that may cause connectivity issues.  You can find information in [this forum post](https://devtalk.nvidia.com/default/topic/1049303/jetson-nano/jetson-nano-wifi-/post/5329699/#5329699).  For now, we recommend using Option 1 listed above.  Thank you to those who discovered this issue!
+This option is compatible with both the original Jetson Nano (4GB) and Jetson Nano 2GB.
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
-| WiFi Dongle | 1 | $9.99 | [Amazon](https://amzn.com/B003MTTJOY/) | RTL8192U chipset |
+| WiFi Dongle - TP-Link Archer T2U Nano | 1 | $17.99 | [Amazon](https://amzn.com/B07PB1X4CN/) | RTL8811AU chipset |
+| WiFi Dongle - TP-Link Archer T2U Plus | 1 | $19.99 | [Amazon](https://amzn.com/B07P5PRK7J/) | RTL8811AU chipset |
+
+???+ info
+    For other possible USB Wi-fi dongles that you can use on Jetson Nano, please check the Suported Components List.
+
+    - [Jetson Nano 2GB Developer Kit User Guide - Supported Component List](https://developer.nvidia.com/embedded/learn/jetson-nano-2gb-devkit-user-guide#id-.JetsonNano2GBDeveloperKitUserGuidevbatuu_v1.0-SupportedComponentList)
 
 ### Wheels
 

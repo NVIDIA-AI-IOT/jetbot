@@ -5,6 +5,16 @@
 We use [mkdocs-material](https://github.com/squidfunk/mkdocs-material)
 to easily generate documentation from markdown.  
 
+### Installing Dependencies
+
+```bash
+sudo apt-get update
+sudo apt-get -y install python3-pip
+sudo apt-get -y install mkdocs
+pip3 install mkdocs-material mike
+```
+
+
 ### Testing
 
 To quickly test the version of the documentation you're using, without commiting
