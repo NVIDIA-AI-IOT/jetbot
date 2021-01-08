@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export JETBOT_VERSION=0.4.1
+export JETBOT_VERSION=0.4.2
 
 L4T_VERSION_STRING=$(head -n 1 /etc/nv_tegra_release)
 L4T_RELEASE=$(echo $L4T_VERSION_STRING | cut -f 2 -d ' ' | grep -Po '(?<=R)[^;]+')

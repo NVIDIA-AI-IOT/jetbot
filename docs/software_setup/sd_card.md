@@ -3,94 +3,88 @@
 This page details how to set up JetBot using the pre-built JetBot SD card image. You may prefer this option if you are new to Jetson Nano, and do not have an existing SD card configured.
 
 
-## Step 1 - Flash JetBot image onto SD card
+## Step 1 - Download the pre-built JetBot SD card image
 
-1. Download the expandable JetBot SD card image [jetbot_image_v0p4p0.zip](https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN)
+Download the pre-built JetBot SD card image from the table below.  Make sure to select the version that matches the Jetson you're using  (for example Jetson Nano 2GB).
 
-    ???+ info
-        The above image is based on JetPack 4.3.  The previous image based on JetPack 4.2 may be found here: [jetbot_image_v0p3p2.zip](https://drive.google.com/open?id=1GF2D814hkViwluZ5SgNKW56cQu_5Ekt5).
+### Latest Release
 
-2. Insert an SD card into your desktop machine
-3. Using [Etcher](https://www.balena.io/etcher/), select the ``jetbot_image_v0p4p0.zip`` image and flash it onto the SD card
+| Platform | JetPack Version | JetBot Version | Download |
+|--------|-----------------|----------------|--------|
+| Jetson Nano 2GB | 4.4.1 | 0.4.2 | [jetbot-042_nano-2gb-jp441.zip](https://drive.google.com/file/d/1uiWz6QTcqB3wzN81gdv_zY8t_V3ZzkNE/view) |
+| Jetson Nano (4GB) | 4.4.1 | 0.4.2 | [jetbot-042_nano-4gb-jp441.zip](https://drive.google.com/file/d/1MAX1ibJvcLulKQeMtxbjMhsrOevBfUJd/view) |
+
+### Old releases
+
+| Platform | JetPack Version | JetBot Version | Download |
+|--------|-----------------|----------------|--------|
+| Jetson Nano 2GB | 4.4.1 | 0.4.1 | [jetbot-041_nano-2gb-jp441.zip](https://drive.google.com/file/d/1d03TOrQyffxFsv_Nhp-XQ7Q3-nCHbT9a/view) |
+| Jetson Nano (4GB) | 4.4.1 | 0.4.1 | [jetbot-041_nano-4gb-jp441.zip](https://drive.google.com/file/d/1yQ5MEiiBxbytCXHFPPBi-5SAxWklhZQA/view) |
+| Jetson Nano (4GB) | 4.3 | 0.4.0 | [jetbot_image_v0p4p0.zip](https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN) |
+| Jetson Nano (4GB) | 4.2 | 0.3.2 | [jetbot_image_v0p3p2.zip](https://drive.google.com/open?id=1GF2D814hkViwluZ5SgNKW56cQu_5Ekt5) | 
+
+## Step 2 - Flash JetBot image onto SD card
+
+1. Insert an SD card into your desktop machine
+
+3. Using [Etcher](https://www.balena.io/etcher/), select the image you downloaded above and flash it onto the SD card.
+
 4. Remove the SD card from your desktop machine
 
-## Step 2 - Boot Jetson Nano
+## Step 3 - Boot Jetson Nano
 
 1. Insert the SD card into your Jetson Nano (the micro SD card slot is located 
    under the module)
 
 2. Connect the monitor, keyboard, and mouse to the Nano
-3. Power on the Jetson Nano by connecting the micro USB charger to the micro USB port
+3. Power on the Jetson Nano by connecting the micro USB (for Jetson Nano (4GB)) or USB-C (for Jetson Nano 2GB) charger to the port
 
     ???+ attention 
         We recommend first booting the Jetson Nano once without the piOLED / motor driver connected.
 
         This way you can check to make sure the system boots properly from the SD card image without worrying about hardware issues.  After you've verified that it boots, reconnect the piOLED, double check your wiring, and boot again.
 
-## Step 3 - Connect JetBot to WiFi
+## Step 4 - Connect JetBot to WiFi
+
+Next you'll need to connect to WiFi.  To reduce memory consumption, we disable the Ubuntu GUI in the latest JetBot SD card image.  For this reason, you'll need to use the command line to connect to WiFi.
 
 1. Log in using the user ``jetbot`` and password ``jetbot``
+    
+2. Connect to a WiFi network using the following command
 
-2. Connect to a WiFi network using the Ubuntu desktop GUI
-
+    ```bash
+    sudo nmcli device wifi connect <SSID> password <PASSWORD>
+    ```
+    
 Your Jetson Nano should now automatically connect to the WiFi at boot and display it's IP address on the piOLED display.
 
 ???+ tip
     If you're having trouble figuring out how to get connected to Wi-Fi, check out the [Wi-Fi setup](wifi_setup.md) page for more detailed instructions 
 
-## Step 4 - Connect to JetBot from web browser
+## Step 5 - Connect to JetBot from web browser
 
-After your robot is connected to WiFi, you can connect to the robot from a web browser by performing the following steps
+After your robot is connected to WiFi, you no longer need to have the robot connected by a monitor.  You can connect to the robot from your laptop's web browser by performing the following steps
 
-1. Shutdown JetBot using the Ubuntu GUI
+1. Shutdown JetBot using the command line
+
+    ```bash
+    sudo shutdown now
+    ```
 
 2. Unplug your HDMI monitor, USB keyboard, mouse and power supply from Jetson Nano
+
 3. Power the JetBot from the USB battery pack by plugging in the micro-USB cable
 4. Wait a bit for JetBot to boot
 2. Check the IP address of your robot on the *piOLED* display screen.  Enter this in place of ``<jetbot_ip_address>`` in the next command
-3. Navigate to ``http://<jetbot_ip_address>:8888`` from your desktop's web browser
+3. Navigate to ``http://<jetbot_ip_address>:8888`` from your desktop's web browser. You can do this from any machine on your local network.  
+4. Sign in using the password ``jetbot``.
 
-???+ info
-    You shouldn't need to connect your robot to a monitor past this step! 
+That's it, you've now accessed JetBot's remote programming environment! 
 
-## Step 5 - Install latest software (optional)
+You will be presented with a view similar to the following. 
 
-The JetBot GitHub repository may contain software that is newer than that pre-installed
-on the SD card image.  To install the latest software:
+![](../images/docker_jupyter-on-browser.png)
 
-1. If you haven't already, connect to your robot by going to ``http://<jetbot_ip_address>:8888``
-
-2. Click the ``+`` icon to open the Jupyter Lab launcher
-3. Launch a new terminal
-2. Get and install the latest JetBot repository from GitHub by entering the following commands
-    ```bash
-    git clone https://github.com/NVIDIA-AI-IOT/jetbot
-    cd jetbot
-    sudo python3 setup.py install
-    ``` 
-3. Replace the old notebooks with the new notebooks by entering
-    ```bash
-    sudo apt-get install rsync
-    rsync jetbot/notebooks ~/Notebooks
-    ```
-
-## Step 6 - Configure power mode
-
-To ensure that the Jetson Nano doesn't draw more current than the battery pack can supply,
-place the Jetson Nano in ``5W`` mode by calling the following command
-
-1. If you haven't already, connect to your robot by going to ``http://<jetbot_ip_address>:8888``
-
-2. Click the ``+`` icon to open the Jupyter Lab launcher
-3. Launch a new terminal
-4. Select 5W power mode
-
-    ```bash
-    sudo nvpmodel -m1
-    ```
-5. Verify the Jetson Nano is in 5W power mode
-    ```bash
-    sudo nvpmodel -q
-    ```
+Here you can easily access the JetBot examples!  From this point on, when you power on the JetBot, it should automatically connect to WiFi and display it's IP address.  So all you need to do is reconnect using your web browser to start programming!
 
 Now that you're finished setting up your JetBot, you're ready to run the [examples](../examples/basic_motion.md).

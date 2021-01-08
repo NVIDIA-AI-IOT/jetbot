@@ -24,7 +24,7 @@ To get started with the DIY open-source JetBot, follow these steps.
 
 2. Follow the [hardware setup](hardware_setup.md)
 
-3. Follow the [software setup](software_setup/docker.md)
+3. Follow the [software setup](software_setup/sd_card.md)
 
 ### Option 2 - Third Party JetBot Kit
 
