@@ -80,7 +80,7 @@ RUN apt-get update
 RUN apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y nodejs libffi-dev 
-RUN pip3 install jupyter jupyterlab
+RUN pip3 install jupyter jupyterlab==2.2.6
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 
