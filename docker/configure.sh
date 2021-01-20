@@ -1,15 +1,16 @@
 #!/bin/bash
 
 export JETBOT_VERSION=0.4.2
+echo "export JETBOT_VERSION=$JETBOT_VERSION"
 
 L4T_VERSION_STRING=$(head -n 1 /etc/nv_tegra_release)
 L4T_RELEASE=$(echo $L4T_VERSION_STRING | cut -f 2 -d ' ' | grep -Po '(?<=R)[^;]+')
 L4T_REVISION=$(echo $L4T_VERSION_STRING | cut -f 2 -d ',' | grep -Po '(?<=REVISION: )[^;]+')
 
-echo "export L4T_VERSION=$L4T_RELEASE.$L4T_REVISION"
 export L4T_VERSION="$L4T_RELEASE.$L4T_REVISION"
-echo "export JETBOT_DOCKER_REMOTE=jetbot"
+echo "export L4T_VERSION=$L4T_RELEASE.$L4T_REVISION"
 export JETBOT_DOCKER_REMOTE=jetbot
+echo "export JETBOT_DOCKER_REMOTE=$JETBOT_DOCKER_REMOTE"
 
 if [[ "$L4T_VERSION" == "32.4.3" ]]
 then
