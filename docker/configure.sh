@@ -9,19 +9,6 @@ L4T_REVISION=$(echo $L4T_VERSION_STRING | cut -f 2 -d ',' | grep -Po '(?<=REVISI
 
 export L4T_VERSION="$L4T_RELEASE.$L4T_REVISION"
 echo "export L4T_VERSION=$L4T_RELEASE.$L4T_REVISION"
-export JETBOT_DOCKER_REMOTE=jetbot
-echo "export JETBOT_DOCKER_REMOTE=$JETBOT_DOCKER_REMOTE"
-
-if [[ "$L4T_VERSION" == "32.4.3" ]]
-then
-    # docker hub
-    echo "export JETBOT_DOCKER_REMOTE=jetbot"
-    export JETBOT_DOCKER_REMOTE=jetbot
-elif [[ "$L4T_VERSION" == "32.4.4" ]]
-then
-    echo "export JETBOT_DOCKER_REMOTE=jetbot"
-    export JETBOT_DOCKER_REMOTE=jetbot
-fi
 
 ./set_nvidia_runtime.sh
 sudo systemctl enable docker
