@@ -23,7 +23,7 @@ sudo systemctl enable docker
 # check system memory
 SYSTEM_RAM_KILOBYTES=$(awk '/^MemTotal:/{print $2}' /proc/meminfo)
 
-if [ $SYSTEM_RAM_KILOBYTES -gt 3000000 ]
+if [ $SYSTEM_RAM_KILOBYTES -lt 3000000 ]
 then
     export JETBOT_JUPYTER_MEMORY=500m
     export JETBOT_JUPYTER_MEMORY_SWAP=3G
