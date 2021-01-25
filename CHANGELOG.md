@@ -1,6 +1,8 @@
 # Changes
 
-## [Master]
+# [Master]
+
+## [0.4.3] - 1/25/2020
 
 ### Added
 
