@@ -10,4 +10,4 @@ sudo docker run -it -d \
     --volume /tmp/argus_socket:/tmp/argus_socket \
     --privileged \
     --name=jetbot_camera \
-    $JETBOT_DOCKER_REMOTE/jetbot:camera-$JETBOT_VERSION-$L4T_VERSION
+    jetbot/jetbot:camera-$JETBOT_VERSION-$L4T_VERSION
