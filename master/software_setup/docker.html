@@ -681,6 +681,10 @@ If you want to re-enable the GUI, you can execute the following command.</p>
 </code></pre></div>
 <p>Optionally, you can execute this script (<code>./scripts/re_enable_gui.sh</code>). </p>
 </details>
+<p>Then, call the <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/scripts/enable_swap.sh"><code>scripts/enable_swap.sh</code></a> script to enable swap memory if not set.<br>
+Having extra 4GB swap memory is recommended even on Jetson Nano (4GB) Developer Kit.</p>
+<div class="highlight"><pre><span></span><code>./scripts/enable_swap.sh
+</code></pre></div>
 <h2 id="step-5-enable-all-containers">Step 5 - Enable all containers</h2>
 <p>Call the following to enable the JetBot docker containers </p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span> docker
