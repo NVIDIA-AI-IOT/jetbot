@@ -12,7 +12,7 @@ Download the pre-built JetBot SD card image from the table below.  Make sure to 
 | Platform | JetPack Version | JetBot Version | Download | MD5 Checksum | 
 |--------|-----------------|----------------|--------|----|
 | Jetson Nano 2GB | 4.5 | 0.4.3 | [jetbot-043_nano-2gb-jp45.zip](https://drive.google.com/file/d/1tsuSY3iZrfiKu4ww-RX-eCPcwuT2DPwJ/view?usp=sharing) | e6dda4d13b1b1b31f648402b9b742152 |
-| Jetson Nano (4GB) | 4.5 | 0.4.3 | [jetbot-043_nano-4gb-jp45.zip](https://drive.google.com/file/d/1o08RPDRZuDloP_o76tCoSngvq1CVuCDh/view?usp=sharing) |
+| Jetson Nano (4GB) | 4.5 | 0.4.3 | [jetbot-043_nano-4gb-jp45.zip](https://drive.google.com/file/d/1o08RPDRZuDloP_o76tCoSngvq1CVuCDh/view?usp=sharing) | 760b1885646bfad8590633acca014289 |
 
 ### Old releases
 
