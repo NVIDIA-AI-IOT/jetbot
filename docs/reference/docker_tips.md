@@ -2,6 +2,19 @@
 
 This page provides various information related to using docker with JetBot.
 
+## Establishing access to the Docker host terminal
+
+The Jupyter Lab is running in the Docker container, thus the **Terminal** you open on Jupyter Lab only have access to the container environment.<br>
+This means you cannot use commands like `nvpmodel`, `tegrastats`, `journalctl`, `systemctl` and others.
+
+To get around this limitation, you can actually SSH in to the Docker host machine by;
+
+```
+ssh jetbot@0.0.0.0
+```
+
+<img src="../images/docker_host_ssh_login_cropped.png"  >
+
 ## Using Nvidia GPU Cloud (NGC)
 
 The standard JetBot containers are hosted on docker hub, but for development or testing purposes, you may wish to use Nvidia GPU Cloud. To access containers on NGC, you need to sign into the NGC registry. To do this:

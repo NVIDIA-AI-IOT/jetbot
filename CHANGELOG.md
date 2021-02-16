@@ -2,6 +2,8 @@
 
 ## [Master]
 
+## [0.4.3]
+
 ### Added
 
 - Added ``LocalController`` class which allows users to directly connect controller to JetBot
