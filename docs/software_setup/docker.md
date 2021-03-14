@@ -51,6 +51,13 @@ cd jetbot
     
     Optionally, you can execute this script (`./scripts/re_enable_gui.sh`). 
 
+Then, call the [``scripts/enable_swap.sh``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/scripts/enable_swap.sh) script to enable swap memory if not set.<br>
+Having extra 4GB swap memory is recommended even on Jetson Nano (4GB) Developer Kit.
+
+```bash
+./scripts/enable_swap.sh
+```
+
 ## Step 5 - Enable all containers
 
 Call the following to enable the JetBot docker containers 

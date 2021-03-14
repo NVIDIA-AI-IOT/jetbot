@@ -1,5 +1,5 @@
 WORKSPACE=$1
-JETBOT_CAMERA={$2:-opencv_gst_camera}
+JETBOT_CAMERA=${2:-opencv_gst_camera}
 
 # set default swap limit as unlimited
 if [[ -z "$JETBOT_JUPYTER_MEMORY_SWAP" ]]
