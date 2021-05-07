@@ -1,8 +1,5 @@
 # JetBot
 
-???+ info 
-    At GTC 2021, we’re excited to host office hours for any Jetbot related questions. Join us on [22 Apr](https://gtc21.event.nvidia.com/media/Ask%20and%20Learn%20about%20NVIDIA%20Jetson%20with%20Us%20%5BSE3258%5D/1_0t4qy8pg) and [23 Apr](https://gtc21.event.nvidia.com/media/Ask%20and%20Learn%20about%20NVIDIA%20Jetson%20with%20Us%20%5BSE3283%5D/1_k8aftsgr)
-
 <!--[<img src="https://img.shields.io/discord/553852754058280961.svg">](https://discord.gg/Ady6NtF) -->
 
 <img src="images/jetbot_800x630.png" style="height:256px">
