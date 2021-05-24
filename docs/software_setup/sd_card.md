@@ -10,7 +10,9 @@ Download the pre-built JetBot SD card image from the table below.  Make sure to 
 ### Latest Release
 
 ???+ attention
-    To use a sdcard image that is based on JetPack 4.5, you need to run through the initial ("oem-config") setup using the original JetPack 4.5 Jetson Nano SD card image ([Nano 2GB](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image), [Nano (4GB)](https://developer.nvidia.com/jetson-nano-sd-card-image)) first. <br> This step will configure the bootloader on Jetson Nano hardware as needed for the latest SD card we released for JetBot.
+    To use one of the JetBot sdcard images based on JetPack 4.5, you first need to boot your Jetson Nano using a plain JetPack 4.5 SD card image and run through the operating system setup.
+This will perform a one-time configuration which enables you to use SD card images based on JetPack 4.5 on your device.  You can find the original JetPack SD card images
+here: [JetPack SD card image for Jetson Nano 2GB](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image) and [JetPack SD card image for Jetson Nano (4GB)](https://developer.nvidia.com/jetson-nano-sd-card-image).
 
 | Platform | JetPack Version | JetBot Version | Download | MD5 Checksum | 
 |--------|-----------------|----------------|--------|----|
