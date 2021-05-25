@@ -46,6 +46,7 @@ nav:
       - Collision Avoidance: examples/collision_avoidance.md
       - Road Following: examples/road_following.md
       - Object Following: examples/object_following.md
+      - Community Examples: examples/community_examples.md
   - Reference:
       - Third Party Kits: third_party_kits.md
       - 3D Printing: 3d_printing.md
