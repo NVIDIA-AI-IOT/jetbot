@@ -1,6 +1,4 @@
 
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -10,8 +8,9 @@
       
       
       
+      
       <link rel="shortcut icon" href="../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
     
     
       
@@ -19,16 +18,18 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a46bcfb3.min.css">
-      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
       
     
     
     
       
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7C&display=fallback">
         <style>body,input{font-family:"",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
@@ -42,7 +43,7 @@
     
       
         
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-135919510-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-135919510-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
@@ -53,7 +54,10 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="nvgreen" data-md-color-primary="" data-md-color-accent="">
+      
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -71,9 +75,13 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+  
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="JetBot" class="md-header-nav__button md-logo" aria-label="JetBot">
+    <a href="../index.html" title="JetBot" class="md-header-nav__button md-logo" aria-label="JetBot">
       
   <img src="../images/logo.png" alt="logo">
 
@@ -82,18 +90,20 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
     <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             JetBot
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             
               Docker Tips
             
           </span>
         </div>
-      
+      </div>
     </div>
     
       <label class="md-header-nav__button md-icon" for="__search">
@@ -104,7 +114,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -145,8 +155,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -154,12 +162,20 @@
         <div class="md-main__inner md-grid">
           
             
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+  
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="JetBot" class="md-nav__button md-logo" aria-label="JetBot">
+    <a href="../index.html" title="JetBot" class="md-nav__button md-logo" aria-label="JetBot">
       
   <img src="../images/logo.png" alt="logo">
 
@@ -187,8 +203,9 @@
       
 
 
+
   <li class="md-nav__item">
-    <a href="../index.html" title="Home" class="md-nav__link">
+    <a href="../index.html" class="md-nav__link">
       Home
     </a>
   </li>
@@ -199,8 +216,9 @@
       
 
 
+
   <li class="md-nav__item">
-    <a href="../getting_started.html" title="Getting Started" class="md-nav__link">
+    <a href="../getting_started.html" class="md-nav__link">
       Getting Started
     </a>
   </li>
@@ -211,8 +229,9 @@
       
 
 
+
   <li class="md-nav__item">
-    <a href="../bill_of_materials.html" title="Bill of Materials" class="md-nav__link">
+    <a href="../bill_of_materials.html" class="md-nav__link">
       Bill of Materials
     </a>
   </li>
@@ -223,8 +242,9 @@
       
 
 
+
   <li class="md-nav__item">
-    <a href="../hardware_setup.html" title="Hardware Setup" class="md-nav__link">
+    <a href="../hardware_setup.html" class="md-nav__link">
       Hardware Setup
     </a>
   </li>
@@ -235,21 +255,20 @@
       
 
 
+
+  
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" data-md-state="indeterminate" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Software Setup
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Software Setup" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Software Setup
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -260,8 +279,9 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../software_setup/sd_card.html" title="Using SD Card Image" class="md-nav__link">
+    <a href="../software_setup/sd_card.html" class="md-nav__link">
       Using SD Card Image
     </a>
   </li>
@@ -272,8 +292,9 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../software_setup/docker.html" title="Using Docker Container" class="md-nav__link">
+    <a href="../software_setup/docker.html" class="md-nav__link">
       Using Docker Container
     </a>
   </li>
@@ -289,21 +310,20 @@
       
 
 
+
+  
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" data-md-state="indeterminate" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
       Examples
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Examples" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Examples
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -314,8 +334,9 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../examples/basic_motion.html" title="Basic Motion" class="md-nav__link">
+    <a href="../examples/basic_motion.html" class="md-nav__link">
       Basic Motion
     </a>
   </li>
@@ -326,8 +347,9 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../examples/teleoperation.html" title="Teleoperation" class="md-nav__link">
+    <a href="../examples/teleoperation.html" class="md-nav__link">
       Teleoperation
     </a>
   </li>
@@ -338,8 +360,9 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../examples/collision_avoidance.html" title="Collision Avoidance" class="md-nav__link">
+    <a href="../examples/collision_avoidance.html" class="md-nav__link">
       Collision Avoidance
     </a>
   </li>
@@ -350,8 +373,9 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../examples/road_following.html" title="Road Following" class="md-nav__link">
+    <a href="../examples/road_following.html" class="md-nav__link">
       Road Following
     </a>
   </li>
@@ -362,9 +386,23 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../examples/object_following.html" title="Object Following" class="md-nav__link">
+    <a href="../examples/object_following.html" class="md-nav__link">
       Object Following
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../examples/community_examples.html" class="md-nav__link">
+      Community Examples
     </a>
   </li>
 
@@ -378,24 +416,23 @@
       
       
 
+
   
 
 
+  
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
     
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
     <label class="md-nav__link" for="nav-7">
       Reference
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Reference" data-md-level="1">
       <label class="md-nav__title" for="nav-7">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Reference
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -406,8 +443,9 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../third_party_kits.html" title="Third Party Kits" class="md-nav__link">
+    <a href="../third_party_kits.html" class="md-nav__link">
       Third Party Kits
     </a>
   </li>
@@ -418,8 +456,9 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../3d_printing.html" title="3D Printing" class="md-nav__link">
+    <a href="../3d_printing.html" class="md-nav__link">
       3D Printing
     </a>
   </li>
@@ -430,8 +469,9 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../CONTRIBUTING.html" title="Contributing" class="md-nav__link">
+    <a href="../CONTRIBUTING.html" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -442,8 +482,9 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../CHANGELOG.html" title="Changes" class="md-nav__link">
+    <a href="../CHANGELOG.html" class="md-nav__link">
       Changes
     </a>
   </li>
@@ -454,8 +495,9 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../software_setup/wifi_setup.html" title="Wi-Fi setup" class="md-nav__link">
+    <a href="../software_setup/wifi_setup.html" class="md-nav__link">
       Wi-Fi setup
     </a>
   </li>
@@ -464,6 +506,7 @@
           
           
           
+
 
   
 
@@ -477,12 +520,10 @@
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         Docker Tips
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="docker_tips.html" title="Docker Tips" class="md-nav__link md-nav__link--active">
+    <a href="docker_tips.html" class="md-nav__link md-nav__link--active">
       Docker Tips
     </a>
     
@@ -494,9 +535,7 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -548,7 +587,8 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -559,9 +599,7 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -611,9 +649,6 @@
                   </a>
                 
                 
-                  
-                
-                
                 <h1 id="docker-tips">Docker Tips</h1>
 <p>This page provides various information related to using docker with JetBot.</p>
 <h2 id="establishing-access-to-the-docker-host-terminal">Establishing access to the Docker host terminal</h2>
@@ -622,7 +657,6 @@ This means you cannot use commands like <code>nvpmodel</code>, <code>tegrastats<
 <p>To get around this limitation, you can actually SSH in to the Docker host machine by;</p>
 <div class="highlight"><pre><span></span><code>ssh jetbot@0.0.0.0
 </code></pre></div>
-
 <p><img src="../images/docker_host_ssh_login_cropped.png"  ></p>
 <h2 id="using-nvidia-gpu-cloud-ngc">Using Nvidia GPU Cloud (NGC)</h2>
 <p>The standard JetBot containers are hosted on docker hub, but for development or testing purposes, you may wish to use Nvidia GPU Cloud. To access containers on NGC, you need to sign into the NGC registry. To do this:</p>
@@ -645,7 +679,6 @@ This means you cannot use commands like <code>nvpmodel</code>, <code>tegrastats<
 Username: <span class="nv">$oauthtoken</span>
 Password: &lt;Your Generated Key&gt;
 </code></pre></div>
-
 </li>
 </ol>
 <p>For the username, enter <code>$oauthtoken</code> exactly as shown. It is a special authentication token for all users.</p>
@@ -654,7 +687,6 @@ Password: &lt;Your Generated Key&gt;
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span> jetbot/docker
 ./enable.sh <span class="nv">$HOME</span>
 </code></pre></div>
-
 <h2 id="disabling-containers">Disabling containers</h2>
 <p>Once you execute the <code>enable.sh</code> script, the containers are set to restart automatically.
 This means you can shut down your Jetson, and when you reboot the containers will run and you don't need to repeat this process. </p>
@@ -680,7 +712,7 @@ This means you can shut down your Jetson, and when you reboot the containers wil
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../software_setup/wifi_setup.html" title="Wi-Fi setup" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../software_setup/wifi_setup.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -714,15 +746,15 @@ This means you can shut down your Jetson, and when you reboot the containers wil
       
     </div>
     
-      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "..",
-          features: ["navigation.expand"],
+          features: ['navigation.expand'],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

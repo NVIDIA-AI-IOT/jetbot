@@ -14,7 +14,7 @@
     
     
       
-        <title>Object Following - JetBot</title>
+        <title>Community Examples - JetBot</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#object-following" class="md-skip">
+        <a href="#community-examples" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Object Following
+              Community Examples
             
           </span>
         </div>
@@ -388,6 +388,19 @@
           
 
 
+
+  <li class="md-nav__item">
+    <a href="object_following.html" class="md-nav__link">
+      Object Following
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   
 
 
@@ -398,23 +411,39 @@
       
     
     
-    <a href="object_following.html" class="md-nav__link md-nav__link--active">
-      Object Following
-    </a>
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Community Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
     
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="community_examples.html" class="md-nav__link">
+    <a href="community_examples.html" class="md-nav__link md-nav__link--active">
       Community Examples
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#combined-collision-avoidance-and-road-following" class="md-nav__link">
+    Combined Collision Avoidance and Road Following
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -548,6 +577,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#combined-collision-avoidance-and-road-following" class="md-nav__link">
+    Combined Collision Avoidance and Road Following
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -558,61 +602,22 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docs/examples/object_following.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docs/examples/community_examples.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="object-following">Object Following</h1>
-<details class="attention" open="open"><summary>Attention</summary><p>Please note that example for now only works with the SD card image based software setup.</p>
-</details>
-<p>In this example we'll have JetBot follow an object using a pre-trained model capable of detecting common objects like<code>Person</code>, <code>Cup</code>, and <code>Dog</code>.  While doing this, JetBot will run the collision avoidance model from Example 3 to make sure it stays safe!</p>
-<p><a href="http://www.youtube.com/watch?v=MBUEbU9Q6wg" title="Dancing with JetBot"><img alt="" src="http://img.youtube.com/vi/MBUEbU9Q6wg/0.jpg" /></a></p>
-<ol>
-<li>
-<p>Download the object detection model according to the table below</p>
-<table>
-<thead>
-<tr>
-<th>JetBot SD Card Version</th>
-<th>Model</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>v0.3</td>
-<td><a href="https://drive.google.com/open?id=1RnNBHPDphIOWwHCSfeMCWQ7XN3w3tKFD">ssd_mobilenet_v2_coco.engine</a></td>
-</tr>
-<tr>
-<td>v0.4 (latest)</td>
-<td><a href="https://drive.google.com/open?id=1KjlDMRD8uhgQmQK-nC2CZGHFTbq4qQQH">ssd_mobilenet_v2_coco.engine</a></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-<details class="attention" open="open"><summary>Attention</summary><p>Please note, the latest object detection engine targets Jetson Nano running software bundled with JetPack 4.3. This engine not be compatible with other versions of JetPack. For this reason, we recommend starting from the JetPack 4.3 JetBot SD Card image, or using the JetPack 4.3 base SD card image if you want to run the object detection example.</p>
-</details>
-<p><a href="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL04_Object-Following.png"><img src="https://raw.githubusercontent.com/wiki/NVIDIA-AI-IOT/jetbot/images/JL04_Object-Following.png" height="320"></a></p>
-<ol>
-<li>
-<p>Connect to your robot by navigating to <code>http://&lt;jetbot_ip_address&gt;:8888</code></p>
-</li>
-<li>
-<p>Shutdown all other running notebooks by selecting <code>Kernel</code> -&gt; <code>Shutdown All Kernels...</code></p>
-</li>
-<li>Navigate to <code>~/Notebooks/object_following/</code></li>
-<li>
-<p>Upload the pre-trained <code>ssd_mobilenet_v2_coco.engine</code> model to this folder</p>
-<details class="info" open="open"><summary>Info</summary><p>This example also uses the collision avoidance model from example 3. We assume that it is already located at ~/Notebooks/collision_avoidance/best_model.pth</p>
-</details>
-</li>
-<li>
-<p>Open and follow the <code>live_demo.ipynb</code> notebook</p>
-<details class="warning" open="open"><summary>Warning</summary><p>Start cautious and give JetBot enough space to move around.</p>
-</details>
-</li>
-</ol>
+                <h1 id="community-examples">Community Examples</h1>
+<p>Here you can find community examples and extensions of JetBot.</p>
+<h2 id="combined-collision-avoidance-and-road-following">Combined Collision Avoidance and Road Following</h2>
+<p><img src="https://aws1.discourse-cdn.com/nvidia/original/3X/e/a/ea72298c8b2a3a036aa7449e1f3e6feefd49c1be.gif"/></p>
+<p>This example by <a href="https://github.com/abuelgasimsaadeldin">@abuelgasimsaadeldin</a> combines the JetBot road following
+and collision avoidance examples into a combined application.  Watch your JetBot follow the road, while simulataneously
+avoiding traffic collisions.</p>
+<ul>
+<li><a href="https://github.com/abuelgasimsaadeldin/Jetbot-Road-Following-and-Collision-Avoidance">GitHub</a></li>
+<li><a href="https://forums.developer.nvidia.com/t/combine-jetbot-road-following-and-collision-avoidance-tasks/178857">DevTalk</a></li>
+</ul>
                 
               
               
@@ -631,7 +636,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="road_following.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="object_following.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -640,19 +645,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Road Following
+                Object Following
               </div>
             </div>
           </a>
         
         
-          <a href="community_examples.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../third_party_kits.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Community Examples
+                Third Party Kits
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
