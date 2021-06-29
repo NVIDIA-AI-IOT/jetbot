@@ -58,5 +58,36 @@ is saved.  This is set to the root directory of Jupyter Lab.  Please note, if yo
 If you want to build the containers from scratch, simply call
 
 ```bash
+cd docker
+source configure.sh
 ./build.sh
 ```
+
+### Rebuilding Containers
+
+1. To rebuild the containers make sure to disable any running containers first. *(Don't forget to move to the `docker` folder)*
+    ```bash
+    cd docker
+    ./disable.sh
+    ```
+2. Rebuild the containers from scratch.
+    ```bash
+    source configure.sh
+    ./build.sh
+    ```
+3. Enable the new containers with `home` as the working directory *(feel free to change)*.
+    ```bash
+    ./enable.sh $HOME
+    ```
+
+Users can check if the containers are running using either of the following commands:
+
+- `sudo docker ps`
+- `sudo ps -aF`
+
+User should see both the jupyter notebook and display (stats) service running. If they are not running, try the following:
+
+- Restarting the Jetson or
+- Re-enabling the containers:
+    1. Run the `disable.sh` script
+    2. Followed by the `enable.sh` script
