@@ -11,10 +11,14 @@ export L4T_VERSION="$L4T_RELEASE.$L4T_REVISION"
 
 if [[ $L4T_VERSION = "32.4.3" ]]
 then
-	JETBOT_BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.4.3-pth1.6-py3
+	export JETBOT_BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.4.3-pth1.6-py3
 elif [[ "$L4T_VERSION" == "32.4.4" ]]
 then
-	JETBOT_BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.4.4-pth1.6-py3
+	export JETBOT_BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.4.4-pth1.6-py3
+elif [[ "$L4T_VERSION" == "32.5.0" ]]
+then
+    export JETBOT_BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.5.0-pth1.6-py3
+	# export JETBOT_BASE_IMAGE=nvcr.io/ea-linux4tegra/l4t-pytorch:r32.5.0-pth1.7-py3	# from bash history of pre-built 2GB image: jetbot-043_nano-2gb-jp45.zip
 else
 	echo "JETBOT_BASE_IMAGE not found for ${L4T_VERSION}.  Please manually set the JETBOT_BASE_IMAGE environment variable. (ie: export JETBOT_BASE_IMAGE=...)"
 fi
