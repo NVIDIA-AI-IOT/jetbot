@@ -154,8 +154,7 @@ while True:
 		if eth != None:
 			a = a + 1
 	except Exception as e:
-		# print(e)
-		eth = None
+		print(e)
 
 	# Checks for WiFi Connection on wlan0
 	try:
@@ -163,8 +162,7 @@ while True:
 		if wlan0 != None:
 			a = a + 2
 	except Exception as e:
-		# print(e)
-		wlan0 = None
+			print(e)
 
 	# Checks for WiFi Connection on wlan1
 	try:
@@ -172,8 +170,7 @@ while True:
 		if wlan1 != None:
 			a = a + 4
 	except Exception as e:
-		# print(e)
-		wlan1 = None
+		print(e)
 	
 	
 	# Check Resource Usage-----------------------------------------------------
