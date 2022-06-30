@@ -58,10 +58,10 @@ nav:
 extra_css:
   - css/version-select.css
   - css/colors.css
-extra_javascript:
-  - js/version-select.js
 
-google_analytics:
-  - UA-135919510-2
-  - auto
-
+extra:
+  version:
+    provider: mike
+  analytics:
+    provider: google
+    property: G-Z68BPY8NZV
