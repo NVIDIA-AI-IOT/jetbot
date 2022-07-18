@@ -13,5 +13,7 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
+      - run: git config --global user.name "GitHub Action"
+      - run: git config --global user.email "action@github.com"
       - run: pip install mkdocs-material mike
-      - run: mike deploy ${GITHUB_REF##*/}
+      - run: mike deploy ${GITHUB_REF##*/} --push
