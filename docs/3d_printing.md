@@ -1,42 +1,66 @@
+# 3D Printing
 This page has useful information related to printing the JetBot chassis using a 3D printer.  There are two methods for printing JetBot
 
-* Print by yourself
-* Use a printing service
+* [Method 1 - Print by yourself](#method-1-print-by-yourself)
+* [Method 2 - Use a printing service](#method-2-use-a-printing-service)
 
 ## Method 1 - Print by yourself
 
 If you have a 3D printer, we recommend printing the JetBot components yourself!
 
-### Print facts
+### Files:
+
+|  **Part** | **URL** | **Notes** 
+| --- | --- | --- |
+| Chassis | [STL file](cad/chassis.stl) | |
+| Camera Mount | [STL file](cad/camera_mount.stl) | |
+| Caster base | [STL file](cad/caster_base_60mm.stl) | [for 60mm wheel](bill_of_materials.html#wheels) |
+| Caster shroud  | [STL file](cad/caster_shroud_60mm.stl) | [for 60mm wheel](bill_of_materials.html#wheels) |
+| Caster base  | [STL file](cad/caster_base_65mm.stl) | [for 65mm wheel](bill_of_materials.html#wheels) |
+| Caster shroud | [STL file](cad/caster_shroud_65mm.stl) | [for 65mm wheel](bill_of_materials.html#wheels) |
+
+### Prebuilt GCode / Prusa Slicer Project Files:
+These gcodes are prebuilt and tested by us. They are ready to go on your SD card for printing.
+
+|  **Printer** | **Gcode** | **Image**| **Nozzle** | **Prusa Slicer** | **Notes** |
+| --- | --- | --- | --- | --- | --- |
+| Creality Ender 3 | [Gcode file](cad/jetbot_ender_3_04mm_nozzle.gcode) | [IMAGE](images/prebuilt_ender3.png) | 0.4mm | [Project File](cad/jetbot_ender3.3mf) | for 60mm wheel |
+| Prusa Mini | [Gcode file](cad/jetbot_prusa_mini_04mm_nozzle.gcode) | [IMAGE](images/prebuilt_mini.png) | 0.4mm | [Project File](cad/jetbot_prusa_mini.3mf) | for 60mm wheel |
+| Prusa Mk3 | [Gcode file](cad/jetbot_prusa_mk3_04mm_nozzle.gcode) | [IMAGE](images/prebuilt_mk3.png) | 0.4mm | [Project File](cad/jetbot_prusa_mk3.3mf) | for 60mm wheel |
+
+
+### Print facts:
 
 Below are some facts related to printing a single JetBot.
 
-* Print time:  10-12 hours
-* Material used:  < 100 grams
+* Print time:  12-15 hours
+* Material used:  ~ 100 grams
 * Material cost:  ~ $2
 
-### Tested Printers
+### Tested Printers:
 
-We've tested that the following printers are able to print JetBot successfully.
+We've tested that the following printers are able to print JetBot successfully. If you’re just beginning to enter the 3D printing space a [Prusa Mini](https://www.prusa3d.com/product/original-prusa-mini-kit-2) is highly recommended for its reliability. Where a [Creality Ender 3](https://amzn.to/3P78lP5) is less reliable but very affordable.
 
 | Model | Cost | URL |
 |------------|------|---|
-| Monoprice Voxel | $320 | [Amazon](https://amzn.to/2GbUJ5Q) |
-| Ultimaker 2+ | $2500 | [Amazon](https://amzn.to/2t8UDU0) |
+| Creality Ender 3 | $189 | [Amazon](https://amzn.to/3P78lP5) |
+| Prusa Mini | $429 | [Prusa](https://www.prusa3d.com/product/original-prusa-mini-kit-2/) |
+| Prusa Mk3 | $799 | [Prusa](https://www.prusa3d.com/product/original-prusa-i3-mk3s-kit-3/) |
 
-### Tested Filaments
+### Tested Filaments:
 
 Based on our experience, we recommend using PLA filament when printing JetBot.  Below is a collection
-of filaments that we have tested with the [Monoprice Voxel](https://amzn.to/2GbUJ5Q) 3D printer.
+of filaments that we have tested with the [Ender 3](https://amzn.to/3P78lP5) and [Prusa](https://www.prusa3d.com/product/original-prusa-mini-kit-2/) 3D printers.
 
 | Brand | Thickness | Material | Color | URL | Notes |
 |-------|-----------|----------|-------|-----|-------|
-| AmazonBasics | 1.75mm | PLA | Silver | [Amazon](https://amzn.to/2BkrKZP) | Smooth, dark metallic finish |
-| AmazonBasics | 1.75mm | PLA | Neon Green | [Amazon](https://amzn.to/2HPg1YR) | Smooth, pale finish|
-| AmazonBasics | 1.75mm | PLA | Yellow | [Amazon](http://amzn.com/B07D6CPFP4/) | Bold yellow, slightly translucent |
-| AmazonBasics | 1.75mm | PLA | Purple | [Amazon](#) | Smooth, pale finish |
+| AmazonBasics | 1.75mm | PLA | Silver | [Amazon](https://amzn.to/3JzgZ7C) | Smooth, dark metallic finish |
+| AmazonBasics | 1.75mm | PLA | Neon Green | [Amazon](https://amzn.to/3Jz7DZH) | Smooth, pale finish|
+| AmazonBasics | 1.75mm | PLA | Black | [Amazon](https://amzn.to/3vN0XS9) |  Black, pale finish |
+| AmazonBasics | 1.75mm | PLA | Yellow | [Amazon](https://amzn.to/3QtrAmL) |  Yellow, slightly translucent |
+| AmazonBasics | 1.75mm | PLA | Purple | [Amazon](https://amzn.to/3BJbmBV) | Smooth, pale finish |
 
-### Printing and slicing configuration
+### Printing and slicing configuration:
 
 * STL unit: **mm**
 
