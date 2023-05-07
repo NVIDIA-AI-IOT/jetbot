@@ -30,7 +30,7 @@ RUN apt-get update && \
 
 RUN pip3 install setuptools Cython wheel
 RUN pip3 install h5py==2.10.0 --verbose
-RUN pip3 install future==0.17.1 mock==3.0.5 keras_preprocessing==1.0.5 keras_applications==1.0.8 gast==0.2.2 futures protobuf pybind11 --verbose
+RUN pip3 install future==0.17.1 mock==3.0.5 keras_preprocessing==1.0.5 keras_applications==1.0.8 gast==0.2.2 futures protobuf==3.19.4 pybind11 --verbose
 RUN pip3 install numpy --verbose
 
 ARG TENSORFLOW_URL=https://nvidia.box.com/shared/static/rummpy6q1km1wivomalpkwt2jy28mndf.whl 
@@ -79,7 +79,8 @@ RUN echo -e "\e[48;5;172m Install Jupyter Lab \e[0m"
 RUN apt-get update
 RUN apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
-RUN apt-get install -y nodejs libffi-dev 
+RUN apt-get install -y nodejs libffi-dev
+RUN pip3 install packaging
 RUN pip3 install jupyter jupyterlab==2.2.6
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
