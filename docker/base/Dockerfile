@@ -86,6 +86,8 @@ RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 
 # Install jupyter_clickable_image_widget
+RUN pip3 install nbconvert pygments==2.4.1
+
 RUN echo "\e[42m Install jupyter_clickable_image_widget \e[0m"
 RUN cd && \
     apt-get install -y libssl1.0-dev && \
