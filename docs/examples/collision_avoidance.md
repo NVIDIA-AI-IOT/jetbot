@@ -39,7 +39,7 @@ JetBot safe!  We'll teach JetBot to detect two scenarios ``free`` and ``blocked`
 1. Connect to your robot by navigating to ``https://<jetbot_ip_address>:8888``
 2. Sign in with the default password jetbot
 3. Shutdown all other running notebooks by selecting Kernel -> Shutdown All Kernels...
-4. Navigate to ``~/Notebooks/road_following``
+4. Navigate to ``~/Notebooks/collision_avoidance``
 5. Open and follow the [``live_demo_resnet18_build_trt.ipynb``](https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/notebooks/collision_avoidance/live_demo_resnet18_build_trt.ipynb) notebook to optimize the model with TensorRT
 
 #### Step 4 - Run live demo on JetBot
