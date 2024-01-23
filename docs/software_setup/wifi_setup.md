@@ -16,7 +16,8 @@ For this you need to fisrt connect the following to the Jetson on your JetBot.
 - USB keyboard
 - USB mouse
 
-With this setup, you can use Jetson like a standard Linux computer. <br>
+With this setup, you can use Jetson like a standard Linux computer.
+
 We call this **Monitor-attached Mode**.
 
 ???+ hint
@@ -44,12 +45,14 @@ Note this IP address.
 
 To test the IP address is valid and your Jetson is accesible, try connecting to the IP address from your separate (laptop) PC.
 
-SSH server is enabled by default on Jetson.<br>
+SSH server is enabled by default on Jetson.
+
 Open your SSH client software (PuTTY, etc) on your PC, and try to connect the SSH server on the IP address.
 
 ![](../images/windows_putty_ssh.png)
 
-This is how you connect to your JetBot using SSH client software.<br>
+This is how you connect to your JetBot using SSH client software.
+
 Once you confirm you can connect to your Jetson remotely from your PC via Wi-Fi, **you can now remove the HDMI monitor, keyboard and mouse from Jetson**, and let your JetBot free!
 
 And at this point, you are now using Jetson effectively in the Headless Mode.
@@ -62,8 +65,10 @@ And at this point, you are now using Jetson effectively in the Headless Mode.
 
 ## Headless Mode
 
-When you put your Jetson in a deployed system, like a mobile robot, it is often difficult to attach an HDMI monitor.<br>
-We can still control such Jetson remotely through network from a (laptop) PC, ***WHEN you already know the IP address***.<br>
+When you put your Jetson in a deployed system, like a mobile robot, it is often difficult to attach an HDMI monitor.
+
+We can still control such Jetson remotely through network from a (laptop) PC, ***WHEN you already know the IP address***.
+
 We call this operation mode **Headless Mode**.
 
 However you face a chiken-or-egg dillemna here, because you want to remotely login to the console to set up a Wi-Fi connection, but to do that you first need the IP address of your Jetson that you get after establishing the Wi-Fi connecton.
@@ -82,10 +87,11 @@ They function as
 - USB serial (like the common "FTDI" USB to serial adapter)
 - USB network interface card (like a virtual Ethernet adapter)
 
-With the virtual Ethernet adapter functinality, Jetson forms a virutal local Ethernet network with Jetson being `192.168.55.1` and your PC being `192.168.55.100`.
+With the virtual Ethernet adapter functinality, Jetson forms a virtual local Ethernet network with Jetson being `192.168.55.1` and your PC being `192.168.55.100`.
 So you can actually SSH login from your (laptop) PC by specifying `192.168.55.1`, if you have already set up your acount (with username and password).
 
-If you are using Jetson for the first time right after you flash your SD card, then you don't have this user account set up.<br>
+If you are using Jetson for the first time right after you flash your SD card, then you don't have this user account set up.
+
 In that case, you want to use the USB serial functinality, and use your serial terminal software on your PC to have accesss to the Jetson's serial terminal.
 
 So either way, with a Micro USB cable, you can have an access to Jetson's terminal.
@@ -95,7 +101,8 @@ So either way, with a Micro USB cable, you can have an access to Jetson's termin
 
 If a Wi-Fi adaptor (either Intel 8265 M.2 card or a USB Wi-Fi dongle) is attached, you can configure the wireless network using `nmcli` command.
 
-You can first check if you want a wireless adapter on your system.<br>
+You can first check if you want a wireless adapter on your system.
+
 Look for `wlan0`.
 
 ```bash
@@ -201,7 +208,8 @@ Open your SSH client software (PuTTY, etc) on your PC, and try to connect the SS
 
 ![](../images/windows_putty_ssh.png)
 
-This is how you connect to your JetBot over Wi-Fi.<br>
+This is how you connect to your JetBot over Wi-Fi.
+
 Once you confirm you can connect to your Jetson remotely from your PC via Wi-Fi, **you can now remove the Micro USB cable** and let your JetBot free!
 
 ???+ info
@@ -210,7 +218,8 @@ Once you confirm you can connect to your Jetson remotely from your PC via Wi-Fi,
     - [Software setup using Docker container](docker.md) 
     - [Software setup using SD card image](sd_card.md)
     
-    Once your JetBot software is configure, you should see JetBot's IP address on the small OLED display.<br>
+    Once your JetBot software is configure, you should see JetBot's IP address on the small OLED display.
+    
     You would only need to come back to this step to re-connect to the network or to find the IP address when your JetBot fails to get the IP address and show the current IP address on the OLED display.
 
 
