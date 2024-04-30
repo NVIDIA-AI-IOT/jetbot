@@ -3,7 +3,8 @@ theme:
     name: "material"
     logo: images/logo.png
     favicon: images/favicon.png
-    font: Incosolata
+    font: 
+      text: Incosolata
     palette:
         scheme: nvgreen 
     features:
@@ -36,6 +37,7 @@ nav:
   - Home: index.md
   - Getting Started: getting_started.md
   - Bill of Materials: bill_of_materials.md
+  - Bill of Materials (Orin): bill_of_materials_orin.md
   - Hardware Setup: hardware_setup.md
   - Software Setup:
       - Using SD Card Image: software_setup/sd_card.md
