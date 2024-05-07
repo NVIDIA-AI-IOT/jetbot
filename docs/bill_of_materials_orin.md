@@ -21,8 +21,6 @@ You need these components for each JetBot.
 | --- | --: | --: | --- | --- |
 | Jetson Orin Nano 8GB Developer Kit | 1 |  $499.00 | [NVIDIA](https://store.nvidia.com/jetson/store/)  |  |
 | Micro SD card | 1 | $14.95 | [Amazon](https://a.co/d/0aOqPQh) | 128GB |
-| Battery | 1 | $12.99 | [Amazon](https://a.co/d/5DvsXGu) | PD 20W output, 10,000mAh |
-| USB-C PD cable | 1 | $10.99 | [Amazon](https://a.co/d/ihjA431) | USB-C to DC 5.5mm x 2.5mm, right angle |
 | Motor | 2 | $5.90 | [Adafruit](http://adafru.it/3777), [Amazon(1)](https://a.co/d/cQ489BJ), [Amazon(2)](https://amzn.to/2MU9zPb) | "TT" form factor |
 | Motor Driver | 1 | $19.95 | [Adafruit](http://adafru.it/2927), [Amazon](https://a.co/d/aUs8dwA) |  |
 | Caster ball | 1 | $10.99 | [Amazon](https://a.co/d/3WmVtqU) | 1-inch diameter |
@@ -31,6 +29,17 @@ You need these components for each JetBot.
 | *PiOLED* header | 1 | $7.99 | [Adafruit](http://adafru.it/1541), [Amazon](https://a.co/d/fGDbnIE), [Sparkfun](https://www.sparkfun.com/products/12792) | 2x(3+) right angle male |
 | Chassis | 1 | -- | [STL file](cad/chassis.stl) | see [3D printing](3d-printing) | |
 | Camera Mount | 1 | -- | [STL file](cad/camera_mount.stl) | see [3D printing](3d-printing) |
+
+### Power source
+
+|  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
+| --- | --: | --: | --- | --- |
+| Battery | 1 | $12.99 | [Amazon](https://a.co/d/5DvsXGu) | PD 20W output, 10,000mAh |
+| USB-C PD cable | 1 | $10.99 | [Amazon](https://a.co/d/ihjA431) | USB-C to DC 5.5mm x 2.5mm, right angle |
+
+!!! note
+
+    With this power source option, we recommend setting Jetson Orin Nano in `7W` mode (`sudo nvpmodel -m 1`), as we observed Jetson in `15W` mode shutdown in certain scenarios like suddenly ramping up the motor from 0% to 100% speed or having motors stalled.
 
 ### Camera
 
