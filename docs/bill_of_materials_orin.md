@@ -1,5 +1,14 @@
 # Bill of Materials - Jetson Orin Nano version
 
+!!! note
+
+    JetBot was originally designed with ***Jetson Nano Developer Kit***, which was [discontinued](https://forums.developer.nvidia.com/t/jetson-nano-developer-kit-eol/276729).
+
+    For those newly starting, we recommend planning the JetBot assembly with **Jetson Orin Nano 8GB Developer Kit**. 
+
+    Please note that, currently, the software for the Orin version of JetBot is still work in progress.
+
+
 This page lists all the parts you need to build the open-source JetBot with the new [**Jetson Orin Nano 8GB Developer Kit**](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit), along with purchasing links from popular vendors.
 
 Some of the parts are 3D printed.  We provide the STL files needed to print these parts.  Please see our [3d printing](3d_printing.md) page for tips on printing.
