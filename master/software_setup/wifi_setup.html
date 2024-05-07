@@ -8,8 +8,15 @@
       
       
       
+      
+        <link rel="prev" href="../CHANGELOG.html">
+      
+      
+        <link rel="next" href="../reference/docker_tips.html">
+      
+      
       <link rel="icon" href="../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
     
     
       
@@ -17,22 +24,25 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
+
+
     
+    
+      
     
     
       
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Incosolata:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Incosolata";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -40,7 +50,7 @@
     
       <link rel="stylesheet" href="../css/colors.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -49,11 +59,12 @@
   
   
 
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-Z68BPY8NZV"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-Z68BPY8NZV",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-Z68BPY8NZV",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
-  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-Z68BPY8NZV"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-Z68BPY8NZV",{page_path:e.pathname})})})</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z68BPY8NZV"></script>
-
-
+    
     
     
   </head>
@@ -64,9 +75,8 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="nvgreen" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="nvgreen" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -83,16 +93,16 @@
       
     </div>
     
-      <div data-md-component="outdated" hidden>
-        <aside class="md-banner md-banner--warning">
-          
-        </aside>
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
       </div>
     
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../index.html" title="JetBot" class="md-header__button md-logo" aria-label="JetBot" data-md-component="logo">
       
@@ -100,6 +110,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
@@ -119,9 +130,13 @@
       </div>
     </div>
     
+      
+    
+    
     
     
       <label class="md-header__button md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
@@ -130,12 +145,15 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -147,7 +165,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -159,7 +177,7 @@
         <a href="https://github.com/NVIDIA-AI-IOT/jetbot" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -189,6 +207,7 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../index.html" title="JetBot" class="md-nav__button md-logo" aria-label="JetBot" data-md-component="logo">
@@ -203,7 +222,7 @@
       <a href="https://github.com/NVIDIA-AI-IOT/jetbot" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -215,14 +234,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../index.html" class="md-nav__link">
-        Home
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
       </a>
     </li>
   
@@ -230,14 +254,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../getting_started.html" class="md-nav__link">
-        Getting Started
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
       </a>
     </li>
   
@@ -245,14 +274,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../bill_of_materials.html" class="md-nav__link">
-        Bill of Materials
+        
+  
+  <span class="md-ellipsis">
+    Bill of Materials
+  </span>
+  
+
       </a>
     </li>
   
@@ -260,14 +294,39 @@
     
       
       
-      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bill_of_materials_orin.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bill of Materials (Orin)
+  </span>
+  
 
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
   
   
   
     <li class="md-nav__item">
       <a href="../hardware_setup.html" class="md-nav__link">
-        Hardware Setup
+        
+  
+  <span class="md-ellipsis">
+    Hardware Setup
+  </span>
+  
+
       </a>
     </li>
   
@@ -275,292 +334,437 @@
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
-          Software Setup
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Software Setup" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
-          Software Setup
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Software Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Software Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="sd_card.html" class="md-nav__link">
-        Using SD Card Image
+        
+  
+  <span class="md-ellipsis">
+    Using SD Card Image
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="docker.html" class="md-nav__link">
-        Using Docker Container
+        
+  
+  <span class="md-ellipsis">
+    Using Docker Container
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="native_setup.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Native setup from scratch (No docker)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6">
-          Examples
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Examples" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          Examples
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../examples/basic_motion.html" class="md-nav__link">
-        Basic Motion
+        
+  
+  <span class="md-ellipsis">
+    Basic Motion
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../examples/teleoperation.html" class="md-nav__link">
-        Teleoperation
+        
+  
+  <span class="md-ellipsis">
+    Teleoperation
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../examples/collision_avoidance.html" class="md-nav__link">
-        Collision Avoidance
+        
+  
+  <span class="md-ellipsis">
+    Collision Avoidance
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../examples/road_following.html" class="md-nav__link">
-        Road Following
+        
+  
+  <span class="md-ellipsis">
+    Road Following
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../examples/object_following.html" class="md-nav__link">
-        Object Following
+        
+  
+  <span class="md-ellipsis">
+    Object Following
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../examples/community_examples.html" class="md-nav__link">
-        Community Examples
+        
+  
+  <span class="md-ellipsis">
+    Community Examples
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
     
   
   
+  
+    
+    
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
-          Reference
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Reference" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Reference
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
           
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../third_party_kits.html" class="md-nav__link">
-        Third Party Kits
+        
+  
+  <span class="md-ellipsis">
+    Third Party Kits
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../3d_printing.html" class="md-nav__link">
-        3D Printing
+        
+  
+  <span class="md-ellipsis">
+    3D Printing
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../CONTRIBUTING.html" class="md-nav__link">
-        Contributing
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../CHANGELOG.html" class="md-nav__link">
-        Changes
+        
+  
+  <span class="md-ellipsis">
+    Changes
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Wi-Fi setup
+          
+  
+  <span class="md-ellipsis">
+    Wi-Fi setup
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="wifi_setup.html" class="md-nav__link md-nav__link--active">
-        Wi-Fi setup
+        
+  
+  <span class="md-ellipsis">
+    Wi-Fi setup
+  </span>
+  
+
       </a>
       
         
@@ -580,7 +784,9 @@
       
         <li class="md-nav__item">
   <a href="#monitor-attached-mode" class="md-nav__link">
-    Monitor-attached Mode
+    <span class="md-ellipsis">
+      Monitor-attached Mode
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Monitor-attached Mode">
@@ -588,21 +794,27 @@
         
           <li class="md-nav__item">
   <a href="#connect-to-wi-fi-ap" class="md-nav__link">
-    Connect to Wi-Fi AP
+    <span class="md-ellipsis">
+      Connect to Wi-Fi AP
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#check-ip-address" class="md-nav__link">
-    Check IP address
+    <span class="md-ellipsis">
+      Check IP address
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#verify-the-ip-address" class="md-nav__link">
-    Verify the IP address
+    <span class="md-ellipsis">
+      Verify the IP address
+    </span>
   </a>
   
 </li>
@@ -614,7 +826,9 @@
       
         <li class="md-nav__item">
   <a href="#headless-mode" class="md-nav__link">
-    Headless Mode
+    <span class="md-ellipsis">
+      Headless Mode
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Headless Mode">
@@ -622,28 +836,36 @@
         
           <li class="md-nav__item">
   <a href="#usb-device-mode" class="md-nav__link">
-    USB Device Mode
+    <span class="md-ellipsis">
+      USB Device Mode
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#connect-wi-fi-using-nmcli-command" class="md-nav__link">
-    Connect Wi-Fi using nmcli command
+    <span class="md-ellipsis">
+      Connect Wi-Fi using nmcli command
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#check-ip-address_1" class="md-nav__link">
-    Check IP address
+    <span class="md-ellipsis">
+      Check IP address
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#verify-the-ip-address_1" class="md-nav__link">
-    Verify the IP address
+    <span class="md-ellipsis">
+      Verify the IP address
+    </span>
   </a>
   
 </li>
@@ -660,24 +882,32 @@
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../reference/docker_tips.html" class="md-nav__link">
-        Docker Tips
+        
+  
+  <span class="md-ellipsis">
+    Docker Tips
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -710,7 +940,9 @@
       
         <li class="md-nav__item">
   <a href="#monitor-attached-mode" class="md-nav__link">
-    Monitor-attached Mode
+    <span class="md-ellipsis">
+      Monitor-attached Mode
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Monitor-attached Mode">
@@ -718,21 +950,27 @@
         
           <li class="md-nav__item">
   <a href="#connect-to-wi-fi-ap" class="md-nav__link">
-    Connect to Wi-Fi AP
+    <span class="md-ellipsis">
+      Connect to Wi-Fi AP
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#check-ip-address" class="md-nav__link">
-    Check IP address
+    <span class="md-ellipsis">
+      Check IP address
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#verify-the-ip-address" class="md-nav__link">
-    Verify the IP address
+    <span class="md-ellipsis">
+      Verify the IP address
+    </span>
   </a>
   
 </li>
@@ -744,7 +982,9 @@
       
         <li class="md-nav__item">
   <a href="#headless-mode" class="md-nav__link">
-    Headless Mode
+    <span class="md-ellipsis">
+      Headless Mode
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Headless Mode">
@@ -752,28 +992,36 @@
         
           <li class="md-nav__item">
   <a href="#usb-device-mode" class="md-nav__link">
-    USB Device Mode
+    <span class="md-ellipsis">
+      USB Device Mode
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#connect-wi-fi-using-nmcli-command" class="md-nav__link">
-    Connect Wi-Fi using nmcli command
+    <span class="md-ellipsis">
+      Connect Wi-Fi using nmcli command
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#check-ip-address_1" class="md-nav__link">
-    Check IP address
+    <span class="md-ellipsis">
+      Check IP address
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#verify-the-ip-address_1" class="md-nav__link">
-    Verify the IP address
+    <span class="md-ellipsis">
+      Verify the IP address
+    </span>
   </a>
   
 </li>
@@ -791,14 +1039,14 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-  <a href="https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/docs/software_setup/wifi_setup.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+                  
 
+  
+  
 
 
 <h1 id="wi-fi-connection-setup">Wi-Fi connection setup</h1>
@@ -869,87 +1117,87 @@ In that case, you want to use the USB serial functinality, and use your serial t
 <p>If a Wi-Fi adaptor (either Intel 8265 M.2 card or a USB Wi-Fi dongle) is attached, you can configure the wireless network using <code>nmcli</code> command.</p>
 <p>You can first check if you want a wireless adapter on your system.<br>
 Look for <code>wlan0</code>.</p>
-<div class="highlight"><pre><span></span><code>$ nmcli device
-DEVICE  TYPE      STATE         CONNECTION
-l4tbr0  bridge    connected     l4tbr0
-wlan0   wifi      disconnected  --
-eth0    ethernet  unavailable   --
-dummy0  dummy     unmanaged     --
-rndis0  ethernet  unmanaged     --
-usb0    ethernet  unmanaged     --
-lo      loopback  unmanaged     --
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>nmcli<span class="w"> </span>device
+DEVICE<span class="w">  </span>TYPE<span class="w">      </span>STATE<span class="w">         </span>CONNECTION
+l4tbr0<span class="w">  </span>bridge<span class="w">    </span>connected<span class="w">     </span>l4tbr0
+wlan0<span class="w">   </span>wifi<span class="w">      </span>disconnected<span class="w">  </span>--
+eth0<span class="w">    </span>ethernet<span class="w">  </span>unavailable<span class="w">   </span>--
+dummy0<span class="w">  </span>dummy<span class="w">     </span>unmanaged<span class="w">     </span>--
+rndis0<span class="w">  </span>ethernet<span class="w">  </span>unmanaged<span class="w">     </span>--
+usb0<span class="w">    </span>ethernet<span class="w">  </span>unmanaged<span class="w">     </span>--
+lo<span class="w">      </span>loopback<span class="w">  </span>unmanaged<span class="w">     </span>--
 </code></pre></div>
 <p>Then you can list all the wirelss networks (SSDI) in the area.</p>
-<div class="highlight"><pre><span></span><code>$ nmcli device wifi list
-IN-USE  SSID                           MODE   CHAN  RATE        SIGNAL  BARS  SE
-        --                             Infra  <span class="m">6</span>     <span class="m">195</span> Mbit/s  <span class="m">82</span>      ▂▄▆█  WP
-        --                             Infra  <span class="m">6</span>     <span class="m">195</span> Mbit/s  <span class="m">82</span>      ▂▄▆█  WP
-        --                             Infra  <span class="m">6</span>     <span class="m">195</span> Mbit/s  <span class="m">75</span>      ▂▄▆_  WP
-        MY_WIFI_AP                     Infra  <span class="m">6</span>     <span class="m">195</span> Mbit/s  <span class="m">70</span>      ▂▄▆_  WP
-        --                             Infra  <span class="m">6</span>     <span class="m">195</span> Mbit/s  <span class="m">70</span>      ▂▄▆_  WP
-        *********                      Infra  <span class="m">1</span>     <span class="m">405</span> Mbit/s  <span class="m">64</span>      ▂▄▆_  WP
-        ************                   Infra  <span class="m">153</span>   <span class="m">405</span> Mbit/s  <span class="m">64</span>      ▂▄▆_  WP
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>nmcli<span class="w"> </span>device<span class="w"> </span>wifi<span class="w"> </span>list
+IN-USE<span class="w">  </span>SSID<span class="w">                           </span>MODE<span class="w">   </span>CHAN<span class="w">  </span>RATE<span class="w">        </span>SIGNAL<span class="w">  </span>BARS<span class="w">  </span>SE
+<span class="w">        </span>--<span class="w">                             </span>Infra<span class="w">  </span><span class="m">6</span><span class="w">     </span><span class="m">195</span><span class="w"> </span>Mbit/s<span class="w">  </span><span class="m">82</span><span class="w">      </span>▂▄▆█<span class="w">  </span>WP
+<span class="w">        </span>--<span class="w">                             </span>Infra<span class="w">  </span><span class="m">6</span><span class="w">     </span><span class="m">195</span><span class="w"> </span>Mbit/s<span class="w">  </span><span class="m">82</span><span class="w">      </span>▂▄▆█<span class="w">  </span>WP
+<span class="w">        </span>--<span class="w">                             </span>Infra<span class="w">  </span><span class="m">6</span><span class="w">     </span><span class="m">195</span><span class="w"> </span>Mbit/s<span class="w">  </span><span class="m">75</span><span class="w">      </span>▂▄▆_<span class="w">  </span>WP
+<span class="w">        </span>MY_WIFI_AP<span class="w">                     </span>Infra<span class="w">  </span><span class="m">6</span><span class="w">     </span><span class="m">195</span><span class="w"> </span>Mbit/s<span class="w">  </span><span class="m">70</span><span class="w">      </span>▂▄▆_<span class="w">  </span>WP
+<span class="w">        </span>--<span class="w">                             </span>Infra<span class="w">  </span><span class="m">6</span><span class="w">     </span><span class="m">195</span><span class="w"> </span>Mbit/s<span class="w">  </span><span class="m">70</span><span class="w">      </span>▂▄▆_<span class="w">  </span>WP
+<span class="w">        </span>*********<span class="w">                      </span>Infra<span class="w">  </span><span class="m">1</span><span class="w">     </span><span class="m">405</span><span class="w"> </span>Mbit/s<span class="w">  </span><span class="m">64</span><span class="w">      </span>▂▄▆_<span class="w">  </span>WP
+<span class="w">        </span>************<span class="w">                   </span>Infra<span class="w">  </span><span class="m">153</span><span class="w">   </span><span class="m">405</span><span class="w"> </span>Mbit/s<span class="w">  </span><span class="m">64</span><span class="w">      </span>▂▄▆_<span class="w">  </span>WP
 ...
 </code></pre></div>
 <p><img alt="" src="../images/terminal_nmcli_device_wifi_list.png" /></p>
 <p>To connect to your wireless network (AP, access point), issue the commands below.</p>
-<div class="highlight"><pre><span></span><code>$ sudo nmcli device wifi connect &lt;MY_WIFI_AP&gt; password &lt;MY_WIFI_PASSWORD&gt;
-Device <span class="s1">&#39;wlan0&#39;</span> successfully activated with <span class="s1">&#39;2a26d5ca-****-****-****-**************&#39;</span>.
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>nmcli<span class="w"> </span>device<span class="w"> </span>wifi<span class="w"> </span>connect<span class="w"> </span>&lt;MY_WIFI_AP&gt;<span class="w"> </span>password<span class="w"> </span>&lt;MY_WIFI_PASSWORD&gt;
+Device<span class="w"> </span><span class="s1">&#39;wlan0&#39;</span><span class="w"> </span>successfully<span class="w"> </span>activated<span class="w"> </span>with<span class="w"> </span><span class="s1">&#39;2a26d5ca-****-****-****-**************&#39;</span>.
 </code></pre></div>
 <h3 id="check-ip-address_1">Check IP address</h3>
 <p>To check your IP address, use <code>ifconfig</code>.
 Check the <code>wlan0</code> part at the very bottom.</p>
-<div class="highlight"><pre><span></span><code>$ ifconfig
-dummy0: <span class="nv">flags</span><span class="o">=</span><span class="m">195</span>&lt;UP,BROADCAST,RUNNING,NOARP&gt;  mtu <span class="m">1500</span>
-        inet6 fe80::d854:8ff:fe87:e631  prefixlen <span class="m">64</span>  scopeid 0x20&lt;link&gt;
-        ether da:54:08:87:e6:31  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Ethernet<span class="o">)</span>
-        RX packets <span class="m">0</span>  bytes <span class="m">0</span> <span class="o">(</span><span class="m">0</span>.0 B<span class="o">)</span>
-        RX errors <span class="m">0</span>  dropped <span class="m">0</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
-        TX packets <span class="m">24</span>  bytes <span class="m">3376</span> <span class="o">(</span><span class="m">3</span>.3 KB<span class="o">)</span>
-        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>ifconfig
+dummy0:<span class="w"> </span><span class="nv">flags</span><span class="o">=</span><span class="m">195</span>&lt;UP,BROADCAST,RUNNING,NOARP&gt;<span class="w">  </span>mtu<span class="w"> </span><span class="m">1500</span>
+<span class="w">        </span>inet6<span class="w"> </span>fe80::d854:8ff:fe87:e631<span class="w">  </span>prefixlen<span class="w"> </span><span class="m">64</span><span class="w">  </span>scopeid<span class="w"> </span>0x20&lt;link&gt;
+<span class="w">        </span>ether<span class="w"> </span>da:54:08:87:e6:31<span class="w">  </span>txqueuelen<span class="w"> </span><span class="m">1000</span><span class="w">  </span><span class="o">(</span>Ethernet<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>packets<span class="w"> </span><span class="m">0</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">(</span><span class="m">0</span>.0<span class="w"> </span>B<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">0</span><span class="w">  </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>frame<span class="w"> </span><span class="m">0</span>
+<span class="w">        </span>TX<span class="w"> </span>packets<span class="w"> </span><span class="m">24</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">3376</span><span class="w"> </span><span class="o">(</span><span class="m">3</span>.3<span class="w"> </span>KB<span class="o">)</span>
+<span class="w">        </span>TX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">0</span><span class="w"> </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>carrier<span class="w"> </span><span class="m">0</span><span class="w">  </span>collisions<span class="w"> </span><span class="m">0</span>
 
-l4tbr0: <span class="nv">flags</span><span class="o">=</span><span class="m">4163</span>&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu <span class="m">1500</span>
-        inet <span class="m">192</span>.168.55.1  netmask <span class="m">255</span>.255.255.0  broadcast <span class="m">192</span>.168.55.255
-        inet6 fe80::1  prefixlen <span class="m">128</span>  scopeid 0x20&lt;link&gt;
-        inet6 fe80::943c:9dff:fe90:eb89  prefixlen <span class="m">64</span>  scopeid 0x20&lt;link&gt;
-        ether <span class="m">96</span>:3c:9d:90:eb:89  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Ethernet<span class="o">)</span>
-        RX packets <span class="m">15189</span>  bytes <span class="m">1343038</span> <span class="o">(</span><span class="m">1</span>.3 MB<span class="o">)</span>
-        RX errors <span class="m">0</span>  dropped <span class="m">0</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
-        TX packets <span class="m">4344</span>  bytes <span class="m">411009</span> <span class="o">(</span><span class="m">411</span>.0 KB<span class="o">)</span>
-        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+l4tbr0:<span class="w"> </span><span class="nv">flags</span><span class="o">=</span><span class="m">4163</span>&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;<span class="w">  </span>mtu<span class="w"> </span><span class="m">1500</span>
+<span class="w">        </span>inet<span class="w"> </span><span class="m">192</span>.168.55.1<span class="w">  </span>netmask<span class="w"> </span><span class="m">255</span>.255.255.0<span class="w">  </span>broadcast<span class="w"> </span><span class="m">192</span>.168.55.255
+<span class="w">        </span>inet6<span class="w"> </span>fe80::1<span class="w">  </span>prefixlen<span class="w"> </span><span class="m">128</span><span class="w">  </span>scopeid<span class="w"> </span>0x20&lt;link&gt;
+<span class="w">        </span>inet6<span class="w"> </span>fe80::943c:9dff:fe90:eb89<span class="w">  </span>prefixlen<span class="w"> </span><span class="m">64</span><span class="w">  </span>scopeid<span class="w"> </span>0x20&lt;link&gt;
+<span class="w">        </span>ether<span class="w"> </span><span class="m">96</span>:3c:9d:90:eb:89<span class="w">  </span>txqueuelen<span class="w"> </span><span class="m">1000</span><span class="w">  </span><span class="o">(</span>Ethernet<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>packets<span class="w"> </span><span class="m">15189</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">1343038</span><span class="w"> </span><span class="o">(</span><span class="m">1</span>.3<span class="w"> </span>MB<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">0</span><span class="w">  </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>frame<span class="w"> </span><span class="m">0</span>
+<span class="w">        </span>TX<span class="w"> </span>packets<span class="w"> </span><span class="m">4344</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">411009</span><span class="w"> </span><span class="o">(</span><span class="m">411</span>.0<span class="w"> </span>KB<span class="o">)</span>
+<span class="w">        </span>TX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">0</span><span class="w"> </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>carrier<span class="w"> </span><span class="m">0</span><span class="w">  </span>collisions<span class="w"> </span><span class="m">0</span>
 
-lo: <span class="nv">flags</span><span class="o">=</span><span class="m">73</span>&lt;UP,LOOPBACK,RUNNING&gt;  mtu <span class="m">65536</span>
-        inet <span class="m">127</span>.0.0.1  netmask <span class="m">255</span>.0.0.0
-        inet6 ::1  prefixlen <span class="m">128</span>  scopeid 0x10&lt;host&gt;
-        loop  txqueuelen <span class="m">1</span>  <span class="o">(</span>Local Loopback<span class="o">)</span>
-        RX packets <span class="m">3954</span>  bytes <span class="m">287737</span> <span class="o">(</span><span class="m">287</span>.7 KB<span class="o">)</span>
-        RX errors <span class="m">0</span>  dropped <span class="m">0</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
-        TX packets <span class="m">3954</span>  bytes <span class="m">287737</span> <span class="o">(</span><span class="m">287</span>.7 KB<span class="o">)</span>
-        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+lo:<span class="w"> </span><span class="nv">flags</span><span class="o">=</span><span class="m">73</span>&lt;UP,LOOPBACK,RUNNING&gt;<span class="w">  </span>mtu<span class="w"> </span><span class="m">65536</span>
+<span class="w">        </span>inet<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w">  </span>netmask<span class="w"> </span><span class="m">255</span>.0.0.0
+<span class="w">        </span>inet6<span class="w"> </span>::1<span class="w">  </span>prefixlen<span class="w"> </span><span class="m">128</span><span class="w">  </span>scopeid<span class="w"> </span>0x10&lt;host&gt;
+<span class="w">        </span>loop<span class="w">  </span>txqueuelen<span class="w"> </span><span class="m">1</span><span class="w">  </span><span class="o">(</span>Local<span class="w"> </span>Loopback<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>packets<span class="w"> </span><span class="m">3954</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">287737</span><span class="w"> </span><span class="o">(</span><span class="m">287</span>.7<span class="w"> </span>KB<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">0</span><span class="w">  </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>frame<span class="w"> </span><span class="m">0</span>
+<span class="w">        </span>TX<span class="w"> </span>packets<span class="w"> </span><span class="m">3954</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">287737</span><span class="w"> </span><span class="o">(</span><span class="m">287</span>.7<span class="w"> </span>KB<span class="o">)</span>
+<span class="w">        </span>TX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">0</span><span class="w"> </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>carrier<span class="w"> </span><span class="m">0</span><span class="w">  </span>collisions<span class="w"> </span><span class="m">0</span>
 
-rndis0: <span class="nv">flags</span><span class="o">=</span><span class="m">4163</span>&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu <span class="m">1500</span>
-        inet6 fe80::943c:9dff:fe90:eb89  prefixlen <span class="m">64</span>  scopeid 0x20&lt;link&gt;
-        ether <span class="m">96</span>:3c:9d:90:eb:89  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Ethernet<span class="o">)</span>
-        RX packets <span class="m">15414</span>  bytes <span class="m">1360470</span> <span class="o">(</span><span class="m">1</span>.3 MB<span class="o">)</span>
-        RX errors <span class="m">0</span>  dropped <span class="m">7</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
-        TX packets <span class="m">4378</span>  bytes <span class="m">667985</span> <span class="o">(</span><span class="m">667</span>.9 KB<span class="o">)</span>
-        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+rndis0:<span class="w"> </span><span class="nv">flags</span><span class="o">=</span><span class="m">4163</span>&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;<span class="w">  </span>mtu<span class="w"> </span><span class="m">1500</span>
+<span class="w">        </span>inet6<span class="w"> </span>fe80::943c:9dff:fe90:eb89<span class="w">  </span>prefixlen<span class="w"> </span><span class="m">64</span><span class="w">  </span>scopeid<span class="w"> </span>0x20&lt;link&gt;
+<span class="w">        </span>ether<span class="w"> </span><span class="m">96</span>:3c:9d:90:eb:89<span class="w">  </span>txqueuelen<span class="w"> </span><span class="m">1000</span><span class="w">  </span><span class="o">(</span>Ethernet<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>packets<span class="w"> </span><span class="m">15414</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">1360470</span><span class="w"> </span><span class="o">(</span><span class="m">1</span>.3<span class="w"> </span>MB<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">7</span><span class="w">  </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>frame<span class="w"> </span><span class="m">0</span>
+<span class="w">        </span>TX<span class="w"> </span>packets<span class="w"> </span><span class="m">4378</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">667985</span><span class="w"> </span><span class="o">(</span><span class="m">667</span>.9<span class="w"> </span>KB<span class="o">)</span>
+<span class="w">        </span>TX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">0</span><span class="w"> </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>carrier<span class="w"> </span><span class="m">0</span><span class="w">  </span>collisions<span class="w"> </span><span class="m">0</span>
 
-usb0: <span class="nv">flags</span><span class="o">=</span><span class="m">4099</span>&lt;UP,BROADCAST,MULTICAST&gt;  mtu <span class="m">1500</span>
-        ether <span class="m">96</span>:3c:9d:90:eb:8b  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Ethernet<span class="o">)</span>
-        RX packets <span class="m">0</span>  bytes <span class="m">0</span> <span class="o">(</span><span class="m">0</span>.0 B<span class="o">)</span>
-        RX errors <span class="m">0</span>  dropped <span class="m">0</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
-        TX packets <span class="m">0</span>  bytes <span class="m">0</span> <span class="o">(</span><span class="m">0</span>.0 B<span class="o">)</span>
-        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+usb0:<span class="w"> </span><span class="nv">flags</span><span class="o">=</span><span class="m">4099</span>&lt;UP,BROADCAST,MULTICAST&gt;<span class="w">  </span>mtu<span class="w"> </span><span class="m">1500</span>
+<span class="w">        </span>ether<span class="w"> </span><span class="m">96</span>:3c:9d:90:eb:8b<span class="w">  </span>txqueuelen<span class="w"> </span><span class="m">1000</span><span class="w">  </span><span class="o">(</span>Ethernet<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>packets<span class="w"> </span><span class="m">0</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">(</span><span class="m">0</span>.0<span class="w"> </span>B<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">0</span><span class="w">  </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>frame<span class="w"> </span><span class="m">0</span>
+<span class="w">        </span>TX<span class="w"> </span>packets<span class="w"> </span><span class="m">0</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">(</span><span class="m">0</span>.0<span class="w"> </span>B<span class="o">)</span>
+<span class="w">        </span>TX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">0</span><span class="w"> </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>carrier<span class="w"> </span><span class="m">0</span><span class="w">  </span>collisions<span class="w"> </span><span class="m">0</span>
 
-wlan0: <span class="nv">flags</span><span class="o">=</span><span class="m">4163</span>&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu <span class="m">1500</span>
-        inet <span class="m">192</span>.168.1.58  netmask <span class="m">255</span>.255.255.0  broadcast <span class="m">192</span>.168.1.255
-        inet6 fe80::b5a0:c2e3:50bc:29a4  prefixlen <span class="m">64</span>  scopeid 0x20&lt;link&gt;
-        ether b4:4b:d6:23:9a:12  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Ethernet<span class="o">)</span>
-        RX packets <span class="m">26825</span>  bytes <span class="m">40675884</span> <span class="o">(</span><span class="m">40</span>.6 MB<span class="o">)</span>
-        RX errors <span class="m">0</span>  dropped <span class="m">32746</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
-        TX packets <span class="m">16406</span>  bytes <span class="m">1673647</span> <span class="o">(</span><span class="m">1</span>.6 MB<span class="o">)</span>
-        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+wlan0:<span class="w"> </span><span class="nv">flags</span><span class="o">=</span><span class="m">4163</span>&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;<span class="w">  </span>mtu<span class="w"> </span><span class="m">1500</span>
+<span class="w">        </span>inet<span class="w"> </span><span class="m">192</span>.168.1.58<span class="w">  </span>netmask<span class="w"> </span><span class="m">255</span>.255.255.0<span class="w">  </span>broadcast<span class="w"> </span><span class="m">192</span>.168.1.255
+<span class="w">        </span>inet6<span class="w"> </span>fe80::b5a0:c2e3:50bc:29a4<span class="w">  </span>prefixlen<span class="w"> </span><span class="m">64</span><span class="w">  </span>scopeid<span class="w"> </span>0x20&lt;link&gt;
+<span class="w">        </span>ether<span class="w"> </span>b4:4b:d6:23:9a:12<span class="w">  </span>txqueuelen<span class="w"> </span><span class="m">1000</span><span class="w">  </span><span class="o">(</span>Ethernet<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>packets<span class="w"> </span><span class="m">26825</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">40675884</span><span class="w"> </span><span class="o">(</span><span class="m">40</span>.6<span class="w"> </span>MB<span class="o">)</span>
+<span class="w">        </span>RX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">32746</span><span class="w">  </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>frame<span class="w"> </span><span class="m">0</span>
+<span class="w">        </span>TX<span class="w"> </span>packets<span class="w"> </span><span class="m">16406</span><span class="w">  </span>bytes<span class="w"> </span><span class="m">1673647</span><span class="w"> </span><span class="o">(</span><span class="m">1</span>.6<span class="w"> </span>MB<span class="o">)</span>
+<span class="w">        </span>TX<span class="w"> </span>errors<span class="w"> </span><span class="m">0</span><span class="w">  </span>dropped<span class="w"> </span><span class="m">0</span><span class="w"> </span>overruns<span class="w"> </span><span class="m">0</span><span class="w">  </span>carrier<span class="w"> </span><span class="m">0</span><span class="w">  </span>collisions<span class="w"> </span><span class="m">0</span>
 </code></pre></div>
 <h3 id="verify-the-ip-address_1">Verify the IP address</h3>
 <p>To test the IP address is valid and your Jetson is accesible, try connecting to the IP address from your separate (laptop) PC under the same network.</p>
@@ -968,51 +1216,30 @@ Once you confirm you can connect to your Jetson remotely from your PC via Wi-Fi,
 You would only need to come back to this step to re-connect to the network or to find the IP address when your JetBot fails to get the IP address and show the current IP address on the OLED display.</p>
 </details>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../CHANGELOG.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Changes" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Changes
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../reference/docker_tips.html" class="md-footer__link md-footer__link--next" aria-label="Next: Docker Tips" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Docker Tips
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1034,10 +1261,12 @@ You would only need to come back to this step to re-connect to the network or to
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.0238f547.min.js"></script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
     
   </body>
