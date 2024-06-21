@@ -9,8 +9,8 @@ To build JetBot you'll need the following tools
 * Pliers
 
 * Wire flush cutters/wire stripper
-* Phillips screwdriver (+ [Hex screwdriver for M2 hex socket screws](https://amzn.com/B00CP2GGBI/) )
-* Soldering iron and solder
+* Phillips screwdriver (+ [Hex screwdriver for M2 hex socket screws](https://amzn.to/3vOCgEV) )
+* Soldering iron and solder - [(Soldering Iron)](https://amzn.to/3zC6QCB), [(Tip cleaner)](https://amzn.to/3QmXi5c)
 * (optional) [Precision Electronics Tweezers](https://amzn.to/2t4AWg7)
 
 ## Assembly
