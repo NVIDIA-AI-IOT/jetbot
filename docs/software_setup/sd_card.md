@@ -1,11 +1,30 @@
 # Software Setup (SD Card Image)
 
+!!! note
+
+    JetBot was originally designed with ***Jetson Nano Developer Kit***, which was [discontinued](https://forums.developer.nvidia.com/t/jetson-nano-developer-kit-eol/276729).
+
+    For those newly starting, we recommend planning the JetBot assembly with **Jetson Orin Nano 8GB Developer Kit**.<br>
+    The Bill of Materials for Orin version of JetBot is laid out on [Bill of Materials (Orin)](./bill_of_materials_orin.md) page.
+
+    Please note that, currently, the software for the Orin version of JetBot is still work in progress.
+
+
 This page details how to set up JetBot using the pre-built JetBot SD card image. You may prefer this option if you are new to Jetson Nano, and do not have an existing SD card configured.
 
 
 ## Step 1 - Download the pre-built JetBot SD card image
 
 Download the pre-built JetBot SD card image from the table below.  Make sure to select the version that matches the Jetson you're using  (for example Jetson Nano 2GB).
+
+!!! Danger "Atention"
+
+    10/4/2024: 
+    
+    Recently, you may face permission issues when attempting to download the files hosted on Google Drive below.
+
+    We hope to resolve these issues soon.
+
 
 ### Latest Release
 
