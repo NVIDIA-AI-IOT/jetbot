@@ -21,9 +21,9 @@ Download the pre-built JetBot SD card image from the table below.  Make sure to 
 
     10/4/2024: 
     
-    We are facing some issues hosting image files, thus the links below are currently not working.
+    Recently, you may face permission issues when attempting to download the files hosted on Google Drive below.
 
-    We are working on fixing the issue and please come back to check the status in a couple of days.
+    We hope to resolve these issues soon.
 
 
 ### Latest Release
