@@ -17,21 +17,21 @@ This page details how to set up JetBot using the pre-built JetBot SD card image.
 
 Download the pre-built JetBot SD card image from the table below.  Make sure to select the version that matches the Jetson you're using  (for example Jetson Nano 2GB).
 
-!!! Danger "Atention"
+!!! Success "Good News"
 
-    10/4/2024: 
-    
-    Recently, you may face permission issues when attempting to download the files hosted on Google Drive below.
+    10/7/2024:
 
-    We hope to resolve these issues soon.
+    The JetBot image files have been successfully moved to a different server and are now available again.
+
+    If you experienced any issues accessing the files over the past two weeks, please try downloading them again.
 
 
 ### Latest Release
 
 | Platform | JetPack Version | JetBot Version | Download | MD5 Checksum | 
 |--------|-----------------|----------------|--------|----|
-| Jetson Nano 2GB | 4.5 | 0.4.3 | [jetbot-043_nano-2gb-jp45.zip](https://drive.google.com/file/d/1tsuSY3iZrfiKu4ww-RX-eCPcwuT2DPwJ/view?usp=sharing) | e6dda4d13b1b1b31f648402b9b742152 |
-| Jetson Nano (4GB) | 4.5 | 0.4.3 | [jetbot-043_nano-4gb-jp45.zip](https://drive.google.com/file/d/1o08RPDRZuDloP_o76tCoSngvq1CVuCDh/view?usp=sharing) | 760b1885646bfad8590633acca014289 |
+| Jetson Nano 2GB | 4.5 | 0.4.3 | [jetbot-043_nano-2gb-jp45.zip](https://nvidia.box.com/shared/static/4su20xg3w0mtvna99jr21m8ix80jhe5y.zip) | e6dda4d13b1b1b31f648402b9b742152 |
+| Jetson Nano (4GB) | 4.5 | 0.4.3 | [jetbot-043_nano-4gb-jp45.zip](https://nvidia.box.com/shared/static/mhtefkijy2c267rbuux6mhelj7ynjohz.zip) | 760b1885646bfad8590633acca014289 |
 
 ???+ attention
     To use one of the JetBot sdcard images based on JetPack 4.5, you first need to boot your Jetson Nano using a plain JetPack 4.5 SD card image and run through the operating system setup.
@@ -43,12 +43,13 @@ Download the pre-built JetBot SD card image from the table below.  Make sure to 
 
 | Platform | JetPack Version | JetBot Version | Download |
 |--------|-----------------|----------------|--------|
-| Jetson Nano 2GB | 4.4.1 | 0.4.2 | [jetbot-042_nano-2gb-jp441.zip](https://drive.google.com/file/d/1uiWz6QTcqB3wzN81gdv_zY8t_V3ZzkNE/view) |
+| Jetson Nano (4GB) | 4.2 | 0.3.2 | [jetbot_image_v0p3p2.zip](https://nvidia.box.com/shared/static/fh612qv6d9h5hqfpihczddnhio1i8j7d.zip) | 
+
+<!-- | Jetson Nano 2GB | 4.4.1 | 0.4.2 | [jetbot-042_nano-2gb-jp441.zip](https://drive.google.com/file/d/1uiWz6QTcqB3wzN81gdv_zY8t_V3ZzkNE/view) |
 | Jetson Nano (4GB) | 4.4.1 | 0.4.2 | [jetbot-042_nano-4gb-jp441.zip](https://drive.google.com/file/d/1MAX1ibJvcLulKQeMtxbjMhsrOevBfUJd/view) |
 | Jetson Nano 2GB | 4.4.1 | 0.4.1 | [jetbot-041_nano-2gb-jp441.zip](https://drive.google.com/file/d/1d03TOrQyffxFsv_Nhp-XQ7Q3-nCHbT9a/view) |
 | Jetson Nano (4GB) | 4.4.1 | 0.4.1 | [jetbot-041_nano-4gb-jp441.zip](https://drive.google.com/file/d/1yQ5MEiiBxbytCXHFPPBi-5SAxWklhZQA/view) |
-| Jetson Nano (4GB) | 4.3 | 0.4.0 | [jetbot_image_v0p4p0.zip](https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN) |
-| Jetson Nano (4GB) | 4.2 | 0.3.2 | [jetbot_image_v0p3p2.zip](https://drive.google.com/open?id=1GF2D814hkViwluZ5SgNKW56cQu_5Ekt5) | 
+| Jetson Nano (4GB) | 4.3 | 0.4.0 | [jetbot_image_v0p4p0.zip](https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN) | -->
 
 ## Step 2 - Flash JetBot image onto SD card
 
