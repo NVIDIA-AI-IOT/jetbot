@@ -17,7 +17,7 @@ pip3 install mkdocs-material mike
 
 ### Testing
 
-To quickly test the version of the documentation you're using, without commiting
+To quickly test the version of the documentation you're using, without committing
 anything to the ``gh-pages`` branch, run the following command.
 
 ```bash
