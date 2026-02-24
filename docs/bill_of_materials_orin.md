@@ -34,7 +34,7 @@ You need these components for each JetBot.
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
-| Battery | 1 | $12.99 | [Amazon](https://a.co/d/5DvsXGu) | PD 20W output, 10,000mAh |
+| Battery | 1 | $12.99 | [Amazon](https://www.amazon.com/dp/B0B9XHR6BG) | PD 20W output, 10,000mAh |
 | USB-C PD cable | 1 | $10.99 | [Amazon](https://a.co/d/ihjA431) | USB-C to DC 5.5mm x 2.5mm, right angle |
 
 !!! note
