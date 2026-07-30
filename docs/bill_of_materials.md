@@ -20,16 +20,26 @@ You need these components for each JetBot.
 | --- | --: | --: | --- | --- |
 | Jetson Nano | 1 |  $99.00 | [NVIDIA](https://developer.nvidia.com/embedded/buy/jetson-nano-devkit)  |  |
 | Micro SD card | 1 | $13.99 | [Amazon](https://amzn.to/2Us6bOv) | 64GB |
-| Power supply | 1 | $7.50 | [Adafruit](http://bit.ly/af1995) | Micro USB, 5V, 2.5A |
+| Power supply | 1 | $7.50 | [Adafruit](http://bit.ly/af1995), [Amazon](https://amzn.to/3d1GIcH) | Micro USB, 5V, 2.5A |
 | Motor | 2 | $5.90 | [Adafruit](http://adafru.it/3777), [Amazon(1)](https://amzn.to/2MYln32), [Amazon(2)](https://amzn.to/2MU9zPb) | "TT" form factor |
 | Motor Driver | 1 | $19.95 | [Adafruit](http://adafru.it/2927), [Amazon](https://amzn.to/2GvJhBA) |  |
-| Caster ball | 1 | $6.30 | [Amazon](http://amzn.com/B01N2S7CX6/) | 1-inch diameter |
-| Battery | 1 | $15.99 | [Amazon](https://amzn.to/2WRcIUe) | 2x 5V/3A output, 10,000mAh |
-| USB cable pack | 1 | $6.99 | [Amazon](http://amzn.com/B01N337FQF/) | Type A to Micro, right angle |
+| Caster ball | 1 | $12.79 | [Amazon](https://amzn.to/3p47Daw) | 1-inch diameter |
+| Battery | 1 | $19.79 | [Amazon](https://amzn.to/3JAPdaQ) | 2x 5V/3A output, 10,000mAh |
+| USB cable pack | 1 | $7.99 | [Amazon](https://amzn.to/3SyK1Zd) | Type A to Micro, right angle |
 | *PiOLED* display | 1 | $14.95 | [Adafruit](http://adafru.it/3527), [Amazon](https://amzn.to/2GgxUxX) |  |
 | *PiOLED* header | 1 | $5.95 | [Adafruit](http://adafru.it/1541), [Amazon](https://amzn.to/2taLSJf), [Sparkfun](https://www.sparkfun.com/products/12792) | 2x(3+) right angle male |
-| Chassis | 1 | -- | [STL file](cad/chassis.stl) | see [3D printing](3d-printing) | |
-| Camera Mount | 1 | -- | [STL file](cad/camera_mount.stl) | see [3D printing](3d-printing) |
+
+### 3D printing files:
+Please see the [3d printing page](/3d_printing.html) for more detail on printing the compnents and useful information.
+
+|  **Part** | **URL** | **Notes** 
+| --- | --- | --- |
+| Chassis | [STL file](cad/chassis.stl) | |
+| Camera Mount | [STL file](cad/camera_mount.stl) | |
+| Caster base | [STL file](cad/caster_base_60mm.stl) | [for 60mm wheel](bill_of_materials.html#wheels) |
+| Caster shroud  | [STL file](cad/caster_shroud_60mm.stl) | [for 60mm wheel](bill_of_materials.html#wheels) |
+| Caster base  | [STL file](cad/caster_base_65mm.stl) | [for 65mm wheel](bill_of_materials.html#wheels) |
+| Caster shroud | [STL file](cad/caster_shroud_65mm.stl) | [for 65mm wheel](bill_of_materials.html#wheels) |
 
 ### Camera
 
@@ -45,14 +55,14 @@ You need a camera with appropriate sensor and field of view for each JetBot.  Se
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
-| Camera | 1 | $29.90 | [Amazon](http://amzn.com/B07T43K7LC/) | IMX219-160 Camera |
+| Camera | 1 | $29.90 | [Amazon](https://amzn.to/3Q93HkU) | IMX219-160 Camera |
 
 #### Option 3 - RPi Camera V2 + Lens Attachment
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
 | Camera | 1 | $23.90 | [Amazon](https://amzn.to/2MSi6lL), [Adafruit](http://adafru.it/3099) | Raspberry Pi Camera V2 |
-| Camera lens attachment | 1 | $18.99 | [Amazon(1)](https://amzn.com/B07HMXJ9Y1), [Amazon(2)](https://amzn.com/B07HF81BVL/), [eBay](https://ebay.us/Fz7HGd) | 160-degree FoV |
+| Camera lens attachment | 1 | $21.99 | [Amazon](https://amzn.to/3JATr2i), [eBay](https://ebay.us/Fz7HGd) | 160-degree FoV |
 
 ### WiFi
 
@@ -77,8 +87,8 @@ This option is compatible with both the original Jetson Nano (4GB) and Jetson Na
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
-| WiFi Dongle - TP-Link Archer T2U Nano | 1 | $17.99 | [Amazon](https://amzn.com/B07PB1X4CN/) | RTL8811AU chipset |
-| WiFi Dongle - TP-Link Archer T2U Plus | 1 | $19.99 | [Amazon](https://amzn.com/B07P5PRK7J/) | RTL8811AU chipset |
+| WiFi Dongle - TP-Link Archer T2U Nano | 1 | $14.99 | [Amazon](https://amzn.to/3A5vBIS) | RTL8811AU chipset |
+| WiFi Dongle - TP-Link Archer T2U Plus | 1 | $18.72 | [Amazon](https://amzn.to/3bFp2U2) | RTL8811AU chipset |
 
 ???+ info
     For other possible USB Wi-fi dongles that you can use on Jetson Nano, please check the Suported Components List.
@@ -89,21 +99,17 @@ This option is compatible with both the original Jetson Nano (4GB) and Jetson Na
 
 You need wheels with a "TT" motor shaft connector for each JetBot.  Select an option and get the parts specified.
 
-#### Option 1 - 60mm
+#### Wheel option 1 - 60mm
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
 | Wheel | 2 | $5.00 | [Adafruit](http://adafru.it/3757) | 60mm diameter |
-| Caster base | 1 | -- | [STL file](cad/caster_base_60mm.stl) | for 60mm wheel |
-| Caster shroud | 1 | -- | [STL file](cad/caster_shroud_60mm.stl) | for 60mm wheel |
 
-#### Option 2 - 65mm
+#### Wheel option 2 - 65mm
 
 |  **Part** | **Quantity** | **Cost** | **URL** | **Notes** |
 | --- | --: | --: | --- | --- |
 | Wheel | 2 | $3.00 | [Adafruit](https://www.adafruit.com/product/3763) | 65mm diameter |
-| Caster base | 1 | -- | [STL file](cad/caster_base_65mm.stl) | for 65mm wheel|
-| Caster shroud | 1 | -- | [STL file](cad/caster_shroud_65mm.stl) | for 65mm wheel |
 
 ### Assembly Hardware
 
@@ -111,8 +117,8 @@ You need the following parts to build JetBot.  They come in packs, so order the 
 
 |  **Part** | **Qty per JetBot** | **Qty per pack** | **Cost per JetBot** | **URL** | **Notes** |
 | --- | --- | --: | --: | --: | --- |
-|  Adhesive pads | 2 | 48 | $0.14 | [Amazon](http://amzn.com/B01FIK56Q4) | |
-|  M2 screw | 20 | 100 | $1.29 | [Amazon](http://amzn.com/B00YBMRAH4) | 8mm long, self tapping |
+|  Adhesive pads | 2 | 20 | $0.50 | [Amazon](https://amzn.to/3P6IWF8) | |
+|  M2 screw | 20 | 100 | $1.29 | [Amazon](https://amzn.to/3SCqp6r) | 8mm long, self tapping |
 |  M3 screw | 4 | 60 | $0.47 | [Amazon](https://amzn.to/2tcdluk) | 25mm long|
 |  M3 nut | 4 | 100 | $0.24 | [Amazon](https://amzn.to/2tb8PMo) |  |
 |  Jumper wires | 4 | 40 | $0.13 | [Amazon](https://amzn.to/2tacYQD) | Female-female, ~20cm |
