@@ -138,8 +138,8 @@ elif 61 in addresses:
 		# Could replace line spacing with disp2.getFontHeight, but doesn't scale properly
 
 		# Screen Width
-		import qwiic_micro_oled
-		LCDWIDTH = qwiic_micro_oled._LCDWIDTH
+		LCDWIDTH = disp2.get_lcd_width()
+
 	except OSError as err:
 		print("OS error: {0}".format(err))
 		time.sleep(5)
