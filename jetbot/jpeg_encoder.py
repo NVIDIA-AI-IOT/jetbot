@@ -72,5 +72,4 @@ class JpegEncoder(object):
         self.appsrc.emit("push-buffer", buffer)
         sample = self.appsink.emit('pull-sample')  # blocks until sample avaialable
         buf = sample.get_buffer()
-        (result, mapinfo) = buf.map(Gst.MapFlags.READ)
         return buf.extract_dup(0, buf.get_size())
